@@ -28,19 +28,19 @@ Breadcrumbs are a navigation tool to provide a visual reference to the current p
 
 <div class="my-lg">
     <ks-breadcrumbs>
-        <ks-crumb href="#">Home</ks-crumb>
-        <ks-crumb href="#">Products</ks-crumb>
-        <ks-crumb href="#">Bacon Flavored Toothpaste</ks-crumb>
-        <ks-crumb href="#">Details</ks-crumb>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Bacon Flavored Toothpaste</a>
+        <a href="#">Details</a>
     </ks-breadcrumbs>
 </div>
 
 ```html
 <ks-breadcrumbs>
-    <ks-crumb href="#">Home</ks-crumb>
-    <ks-crumb href="#">Products</ks-crumb>
-    <ks-crumb href="#">Bacon Flavored Toothpaste</ks-crumb>
-    <ks-crumb href="#">Details</ks-crumb>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Bacon Flavored Toothpaste</a>
+    <a href="#">Details</a>
 </ks-breadcrumbs>
 ```
 
@@ -54,10 +54,4 @@ The last item in the breadcrumb will have the attribute `aria-current="page"` to
 
 ### `<ks-breadcrumbs>`
 
-The `<ks-breadcrumbs>` has no custom properties.
-
-### `<ks-crumb>`
-
-| Property | Attribute | Type     | Default     | Description |
-| -------- | --------- | -------- | ----------- | ----------- |
-| `href`   | `href`    | `string` | `undefined` | url of the page in the hierarchy |
+The `<ks-breadcrumbs>` component has no custom properties.

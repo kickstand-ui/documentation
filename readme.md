@@ -1,6 +1,6 @@
 # Getting Started
 
-The official documentation for [Kickstand UI](https://kickstand-ui.com/).
+The official documentation for the _beta_ release of [Kickstand UI](https://beta.kickstand-ui.com/).
 
 ## Install Dependencies
 

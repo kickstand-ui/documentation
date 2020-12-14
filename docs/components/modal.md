@@ -120,22 +120,12 @@ It is important to choose what the footer behavior will be and try to be as cons
 </div>
 
 ```html
-<ks-button shows="multi_action_modal"
-    >Show Modal with Multiple Actions</ks-button
->
-<ks-modal
-    modal-title="Modal with Multiple Actions"
-    id="multi_action_modal"
-    size="lg"
->
+<ks-button shows="multi_action_modal">Show Modal with Multiple Actions</ks-button>
+<ks-modal id="multi_action_modal" modal-title="Modal with Multiple Actions" size="lg">
     ...
     <ks-modal-footer>
-        <ks-button display="clear" hides="multi_action_modal"
-            >Least Important</ks-button
-        >
-        <ks-button display="hollow" hides="multi_action_modal"
-            >Semi-Important</ks-button
-        >
+        <ks-button display="clear" hides="multi_action_modal">Least Important</ks-button>
+        <ks-button display="hollow" hides="multi_action_modal">Semi-Important</ks-button>
         <ks-button hides="multi_action_modal">Very Important</ks-button>
     </ks-modal-footer>
 </ks-modal>
@@ -152,7 +142,7 @@ By default, Kickstand UI's modal can be dismissed using the close button, the es
             <iframe src="https://giphy.com/embed/Qa5dsjQjlCqOY" width="100%" height="100%" frameBorder="0" class="giphy-embed position-absolute" allowFullScreen></iframe>
         </div>
         <p>
-            <a href="https://giphy.com/gifs/the-office-michael-scott-graduation-Qa5dsjQjlCqOY">via GIPHY</a>
+            <a href="https://giphy.com/gifs/the-office-michael-scott-graduation-Qa5dsjQjlCqOY">via GIPHY<a>
         </p>
         <ks-modal-footer>
             <ks-button hides="prevent-close_modal">Got It!</ks-button>
@@ -205,7 +195,7 @@ You can also programmatically show and hide modals. It is as simple as using Jav
         (function () {
             let testButton = document.getElementById('js_button');
             let testModal = document.getElementById('test_modal');
-            testButton.addEventListener('click', () => {
+            testButton.addEventListener('click', function() {
                 testModal.show();
                 setTimeout(function() {
                     testModal.hide();
@@ -221,21 +211,17 @@ You can also programmatically show and hide modals. It is as simple as using Jav
     ...
 </ks-modal>
 <script>
-    (function() {
-        let testButton = document.getElementById("test_button");
-        let testModal = document.getElementById("test_modal");
+    let testButton = document.getElementById("test_button");
+    let testModal = document.getElementById("test_modal");
 
-        // add click event listener to button
-        testButton.addEventListener("click", () => {
-            // show loading overlay
-            testModal.show();
+    // add click event listener to button
+    testButton.addEventListener("click", () => {
+        // show loading overlay
+        testModal.show();
 
-            // hide after 3 seconds
-            setTimeout(function() {
-                testModal.hide();
-            }, 3000);
-        });
-    })();
+        // hide after 3 seconds
+        setTimeout(() => testModal.hide(), 3000);
+    });
 </script>
 ```
 
@@ -243,15 +229,15 @@ You can also programmatically show and hide modals. It is as simple as using Jav
 
 The modal component is built using the [`<ks-overlay>`](/components/overlay.html) component and inherits accessibility features from that such as:
 
--   The modal has the `role="dialog"` to help assistive technology identify the modal's content as being grouped and separated from the rest of the page content.
--   When opened, the focus will be set on the first clickable element within the modal.
--   The element that triggered the modal will have the attribute `aria-expanded="true"` automatically added.
--   When the user tabs, the focus will stay isolated within the modal to prevent elements outside the modal from being selected.
--   When the modal is closed, the focus will go back to the element the user was on before the modal was opened so they do not lose their place in the document.
--   Once the modal is closed, the element that triggered the modal will have the attribute `aria-expanded="true"` automatically added.
--   The modal title will be used to label the overlay using the `aria-labelledby` attribute.
--   The modal can be closed using the `esc` key for keyboard users.
--   If you are using the `shows` and `hides` controls on the `<ks-button>` component, the button will automatically be populated with the appropriate `aria-haspopup`, `aria-expanded`, and `aria-controls` attributes on the button.
+- The modal has the `role="dialog"` to help assistive technology identify the modal's content as being grouped and separated from the rest of the page content.
+- When opened, the focus will be set on the first clickable element within the modal.
+- The element that triggered the modal will have the attribute `aria-expanded="true"` automatically added.
+- When the user tabs, the focus will stay isolated within the modal to prevent elements outside the modal from being selected.
+- When the modal is closed, the focus will go back to the element the user was on before the modal was opened so they do not lose their place in the document.
+- Once the modal is closed, the element that triggered the modal will have the attribute `aria-expanded="true"` automatically added.
+- The modal title will be used to label the overlay using the `aria-labelledby` attribute.
+- The modal can be closed using the `esc` key for keyboard users.
+- If you are using the `shows` and `hides` controls on the `<ks-button>` component, the button will automatically be populated with the appropriate `aria-haspopup`, `aria-expanded`, and `aria-controls` attributes on the button.
 
 ## Properties
 

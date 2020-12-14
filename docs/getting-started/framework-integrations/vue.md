@@ -36,9 +36,9 @@ Assuming you’ve run `npm install --save kickstand-ui` beforehand, you import t
 
 1. importing the node module
 2. telling Vue to ignore the custom element tags (see `https://vuejs.org/v2/api/#ignoredElements`)
-3. binding the Stenciljs component code to the window object
+3. binding the Kickstand UI components to the window object
 
-```tsx
+```js
 import Vue from 'vue';
 import App from './App.vue';
 
@@ -64,7 +64,6 @@ new Vue({
 Kickstand UI components should now be available in any of your Vue components.
 
 ## Using SASS
-
 
 :::tip Note
 If you are using SASS, you do not need to import the CSS file as it is outlined above.

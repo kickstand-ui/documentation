@@ -154,25 +154,46 @@ You can control the color of the progress bar to help convey statuses.
 
 ```html
 <ks-progress-bar
-    description="XS Progress Bar"
-    size="xs"
-    value="25"
-    />
+    description="Primary Progress Bar"
+    color="primary"
+    value="25">
+</ks-progress-bar>
+
 <ks-progress-bar
-    description="SM Progress Bar"
-    size="sm"
-    value="25"
-    />
+    description="Secondary Progress Bar"
+    color="secondary"
+    value="25">
+</ks-progress-bar>
+
 <ks-progress-bar
-    description="md Progress Bar"
-    size="md"
-    value="25"
-    />
+    description="Light Progress Bar"
+    color="light"
+    value="25">
+</ks-progress-bar>
+
 <ks-progress-bar
-    description="LG Progress Bar"
-    size="lg"
-    value="25"
-    />
+    description="Dark Progress Bar"
+    color="dark"
+    value="25">
+</ks-progress-bar>
+
+<ks-progress-bar
+    description="Info Progress Bar"
+    color="info"
+    value="25">
+</ks-progress-bar>
+
+<ks-progress-bar
+    description="Warning Progress Bar"
+    color="warning"
+    value="25">
+</ks-progress-bar>
+
+<ks-progress-bar
+    description="Danger Progress Bar"
+    color="danger"
+    value="25">
+</ks-progress-bar>
 ```
 
 ## Accessibility

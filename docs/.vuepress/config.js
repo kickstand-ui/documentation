@@ -12,6 +12,13 @@ module.exports = {
         [
             "meta",
             {
+                "http-equiv": "X-UA-Compatible",
+                content: "IE=edge"
+            }
+        ],
+        [
+            "meta",
+            {
                 property: "og:image",
                 content: "https://kickstand-ui.com/images/kickstand_card.png"
             }
@@ -47,6 +54,10 @@ module.exports = {
         logo: "/images/kickstand_logo_2.svg",
         nav: [
             {
+                text: "Documentation",
+                link: "/getting-started/installation.html"
+            },
+            {
                 text: "Contact",
                 link: "/contact.html"
             },
@@ -64,8 +75,8 @@ module.exports = {
                 title: "Getting Started",
                 collapsable: true,
                 children: [
-                    "./getting-started/introduction.html",
                     "./getting-started/installation.html",
+                    "./getting-started/introduction.html",
                     "./getting-started/how-to-use.html",
                     {
                         title: "Framework Integrations",
@@ -97,15 +108,13 @@ module.exports = {
                 children: [
                     "/components/accordion.html",
                     "/components/alert.html",
-                    "/components/autocomplete.html",
                     "/components/badge.html",
                     "/components/breadcrumbs.html",
                     "/components/button.html",
+                    "/components/button-bar.html",
                     "/components/card.html",
                     "/components/carousel.html",
                     "/components/dropdown.html",
-                    "/components/form.html",
-                    "/components/form-field.html",
                     "/components/gallery.html",
                     "/components/icons.html",
                     "/components/images.html",
@@ -117,16 +126,35 @@ module.exports = {
                     "/components/responsive-embed.html",
                     "/components/side-drawer.html",
                     "/components/switch.html",
-                    // "/components/spin-box.html",
                     "/components/tabs.html",
                     "/components/tooltip.html"
                 ]
             },
-            // {
-            //     title: "Content",
-            //     collapsable: true,
-            //     children: []
-            // },
+            {
+                title: "Forms",
+                collapsable: true,
+                children: [
+                    "/forms/form.html",
+                    "/forms/form-field.html",
+                    "/forms/autocomplete.html",
+                    "/forms/checkbox.html",
+                    "/forms/checklist.html",
+                    "/forms/color.html",
+                    "/forms/datalist.html",
+                    "/forms/date.html",
+                    "/forms/email.html",
+                    "/forms/number.html",
+                    "/forms/password.html",
+                    "/forms/radiolist.html",
+                    "/forms/range.html",
+                    "/forms/search.html",
+                    "/forms/select.html",
+                    "/forms/spin-box.html",
+                    "/forms/telephone.html",
+                    "/forms/text.html",
+                    "/forms/textarea.html"
+                ]
+            },
             {
                 title: "Layout",
                 collapsable: true,
@@ -137,6 +165,7 @@ module.exports = {
                 collapsable: true,
                 children: [
                     "/utilities/borders.html",
+                    "/utilities/border-radiuses.html",
                     "/utilities/colors.html",
                     "/utilities/display.html",
                     "/utilities/layout.html",
@@ -148,13 +177,61 @@ module.exports = {
                 ]
             },
             {
-                title: "Theming",
+                title: "Design Tokens",
                 collapsable: true,
                 children: [
-                    "/theming/design-tokens.html"
-                    // "/theming/customizing-components.html"
+                    "/design-tokens/design-tokens.html",
+                    {
+                        title: 'Border Radiuses',
+                        path: "/design-tokens/border-radiuses.html"
+                    },
+                    {
+                        title: 'Borders',
+                        path: "/design-tokens/borders.html"
+                    },
+                    {
+                        title: 'Colors',
+                        path: "/design-tokens/colors.html"
+                    },
+                    {
+                        title: 'Containers',
+                        path: "/design-tokens/containers.html"
+                    },
+                    {
+                        title: 'Fonts',
+                        path: "/design-tokens/fonts.html"
+                    },
+                    {
+                        title: 'Media Queries',
+                        path: "/design-tokens/media-queries.html"
+                    },
+                    {
+                        title: 'Outline',
+                        path: "/design-tokens/outline.html"
+                    },
+                    {
+                        title: 'Responsive Embed',
+                        path: "/design-tokens/responsive-embed.html"
+                    },
+                    {
+                        title: 'Shadows',
+                        path: "/design-tokens/shadows.html"
+                    },
+                    {
+                        title: 'Spacing',
+                        path: "/design-tokens/spacing.html"
+                    },
+                    {
+                        title: 'Transitions',
+                        path: "/design-tokens/transitions.html"
+                    },
+                    {
+                        title: 'Z-Indexes',
+                        path: "/design-tokens/z-index.html"
+                    },
                 ]
-            }
+            },
+            'changelog.html'
         ]
     },
     plugins: [

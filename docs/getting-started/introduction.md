@@ -22,11 +22,11 @@ Kickstand UI can be easily implemented in any of your projects regardless of the
 
 It also means that you can have a Design System that is designed to be customized to match your brand with a few simple value changes rather than extensive overriding of the default CSS.
 
-<div class="display-flex space-between align-center my-lg">
+<div class="display-flex align-center justify-center my-lg">
     <a href="https://stenciljs.com/">
         <img src="/images/stencil_logo.png" alt="stenciljs logo" style="width: 100%; max-width: 250px;" />
     </a>
-    <b class="text-xxl">+</b>
+    <b class="text-xxl mx-xxxl my-xxl">+</b>
     <a href="https://projectclarion.com/">
         <img src="/images/clarion_logo.png" alt="product clarion logo" style="width: 100%; max-width: 250px;" />
     </a>
@@ -36,7 +36,7 @@ Kickstand UI is built using StencilJS and Clarion to create a design system that
 
 ### Performant
 
-It is also important to note that, since Kickstand UI is a framework-less design system, it is incredibly light-weight. The initial size is about `8KB` of CSS and `7KB` of JavaScript in modern browsers!
+It is also important to note that, since Kickstand UI is a framework-less design system, it is incredibly light-weight. The initial size is about `13KB` of CSS and `7KB` of JavaScript in modern browsers!
 
 ## Stencil
 

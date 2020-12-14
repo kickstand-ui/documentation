@@ -40,7 +40,7 @@ Kickstand UI's Responsive Embed component is design to embed content in your pag
 
 ## Aspect Ratio
 
-The default aspect ratio is `16x9`. Other available values are `21x9`, `4x3`, and `1x1`. You can add additional aspect ratios using a custom [SASS Variables](/theming/design-tokens.html#responsive-embed-aspect-ratios).
+The default aspect ratio is `16x9`. Other available values are `21x9`, `4x3`, and `1x1`. You can add additional aspect ratios using a custom [SASS Variables](../design-tokens/responsive-embed.md).
 
 ## Properties
 

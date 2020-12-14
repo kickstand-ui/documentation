@@ -36,11 +36,7 @@ The biggest advantage the Kickstand UI image component brings is the ability to 
 </div>
 
 ```html
-<ks-img
-    src="/images/demo/superstitious.jpg"
-    alt="Michael Scott"
-    lazy
-    />
+<ks-img src="/images/demo/superstitious.jpg" alt="Michael Scott" lazy></ks-img>
 ```
 
 ## Properties
@@ -50,7 +46,7 @@ The biggest advantage the Kickstand UI image component brings is the ability to 
 | `alt`       | `alt`       | alternate text for image                                           | `string`  | `undefined` |
 | `lazy`      | `lazy`      | toggles whether an image will be lazy loaded                       | `boolean` | `undefined` |
 | `src`       | `src`       | url to image                                                       | `string`  | `undefined` |
-| `threshold` | `threshold` | distance from the bottom of the viewport a lazy image will display | `number`  | `300`       |
+| `threshold` | `threshold` | distance from the bottom of the viewport a lazy image will display (in pixels) | `number`  | `300`       |
 
 <div class="my-xl text-center">
     <ks-img
@@ -59,12 +55,9 @@ The biggest advantage the Kickstand UI image component brings is the ability to 
         class="w-50"
         lazy
         />
+    <div class="text-lg mt-sm">I was lazy-loaded!!!</div>
 </div>
 
 ```html
-<ks-img
-    src="/images/demo/michael_scott.jpg"
-    alt="Michael Scott"
-    lazy
-    />
+<ks-img src="/images/demo/michael_scott.jpg" alt="Michael Scott" lazy threshold="500"></ks-img>
 ```

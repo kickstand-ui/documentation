@@ -122,19 +122,49 @@ Drop-down menus are great for displaying a list of available actions, however me
 
 <div class="my-xl">
     <ks-dropdown text="Catalogs" mega-menu>
-        <ks-row class="align-center">
-            <ks-column>
-                <a href="#" class="text-center w-100">
-                    <img class="w-50" src="/images/demo/dunder_mifflin_logo.jpg" alt="dunder mifflin logo" />
-                </a>
+        <ks-row class="align-center" style="max-width:960px;margin:auto;">
+            <ks-column class="p-xxxl">
+                <a href="#">Office Supplies</a>
+                <ul>
+                    <li>Calendars & Planners</li>
+                    <li>Writing Supplies</li>
+                    <li>Office Basics</li>
+                    <li>Office & School</li>
+                    <li>Notebooks & Pads</li>
+                    <li>Binders and Accessories</li>
+                </ul>
             </ks-column>
-            <ks-column>
-                <a href="#" class="text-center w-100">
-                    <img class="w-50" src="/images/demo/sabre-corp_logo.jpg" alt="sabre logo" />
-                </a>
+            <ks-column class="p-xxxl">
+                <a href="#">Paper</a>
+                <ul>
+                    <li>Printing Paper</li>
+                    <li>Teacher & Classroom</li>
+                    <li>Notebooks & Pads</li>
+                    <li>Post-it & Sticky Notes</li>
+                    <li>Specialty Paper</li>
+                </ul>
             </ks-column>
-            <ks-column>
-                <a href="#" class="text-xxl text-center w-100">The Pyramid</a>
+            <ks-column class="p-xxxl">
+                <a href="#">Printers & Scanners</a>
+                <ul>
+                    <li>Printers</li>
+                    <li>Ink & Toner</li>
+                    <li>Printer Accessories</li>
+                    <li>Scanners</li>
+                </ul>
+            </ks-column>
+            <ks-column class="p-xxxl">
+                <a href="#">Mail & Ship</a>
+                <ul>
+                    <li>Tape</li>
+                    <li>Boxes & Pads</li>
+                    <li>Mailers & Envelopes</li>
+                    <li>Cushioning & Void Fill</li>
+                    <li>Poly Bags</li>
+                    <li>Strapping</li>
+                    <li>Stretch & Shrink</li>
+                    <li>Labels</li>
+                </ul>
             </ks-column>
         </ks-row>
     </ks-dropdown>
@@ -142,20 +172,50 @@ Drop-down menus are great for displaying a list of available actions, however me
 
 ```html
 <ks-dropdown text="Catalogs" mega-menu>
-    <!-- Kickstand UI Grid -->
+    <!-- Kickstand Grid -->
     <ks-row class="align-center">
-        <ks-column>
-            <a href="#" class="text-center">
-                <img class="w-50" src="/images/demo/dunder_mifflin_logo.jpg" alt="dunder mifflin logo" />
-            </a>
+        <ks-column class="p-xxxl">
+            <a href="#">Office Supplies</a>
+            <ul>
+                <li>Calendars & Planners</li>
+                <li>Writing Supplies</li>
+                <li>Office Basics</li>
+                <li>Office & School</li>
+                <li>Notebooks & Pads</li>
+                <li>Binders and Accessories</li>
+            </ul>
         </ks-column>
-        <ks-column>
-            <a href="#" class="text-center">
-                <img class="w-50" src="/images/demo/sabre-corp_logo.jpg" alt="sabre logo" />
-            </a>
+        <ks-column class="p-xxxl">
+            <a href="#">Paper</a>
+            <ul>
+                <li>Printing Paper</li>
+                <li>Teacher & Classroom</li>
+                <li>Notebooks & Pads</li>
+                <li>Post-it & Sticky Notes</li>
+                <li>Specialty Paper</li>
+            </ul>
         </ks-column>
-        <ks-column>
-            <a href="#" class="text-xxl text-center">The Pyramid</a>
+        <ks-column class="p-xxxl">
+            <a href="#">Printers & Scanners</a>
+            <ul>
+                <li>Printers</li>
+                <li>Ink & Toner</li>
+                <li>Printer Accessories</li>
+                <li>Scanners</li>
+            </ul>
+        </ks-column>
+        <ks-column class="p-xxxl">
+            <a href="#">Mail & Ship</a>
+            <ul>
+                <li>Tape</li>
+                <li>Boxes & Pads</li>
+                <li>Mailers & Envelopes</li>
+                <li>Cushioning & Void Fill</li>
+                <li>Poly Bags</li>
+                <li>Strapping</li>
+                <li>Stretch & Shrink</li>
+                <li>Labels</li>
+            </ul>
         </ks-column>
     </ks-row>
 </ks-dropdown>

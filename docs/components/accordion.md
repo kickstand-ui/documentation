@@ -24,7 +24,7 @@
 
 # Accordion
 
-Accordions are used to group and toggle (expand/collapse) sections of content
+Accordions are used to group and toggle (expand/collapse) sections of related content.
 
 <div class="my-lg">
     <ks-accordion>
@@ -80,8 +80,7 @@ Accordions are used to group and toggle (expand/collapse) sections of content
 
 ## Toggle Slide
 
-<br />
-Rather than expanding and collapsing the slide by setting the `expanded` property, you can use the `toggleSlide()`method.
+Rather than expanding and collapsing the slide by setting the `expanded` property, you can use the `toggleSlide()` method.
 
 ```html
 <ks-accordion>

@@ -1,6 +1,18 @@
-.theme-default-content:not(.custom) a.ks-button:hover {
-    text-decoration: none
+main.page {
+    max-width: 1440px !important;
 }
+
+.theme-default-content:not(.custom) {
+
+}
+
+.theme-default-content:not(.custom) {
+    max-width: 960px;
+
+    a.ks-button:hover {
+        text-decoration: none
+    }
+} 
 
 .theme-container {
     .navbar {
@@ -45,7 +57,7 @@
 }
 
 h1,h2,h3,h4,h5,h6 {
-    color: #2c5374 
+    // color: #2c5374 
     border: 0
 }
 
@@ -61,14 +73,14 @@ table {
         overflow-x: auto
 
         tr {
-            border-top: 1px solid #dfe2e5
+            border-top: 1px solid rgb(55, 68, 79)
 
             &:nth-child(2n) {
-                background-color: #f6f8fa;
+                background-color: rgb(247, 248, 250);
             }
 
             th, td {
-                border: 1px solid #dfe2e5
+                border: 1px solid rgb(55, 68, 79)
                 padding: 0.6em 1em
             }
         }
@@ -79,12 +91,12 @@ table.table {
     width: 100%;
     border-collapse: collapse;
     display: table
-    border: .0625rem solid #bcbcbc;
+    border: .0625rem solid rgb(197, 209, 218);
 
     &.striped {
         tbody {
             tr:nth-child(odd) {
-                background-color: #f9f9f9;
+                background-color: rgb(222, 229, 234);
             }
         }
     }
@@ -93,7 +105,7 @@ table.table {
         tbody {
             tr {
                 &:hover {
-                    background-color: #e5e5e5;
+                    background-color: rgb(197, 209, 218);
                 }
             }
         }
@@ -101,7 +113,7 @@ table.table {
 
     thead {
         font-weight: bold;
-        border-bottom: solid 0.125rem #bcbcbc;
+        border-bottom: solid 0.125rem rgb(197, 209, 218);
     }
 
     tr { 
@@ -114,7 +126,18 @@ table.table {
             padding-bottom: 0.5rem;
             padding-left: 0.5rem;
             padding-right: 0.5rem;
-            border: solid 0.0625rem #bcbcbc;
+            border: solid 0.0625rem rgb(197, 209, 218);
         }
     }
+}
+
+a.button.solid:hover,
+a.button.clear:hover,
+a.button.hollow:hover {
+    text-decoration: none;
+}
+
+.home-hero {
+    background-image: url('/images/home_background_2.png');
+    background-size: cover;
 }

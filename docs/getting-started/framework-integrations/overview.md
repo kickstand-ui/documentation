@@ -17,11 +17,11 @@
 
 # Framework Overview
 
-Integrating Kickstand UI into your framework is not _required_ in order to take advantage of the component library.   However, doing so enables the web components to behave like part of the framework.
+Integrating Kickstand UI into your framework is not _required_ in order to take advantage of the component library. However, doing so enables the web components to behave like part of the framework.
 
 ## Build Process
 
-Kickstand UI's styles are built using [SASS](https://sass-lang.com/) and will need to be compiled in order to take advantage of the customization and tooling it provides.
+Kickstand UI's styles are built using [SASS](https://sass-lang.com/). Using SASS is not required to use and customize Kickstand UI for your needs, but we have created some great [SASS tools](../../design-tokens/design-tokens.md) to really accelerate the development process.
 
 In addition to compiling the SASS, you will need to incorporate post-processing into your build pipeline. The SASS is built without vendor prefixes and should be added using a tool like [PostCSS's](https://postcss.org/) [Autoprefixer](https://github.com/postcss/autoprefixer) to provide cross-browser consistency.
 

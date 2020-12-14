@@ -31,22 +31,19 @@ Kickstand UI's carousel component is designed to provide users with a way to cyc
         <ks-carousel-slide
             alt="Jim Pranks Dwight"
             src="/images/demo/stapler_in_jello.jpg"
-            position="top"
             >
             <h2>Stapler in Jello</h2>
         </ks-carousel-slide>
         <ks-carousel-slide
             alt="Jim Pranks Dwight"
             src="/images/demo/jim_as_dwight.jpeg"
-            position="bottom"
             >
-            <h2>Jim Dressed as Dwight</h2>
-            <ks-button>Find Out More</ks-button>
+            <h2>Identity Theft</h2>
+            <ks-button>Protect Yourself</ks-button>
         </ks-carousel-slide>
         <ks-carousel-slide
             alt="Jim Pranks Dwight"
             src="/images/demo/asian_jim.png"
-            align="left"
             >
             <h2>Asian Jim</h2>
             <p>(Not really Jim)</p>
@@ -54,9 +51,8 @@ Kickstand UI's carousel component is designed to provide users with a way to cyc
         <ks-carousel-slide
             alt="Jim Pranks Dwight"
             src="/images/demo/dwight_fights_himself.png"
-            position="bottom"
             >
-            <h2>Dwight Fights Himself</h2>
+            <h2>Dwight VS Dwight</h2>
         </ks-carousel-slide>
     </ks-carousel>
 </div>
@@ -66,22 +62,19 @@ Kickstand UI's carousel component is designed to provide users with a way to cyc
     <ks-carousel-slide
         alt="Jim Pranks Dwight"
         src="/images/demo/stapler_in_jello.jpg"
-        position="top"
         >
         <h2>Stapler in Jello</h2>
     </ks-carousel-slide>
     <ks-carousel-slide
         alt="Jim Pranks Dwight"
         src="/images/demo/jim_as_dwight.jpeg"
-        position="bottom"
         >
-        <h2>Jim Dressed as Dwight</h2>
-        <ks-button>Find Out More</ks-button>
+        <h2>Identity Theft</h2>
+        <ks-button>Protect Yourself</ks-button>
     </ks-carousel-slide>
     <ks-carousel-slide
         alt="Jim Pranks Dwight"
         src="/images/demo/asian_jim.png"
-        align="left"
         >
         <h2>Asian Jim</h2>
         <p>(Not really Jim)</p>
@@ -89,9 +82,8 @@ Kickstand UI's carousel component is designed to provide users with a way to cyc
     <ks-carousel-slide
         alt="Jim Pranks Dwight"
         src="/images/demo/dwight_fights_himself.png"
-        position="bottom"
         >
-        <h2>Dwight Fights Himself</h2>
+        <h2>Dwight VS Dwight</h2>
     </ks-carousel-slide>
 </ks-carousel>
 ```
@@ -107,22 +99,19 @@ Before using a carousel, please consider an alternate way of displaying content 
         <ks-carousel-slide
             alt="Jim Pranks Dwight"
             src="/images/demo/stapler_in_jello.jpg"
-            position="top"
             >
             <h2>Stapler in Jello</h2>
         </ks-carousel-slide>
         <ks-carousel-slide
             alt="Jim Pranks Dwight"
             src="/images/demo/jim_as_dwight.jpeg"
-            position="bottom"
             >
-            <h2>Jim Dressed as Dwight</h2>
-            <ks-button>Find Out More</ks-button>
+            <h2>Identity Theft</h2>
+            <ks-button>Protect Yourself</ks-button>
         </ks-carousel-slide>
         <ks-carousel-slide
             alt="Jim Pranks Dwight"
             src="/images/demo/asian_jim.png"
-            align="left"
             >
             <h2>Asian Jim</h2>
             <p>(Not really Jim)</p>
@@ -130,9 +119,8 @@ Before using a carousel, please consider an alternate way of displaying content 
         <ks-carousel-slide
             alt="Jim Pranks Dwight"
             src="/images/demo/dwight_fights_himself.png"
-            position="bottom"
             >
-            <h2>Dwight Fights Himself</h2>
+            <h2>Dwight VS Dwight</h2>
         </ks-carousel-slide>
     </ks-carousel>
 </div>
@@ -150,22 +138,19 @@ Before using a carousel, please consider an alternate way of displaying content 
         <ks-carousel-slide
             alt="Jim Pranks Dwight"
             src="/images/demo/stapler_in_jello.jpg"
-            position="top"
             >
             <h2>Stapler in Jello</h2>
         </ks-carousel-slide>
         <ks-carousel-slide
             alt="Jim Pranks Dwight"
             src="/images/demo/jim_as_dwight.jpeg"
-            position="bottom"
             >
-            <h2>Jim Dressed as Dwight</h2>
-            <ks-button>Find Out More</ks-button>
+            <h2>Identity Theft</h2>
+            <ks-button>Protect Yourself</ks-button>
         </ks-carousel-slide>
         <ks-carousel-slide
             alt="Jim Pranks Dwight"
             src="/images/demo/asian_jim.png"
-            align="left"
             >
             <h2>Asian Jim</h2>
             <p>(Not really Jim)</p>
@@ -173,9 +158,8 @@ Before using a carousel, please consider an alternate way of displaying content 
         <ks-carousel-slide
             alt="Jim Pranks Dwight"
             src="/images/demo/dwight_fights_himself.png"
-            position="bottom"
             >
-            <h2>Dwight Fights Himself</h2>
+            <h2>Dwight VS Dwight</h2>
         </ks-carousel-slide>
     </ks-carousel>
 </div>
@@ -193,22 +177,19 @@ Before using a carousel, please consider an alternate way of displaying content 
         <ks-carousel-slide
             alt="Jim Pranks Dwight"
             src="/images/demo/stapler_in_jello.jpg"
-            position="top"
             >
             <h2>Stapler in Jello</h2>
         </ks-carousel-slide>
         <ks-carousel-slide
             alt="Jim Pranks Dwight"
             src="/images/demo/jim_as_dwight.jpeg"
-            position="bottom"
             >
-            <h2>Jim Dressed as Dwight</h2>
-            <ks-button>Find Out More</ks-button>
+            <h2>Identity Theft</h2>
+            <ks-button>Protect Yourself</ks-button>
         </ks-carousel-slide>
         <ks-carousel-slide
             alt="Jim Pranks Dwight"
             src="/images/demo/asian_jim.png"
-            align="left"
             >
             <h2>Asian Jim</h2>
             <p>(Not really Jim)</p>
@@ -216,9 +197,8 @@ Before using a carousel, please consider an alternate way of displaying content 
         <ks-carousel-slide
             alt="Jim Pranks Dwight"
             src="/images/demo/dwight_fights_himself.png"
-            position="bottom"
             >
-            <h2>Dwight Fights Himself</h2>
+            <h2>Dwight VS Dwight</h2>
         </ks-carousel-slide>
     </ks-carousel>
 </div>
@@ -236,22 +216,19 @@ Before using a carousel, please consider an alternate way of displaying content 
         <ks-carousel-slide
             alt="Jim Pranks Dwight"
             src="/images/demo/stapler_in_jello.jpg"
-            position="top"
             >
             <h2>Stapler in Jello</h2>
         </ks-carousel-slide>
         <ks-carousel-slide
             alt="Jim Pranks Dwight"
             src="/images/demo/jim_as_dwight.jpeg"
-            position="bottom"
             >
-            <h2>Jim Dressed as Dwight</h2>
-            <ks-button>Find Out More</ks-button>
+            <h2>Identity Theft</h2>
+            <ks-button>Protect Yourself</ks-button>
         </ks-carousel-slide>
         <ks-carousel-slide
             alt="Jim Pranks Dwight"
             src="/images/demo/asian_jim.png"
-            align="left"
             >
             <h2>Asian Jim</h2>
             <p>(Not really Jim)</p>
@@ -259,9 +236,8 @@ Before using a carousel, please consider an alternate way of displaying content 
         <ks-carousel-slide
             alt="Jim Pranks Dwight"
             src="/images/demo/dwight_fights_himself.png"
-            position="bottom"
             >
-            <h2>Dwight Fights Himself</h2>
+            <h2>Dwight VS Dwight</h2>
         </ks-carousel-slide>
     </ks-carousel>
 </div>
@@ -331,10 +307,37 @@ There are a number of great properties available for `<ks-carousel-slide>`, but 
     </tr>
 </table>
 
+<div class="my-xl">
+    <ks-carousel>
+        <ks-carousel-slide
+            alt="Jim Pranks Dwight"
+            src="/images/demo/stapler_in_jello.jpg"
+            position="top"
+            align="left"
+            >
+            <h2>Top / Left</h2>
+        </ks-carousel-slide>
+        <ks-carousel-slide
+            alt="Jim Pranks Dwight"
+            src="/images/demo/jim_as_dwight.jpeg"
+            >
+            <h2>Default</h2>
+        </ks-carousel-slide>
+        <ks-carousel-slide
+            alt="Jim Pranks Dwight"
+            src="/images/demo/asian_jim.png"
+            position="bottom"
+            align="right"
+            >
+            <h2>Bottom / Right</h2>
+        </ks-carousel-slide>
+    </ks-carousel>
+</div>
+
 ## Accessibility
 
 :::warning
-Carousels, in general, are not very accessible and are not actually very effective ways of displaying content. They should be avoided as much as possible in favor of static relevant images with meaningful content.
+Carousels, in general, are not very accessible and are not actually very effective ways of displaying content. If possible, static content with relevant images is recommended.
 :::
 
 In order to make the carousel _more_ accessible, it is treated like a tab component and the following roles and states have been implemented:

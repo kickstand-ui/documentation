@@ -1,19 +1,15 @@
 <template>
     <div>
-        <div
-            class="display-flex align-center space-between w-80 mx-auto position-relative"
-        >
+        <div class="w-50 md:w-70 sm:w-80 mx-auto">
             <ks-form-field
                 class="w-100 mb-lg"
                 label="Search Icons"
+                type="search"
+                icon="search"
                 @updated="(e) => (iconSearch = e.detail.value)"
             ></ks-form-field>
-            <ks-icon
-                icon="search"
-                class="mt-sm text-lg text-dark-lighter position-absolute right-0 -offset-x"
-            ></ks-icon>
         </div>
-        <div class="display-flex flex-wrap">
+        <div class="display-flex align-center justify-center flex-wrap">
             <button
                 :id="`icon_${icon}`"
                 :title="icon"

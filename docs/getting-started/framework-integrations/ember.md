@@ -55,7 +55,7 @@ Working with Kickstand UI in Ember is really easy thanks to the `ember-cli-stenc
 - Copying the component definitions into your `assets` directory
 - Optionally generating a wrapper component for improved compatibility with older Ember versions
 
-Start off by installing the Ember addon
+Start off by installing the Ember addon:
 
 ```bash
 ember install ember-cli-stencil

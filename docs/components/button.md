@@ -72,19 +72,102 @@ Buttons are used to perform actions in forms, modals, and more. Kickstand UI but
 
 ## Display
 
+### Solid (default)
+
 <div class="my-xl">
-    <ks-button display="solid">solid button</ks-button>
-    <ks-button display="hollow">hollow button</ks-button>
-    <ks-button display="clear">clear button</ks-button>
-    <ks-button display="link">link button</ks-button>
+    <ks-button color="primary" class="mb-sm">primary</ks-button>
+    <ks-button color="secondary" class="mb-sm">secondary</ks-button>
+    <ks-button color="success" class="mb-sm">success</ks-button>
+    <ks-button color="info" class="mb-sm">info</ks-button>
+    <ks-button color="warning" class="mb-sm">warning</ks-button>
+    <ks-button color="danger" class="mb-sm">danger</ks-button>
+    <ks-button color="light" class="mb-sm">light</ks-button>
+    <ks-button color="dark" class="mb-sm">dark</ks-button>
 </div>
 
 ```html
-<ks-button display="solid">solid button</ks-button>
-<ks-button display="hollow">hollow button</ks-button>
-<ks-button display="clear">clear button</ks-button>
-<ks-button display="link">link button</ks-button>
+<ks-button color="primary">primary</ks-button>
+<ks-button color="secondary">secondary</ks-button>
+<ks-button color="success">success</ks-button>
+<ks-button color="info">info</ks-button>
+<ks-button color="warning">warning</ks-button>
+<ks-button color="danger">danger</ks-button>
+<ks-button color="light">light</ks-button>
+<ks-button color="dark">dark</ks-button>
 ```
+
+### Hollow
+
+<div class="my-xl">
+    <ks-button display="hollow" color="primary" class="mb-sm">primary</ks-button>
+    <ks-button display="hollow" color="secondary" class="mb-sm">secondary</ks-button>
+    <ks-button display="hollow" color="success" class="mb-sm">success</ks-button>
+    <ks-button display="hollow" color="info" class="mb-sm">info</ks-button>
+    <ks-button display="hollow" color="warning" class="mb-sm">warning</ks-button>
+    <ks-button display="hollow" color="danger" class="mb-sm">danger</ks-button>
+    <ks-button display="hollow" color="light" class="mb-sm">light</ks-button>
+    <ks-button display="hollow" color="dark" class="mb-sm">dark</ks-button>
+</div>
+
+```html
+<ks-button display="hollow" color="primary">primary</ks-button>
+<ks-button display="hollow" color="secondary">secondary</ks-button>
+<ks-button display="hollow" color="success">success</ks-button>
+<ks-button display="hollow" color="info">info</ks-button>
+<ks-button display="hollow" color="warning">warning</ks-button>
+<ks-button display="hollow" color="danger">danger</ks-button>
+<ks-button display="hollow" color="light">light</ks-button>
+<ks-button display="hollow" color="dark">dark</ks-button>
+```
+
+### Clear
+
+<div class="my-xl">
+    <ks-button display="clear" color="primary" class="mb-sm">primary</ks-button>
+    <ks-button display="clear" color="secondary" class="mb-sm">secondary</ks-button>
+    <ks-button display="clear" color="success" class="mb-sm">success</ks-button>
+    <ks-button display="clear" color="info" class="mb-sm">info</ks-button>
+    <ks-button display="clear" color="warning" class="mb-sm">warning</ks-button>
+    <ks-button display="clear" color="danger" class="mb-sm">danger</ks-button>
+    <ks-button display="clear" color="light" class="mb-sm">light</ks-button>
+    <ks-button display="clear" color="dark" class="mb-sm">dark</ks-button>
+</div>
+
+```html
+<ks-button display="clear" color="primary">primary</ks-button>
+<ks-button display="clear" color="secondary">secondary</ks-button>
+<ks-button display="clear" color="success">success</ks-button>
+<ks-button display="clear" color="info">info</ks-button>
+<ks-button display="clear" color="warning">warning</ks-button>
+<ks-button display="clear" color="danger">danger</ks-button>
+<ks-button display="clear" color="light">light</ks-button>
+<ks-button display="clear" color="dark">dark</ks-button>
+```
+
+### Link
+
+<div class="my-xl">
+    <ks-button display="link" color="primary" class="mb-sm">primary</ks-button>
+    <ks-button display="link" color="secondary" class="mb-sm">secondary</ks-button>
+    <ks-button display="link" color="success" class="mb-sm">success</ks-button>
+    <ks-button display="link" color="info" class="mb-sm">info</ks-button>
+    <ks-button display="link" color="warning" class="mb-sm">warning</ks-button>
+    <ks-button display="link" color="danger" class="mb-sm">danger</ks-button>
+    <ks-button display="link" color="light" class="mb-sm">light</ks-button>
+    <ks-button display="link" color="dark" class="mb-sm">dark</ks-button>
+</div>
+
+```html
+<ks-button display="link" color="primary">primary</ks-button>
+<ks-button display="link" color="secondary">secondary</ks-button>
+<ks-button display="link" color="success">success</ks-button>
+<ks-button display="link" color="info">info</ks-button>
+<ks-button display="link" color="warning">warning</ks-button>
+<ks-button display="link" color="danger">danger</ks-button>
+<ks-button display="link" color="light">light</ks-button>
+<ks-button display="link" color="dark">dark</ks-button>
+```
+
 
 :::warning
 The `solid` display option will automatically select and appropriate contrasting color to meet the WCAG 2.0 AA standard, but the other are up to your discretion. Please make sure you use these cautiously and test them for sufficient color contrast.
@@ -101,6 +184,18 @@ The `solid` display option will automatically select and appropriate contrasting
 ```
 
 ### Loading
+
+You can put a button in a loading state by setting the `loading` property to `true`.
+
+<div class="my-xl">
+    <ks-button loading>Loading Button</ks-button>
+</div>
+
+```html
+<ks-button loading>Loading Button</ks-button>
+```
+
+The example below shows how you can set it programmatically.
 
 <div class="my-xl">
     <ks-button id="loading_button">Click To Load</ks-button>
@@ -121,42 +216,17 @@ The `solid` display option will automatically select and appropriate contrasting
 <ks-button id="loading_button">Click To Load</ks-button>
 
 <script>
-    (function (){
-        let loadingButton = document.getElementById('loading_button');
-        loadingButton.addEventListener('click', function () {
-            loadingButton.loading = true;
-            setTimeout(function () {
-                loadingButton.loading = false;
-            }, 3000);
-        });
-    })();
+    let loadingButton = document.getElementById('loading_button');
+
+    loadingButton.addEventListener('click', () => {
+        loadingButton.loading = true;
+        setTimeout(() => loadingButton.loading = false, 3000);
+    });
 </script>
 ```
-**Note:** If a button is loading, it is also disabled.
-
-## Icons
-
-<ks-button icon="info" class="mt-xxl">Button With An Icon</ks-button>
-
-```html
-<ks-button icon="info">Button With An Icon</ks-button>
-```
-
-### Direction
-
-<ks-button icon="info" icon-direction="right" class="mt-xxl">Button With An Icon</ks-button>
-
-```html
-<ks-button icon="info" icon-direction="right">Button With An Icon</ks-button>
-```
-
-### Hide Text
-
-<ks-button icon="info" hide-text class="mt-xxl">Button With An Icon</ks-button>
-
-```html
-<ks-button icon="info" hide-text>Button With An Icon</ks-button>
-```
+:::tip Note
+If a button is loading, it is also disabled.
+:::
 
 ## HREF
 
@@ -170,9 +240,7 @@ If the `href` property is populated, it will change the behavior of therefore ch
 <!-- the rendered HTML -->
 <ks-button class="pointer hydrated">
     ...
-    <button aria-haspopup="false" type="button" class="button primary solid icon-left md">
-        <span class="button-text">I do something</span>
-    </button>
+    <button aria-haspopup="false" type="button" class="button primary solid md">I do something</button>
 </ks-button>
 ```
 
@@ -183,10 +251,7 @@ If the `href` property is populated, it will change the behavior of therefore ch
 
 <!-- the rendered HTML -->
 <ks-button href="#" class="pointer hydrated">
-    ...
-    <a class="button primary solid icon-left md" href="#">
-        <span class="button-text">I go somewhere</span>
-    </a>
+    <a class="button primary solid md" href="#">I go somewhere</a>
 </ks-button>
 ```
 
@@ -215,10 +280,7 @@ There are a number of accessibility features built in to the button to promote t
 | `display`       | `display`        | controls the display type                                                                                         | `"clear"`, `"hollow"`, `"link"`, or `"solid"`                                                      | `'solid'`   |
 | `expanded`      | `expanded`       | controls `aria-expanded` attribute on the button element                                                          | `boolean`                                                                                          | `false`     |
 | `haspopup`      | `haspopup`       | adds `aria-haspopup` attribute to button element                                                                  | `boolean`                                                                                          | `false`     |
-| `hideText`      | `hide-text`      | controls whether or not text is displayed (hidden text will still be visible to screen readers)                   | `boolean`                                                                                          | `false`     |
 | `href`          | `href`           | adding this value will convert the button to a link                                                               | `string`                                                                                           | `undefined` |
-| `icon`          | `icon`           | the name of the icon you would like to display                                                                    | `string`                                                                                           | `''`        |
-| `iconDirection` | `icon-direction` | the direction of the icon                                                                                         | `"left"` or `"right"`                                                                              | `'left'`    |
 | `loading`       | `loading`        | enabling this will show the loading icon and disable the button                                                   | `boolean`                                                                                          | `undefined` |
 | `size`          | `size`           | controls the size of the button                                                                                   | `"md"`, `"lg"`, `"sm"`, `"xl"`, or `"xs"`                                                          | `'md'`      |
 | `tabIndex`      | `tab-index`      | adds a `tabindex` attribute on the button element                                                                 | `number`                                                                                           | `undefined` |

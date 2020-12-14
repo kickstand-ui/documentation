@@ -27,91 +27,91 @@ Kickstand UI's grid provides a responsive layout system for your user interfaces
 <div class="my-xl text-center">
     <ks-row>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">1</div>
+            <div class="bg-light py-md">1</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">1</div>
+            <div class="bg-light py-md">1</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">1</div>
+            <div class="bg-light py-md">1</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">1</div>
+            <div class="bg-light py-md">1</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">1</div>
+            <div class="bg-light py-md">1</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">1</div>
+            <div class="bg-light py-md">1</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">1</div>
+            <div class="bg-light py-md">1</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">1</div>
+            <div class="bg-light py-md">1</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">1</div>
+            <div class="bg-light py-md">1</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">1</div>
+            <div class="bg-light py-md">1</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">1</div>
+            <div class="bg-light py-md">1</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">1</div>
+            <div class="bg-light py-md">1</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">1</div>
+            <div class="bg-light py-md">1</div>
         </ks-column>
     </ks-row>
     <ks-row class="mt-sm">
         <ks-column class="col-1">
-            <div class="bg-light py-md border border-light-darker">1</div>
+            <div class="bg-light py-md">1</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">11</div>
+            <div class="bg-light py-md">11</div>
         </ks-column>
     </ks-row>
     <ks-row class="mt-sm">
         <ks-column class="col-2">
-            <div class="bg-light py-md border border-light-darker">2</div>
+            <div class="bg-light py-md">2</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">10</div>
+            <div class="bg-light py-md">10</div>
         </ks-column>
     </ks-row>
     <ks-row class="mt-sm">
         <ks-column class="col-3">
-            <div class="bg-light py-md border border-light-darker">3</div>
+            <div class="bg-light py-md">3</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">9</div>
+            <div class="bg-light py-md">9</div>
         </ks-column>
     </ks-row>
     <ks-row class="mt-sm">
         <ks-column class="col-4">
-            <div class="bg-light py-md border border-light-darker">4</div>
+            <div class="bg-light py-md">4</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">8</div>
+            <div class="bg-light py-md">8</div>
         </ks-column>
     </ks-row>
     <ks-row class="mt-sm">
         <ks-column class="col-5">
-            <div class="bg-light py-md border border-light-darker">5</div>
+            <div class="bg-light py-md">5</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">7</div>
+            <div class="bg-light py-md">7</div>
         </ks-column>
     </ks-row>
     <ks-row class="mt-sm">
         <ks-column class="col-6">
-            <div class="bg-light py-md border border-light-darker">6</div>
+            <div class="bg-light py-md">6</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">6</div>
+            <div class="bg-light py-md">6</div>
         </ks-column>
     </ks-row>
 </div>
@@ -120,16 +120,16 @@ Kickstand UI's grid provides a responsive layout system for your user interfaces
 
 The default behavior is that each of the columns will be evenly distributed across the row.
 
-<div class="my-xl">
+<div class="my-xl text-center">
     <ks-row>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">Column 1</div>
+            <div class="bg-light py-md">Column 1</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">Column 2</div>
+            <div class="bg-light py-md">Column 2</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">Column 3</div>
+            <div class="bg-light py-md">Column 3</div>
         </ks-column>
     </ks-row>
 </div>
@@ -144,16 +144,16 @@ The default behavior is that each of the columns will be evenly distributed acro
 
 If you would like to change the width you can do so using classes on the columns.
 
-<div class="my-xl">
+<div class="my-xl text-center">
     <ks-row>
         <ks-column class="col-6">
-            <div class="bg-light py-md border border-light-darker">col-6</div>
+            <div class="bg-light py-md">col-6</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">col-3 (automatically)</div>
+            <div class="bg-light py-md">col-3 (automatically)</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">col-3 (automatically)</div>
+            <div class="bg-light py-md">col-3 (automatically)</div>
         </ks-column>
     </ks-row>
 </div>
@@ -174,16 +174,16 @@ If you would like to change the width you can do so using classes on the columns
 
 The grid is based on a 12 column system so column sizes can be set using a class prefixed with `col-` and the size of the column you would like. `1` would be the smallest size and `12` would be the full width.
 
-<div class="my-xl">
+<div class="my-xl text-center">
     <ks-row>
         <ks-column class="col-2">
-            <div class="bg-light py-md border border-light-darker">col-2</div>
+            <div class="bg-light py-md">col-2</div>
         </ks-column>
         <ks-column class="col-7">
-            <div class="bg-light py-md border border-light-darker">col-7</div>
+            <div class="bg-light py-md">col-7</div>
         </ks-column>
         <ks-column class="col-3">
-            <div class="bg-light py-md border border-light-darker">col-3</div>
+            <div class="bg-light py-md">col-3</div>
         </ks-column>
     </ks-row>
 </div>
@@ -206,24 +206,24 @@ The grid is based on a 12 column system so column sizes can be set using a class
 
 Based on the user's screen size you may want the layout to display differently. You can control it by prefixing the column size with the targeted screen size.
 
-<div class="my-xl">
+<div class="my-xl text-center">
     <ks-row>
         <ks-column class="col-2 md:col-6 sm:col-12">
-            <div class="bg-light py-md border border-light-darker">
+            <div class="bg-light py-md">
                 col-2<br>
                 md:col-6<br>
                 sm:col-12
             </div>
         </ks-column>
         <ks-column class="col-7 md:col-6 sm:col-12">
-            <div class="bg-light py-md border border-light-darker">
+            <div class="bg-light py-md">
                 col-7<br>
                 md:col-6<br>
                 sm:col-12
             </div>
         </ks-column>
         <ks-column class="col-3 md:col-12">
-            <div class="bg-light py-md border border-light-darker">
+            <div class="bg-light py-md">
                 col-3<br>
                 md:col-12<br><br>
             </div>
@@ -249,16 +249,16 @@ Based on the user's screen size you may want the layout to display differently. 
 
 There are two ways to vertically position content within the grid system - on the row and on the column. They each use the same syntax, but give you the flexibility of how content gets positioned.
 
-<div class="my-xl">
+<div class="my-xl text-center">
     <ks-row position="end" style="height:150px;">
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">I do what the row says</div>
+            <div class="bg-light py-md">I do what the row says</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">I do what the row says</div>
+            <div class="bg-light py-md">I do what the row says</div>
         </ks-column>
         <ks-column position="start">
-            <div class="bg-light py-md border border-light-darker">I do what I want!</div>
+            <div class="bg-light py-md">I do what I want!</div>
         </ks-column>
     </ks-row>
 </div>
@@ -279,19 +279,19 @@ There are two ways to vertically position content within the grid system - on th
 
 ### Options
 
-<div class="my-xl">
+<div class="my-xl text-center">
     <ks-row style="height:150px;">
         <ks-column position="start">
-            <div class="bg-light py-md border border-light-darker">Start</div>
+            <div class="bg-light py-md">Start</div>
         </ks-column>
         <ks-column position="center">
-            <div class="bg-light py-md border border-light-darker">Center</div>
+            <div class="bg-light py-md">Center</div>
         </ks-column>
         <ks-column position="end">
-            <div class="bg-light py-md border border-light-darker">End</div>
+            <div class="bg-light py-md">End</div>
         </ks-column>
         <ks-column position="stretch">
-            <div class="bg-light py-md border border-light-darker h-100">Stretch</div>
+            <div class="bg-light py-md h-100">Stretch</div>
         </ks-column>
     </ks-row>
 </div>
@@ -315,18 +315,18 @@ There are two ways to vertically position content within the grid system - on th
 
 ## Gutters
 
-You have the ability to control the width of the gutters. The sizes are based on the [\$spacing-sizes](/theming/design-tokens.html#spacing) values (`none`, `xxxs`, `xxs`, `xs`, `sm`, `md`, `lg`, `xl`, `xxl`, and `xxxl`).
+You have the ability to control the width of the gutters. The sizes are based on the [$spacing-sizes](../design-tokens/spacing.md) values (`none`, `xxxs`, `xxs`, `xs`, `sm`, `md`, `lg`, `xl`, `xxl`, and `xxxl`).
 
-<div class="my-xl">
+<div class="my-xl text-center">
     <ks-row gutter="xl">
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">Column 1</div>
+            <div class="bg-light py-md">Column 1</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">Column 2</div>
+            <div class="bg-light py-md">Column 2</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">Column 3</div>
+            <div class="bg-light py-md">Column 3</div>
         </ks-column>
     </ks-row>
 </div>
@@ -347,16 +347,16 @@ You have the ability to control the width of the gutters. The sizes are based on
 
 ### No Gutters
 
-<div class="my-xl">
+<div class="my-xl text-center">
     <ks-row gutter="none">
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">Column 1</div>
+            <div class="bg-light py-md">Column 1</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">Column 2</div>
+            <div class="bg-light py-md">Column 2</div>
         </ks-column>
         <ks-column>
-            <div class="bg-light py-md border border-light-darker">Column 3</div>
+            <div class="bg-light py-md">Column 3</div>
         </ks-column>
     </ks-row>
 </div>

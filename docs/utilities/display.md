@@ -53,6 +53,34 @@ Kickstand UI's display utility classes provide a way for you to easily adjust re
 <div class="bg-light p-lg my-md display-inline-flex">display-inline-flex</div>
 ```
 
+## Screen Reader Only
+
+The `sr-only` class is used to hide information that is intended only for screen readers from the layout of a rendered page.
+
+<div class="my-xl text-xl">
+    <a href="#cart-page">
+        <ks-icon icon="cart"></ks-icon>
+        <span class="sr-only">go to cart</span>
+    </a>
+</div>
+
+```html
+<a href="#cart-page">
+    <ks-icon icon="cart"></ks-icon>
+    <span class="sr-only">go to cart</span>
+</a>
+```
+
+:::tip NOTE
+You can also use `aria-label` to accomplish this task, but it can only be used for text descriptions and not markup.
+
+Also, if you are relying on tools like Google Translate to provide localized content to your users, `aria-label` values will not be translated.
+:::
+
+## Full Width
+
+If you need a container to ignore the width of the container it is in (like the [mega menu](./../components/dropdown.md)), you can add the `full-width` utility class to it and it will spann the full width of the browser window.
+
 ## Responsive Classes
 
 You can also change the layout based on the user's screen size using the responsive variations of each class. By prefixing the class with the desired screen size (`xxs`-`xl`), you can adjust the behavior.
