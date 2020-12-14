@@ -23,12 +23,12 @@ Installing Kickstand UI is as easy as adding a few tags to your page.
 
 ```html
 <!-- global styles and utility classes -->
-<link rel="stylesheet" href="https://unpkg.com/kickstand-ui@beta/dist/kickstand-ui/kickstand-ui.css" />
+<link rel="stylesheet" href="https://unpkg.com/kickstand-ui/dist/kickstand-ui/kickstand-ui.css" />
 
 <!-- scripts for browsers that support ES modules -->
-<script type="module" src="https://unpkg.com/kickstand-ui@beta/dist/kickstand-ui/kickstand-ui.esm.js"></script>
+<script type="module" src="https://unpkg.com/kickstand-ui/dist/kickstand-ui/kickstand-ui.esm.js"></script>
 <!-- scripts for browsers that do not support ES modules (legacy browsers) -->
-<script nomodule src="https://unpkg.com/kickstand-ui@beta/dist/kickstand-ui/kickstand-ui.js"></script>
+<script nomodule src="https://unpkg.com/kickstand-ui/dist/kickstand-ui/kickstand-ui.js"></script>
 ```
 
 :::tip NOTE
