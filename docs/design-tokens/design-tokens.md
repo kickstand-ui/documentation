@@ -30,7 +30,7 @@ There are two ways to customize your design tokens:
 It is highly recommended that you take advantage of the SASS tooling that is provided as part of the Kickstand UI framework. They are designed to make updating and maintain your system easy and efficient. Feel free to download the variables template and add to your application to begin customizing your application.
 
 <div class="text-center mt-xl">
-    <ks-button href="/downloads/_variables.scss" display="hollow" download>Download SASS Variables Template</ks-button>
+    <ks-button href="/downloads/sass_variables.zip" display="hollow" download>Download SASS Variables Template</ks-button>
 </div>
 
 ### CSS
@@ -38,7 +38,7 @@ It is highly recommended that you take advantage of the SASS tooling that is pro
 Not everyone is in a position to or likes the idea of using a preprocessor for compiling their styles. If you are planning on using the precompiled styles, it is still very easy to customize the design system to meet your needs. All of the design tokens are converted to CSS variables so you can updated them in a central place and have it globally update your application. You can download the variables template and add it to your project.
 
 <div class="text-center my-xl">
-    <ks-button href="/downloads/variables.css" display="hollow" download>Download CSS Variables Template</ks-button>
+    <ks-button href="/downloads/css_variables.zip" display="hollow" download>Download CSS Variables Template</ks-button>
 </div>
 
 :::tip NOTE
