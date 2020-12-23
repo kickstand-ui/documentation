@@ -22,7 +22,7 @@
 }
 ---
 
-# Shadows
+# Shadow Utility Classes
 
 With Kickstand UI's shadow utility classes you can easily control shadow behavior without writing any custom styles.
 

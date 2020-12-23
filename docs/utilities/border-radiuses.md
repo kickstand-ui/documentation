@@ -22,7 +22,7 @@
 }
 ---
 
-# Border Radiuses
+# Border Radius Utility Classes
 
 With Kickstand UI's border utility classes you can easily control border direction, size, and color without writing any custom styles.
 

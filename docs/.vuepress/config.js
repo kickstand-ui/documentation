@@ -164,74 +164,108 @@ module.exports = {
                 title: "Utilities",
                 collapsable: true,
                 children: [
-                    "/utilities/borders.html",
-                    "/utilities/border-radiuses.html",
-                    "/utilities/colors.html",
-                    "/utilities/display.html",
-                    "/utilities/layout.html",
-                    "/utilities/position.html",
-                    "/utilities/shadows.html",
-                    "/utilities/spacing.html",
-                    "/utilities/table.html",
-                    "/utilities/text.html"
+                    {
+                        title: "Borders",
+                        path: "/utilities/borders.html"
+                    },
+                    {
+                        title: "Border Radiuses",
+                        path: "/utilities/border-radiuses.html"
+                    },
+                    {
+                        title: "Colors",
+                        path: "/utilities/colors.html"
+                    },
+                    {
+                        title: "Display",
+                        path: "/utilities/display.html"
+                    },
+                    {
+                        title: "Layout",
+                        path: "/utilities/layout.html"
+                    },
+                    {
+                        title: "Lists",
+                        path: "/utilities/list.html"
+                    },
+                    {
+                        title: "Position",
+                        path: "/utilities/position.html"
+                    },
+                    {
+                        title: "Shadows",
+                        path: "/utilities/shadows.html"
+                    },
+                    {
+                        title: "Spacing",
+                        path: "/utilities/spacing.html"
+                    },
+                    {
+                        title: "Table",
+                        path: "/utilities/table.html"
+                    },
+                    {
+                        title: "Text",
+                        path: "/utilities/text.html"
+                    }
                 ]
             },
             {
                 title: "Design Tokens",
                 collapsable: true,
                 children: [
-                    "/design-tokens/design-tokens.html",
+                    "/design-tokens/overview.html",
                     {
-                        title: 'Border Radiuses',
+                        title: "Border Radiuses",
                         path: "/design-tokens/border-radiuses.html"
                     },
                     {
-                        title: 'Borders',
+                        title: "Borders",
                         path: "/design-tokens/borders.html"
                     },
                     {
-                        title: 'Colors',
+                        title: "Colors",
                         path: "/design-tokens/colors.html"
                     },
                     {
-                        title: 'Containers',
+                        title: "Containers",
                         path: "/design-tokens/containers.html"
                     },
                     {
-                        title: 'Fonts',
+                        title: "Fonts",
                         path: "/design-tokens/fonts.html"
                     },
                     {
-                        title: 'Media Queries',
+                        title: "Media Queries",
                         path: "/design-tokens/media-queries.html"
                     },
                     {
-                        title: 'Outline',
+                        title: "Outline",
                         path: "/design-tokens/outline.html"
                     },
                     {
-                        title: 'Responsive Embed',
+                        title: "Responsive Embed",
                         path: "/design-tokens/responsive-embed.html"
                     },
                     {
-                        title: 'Shadows',
+                        title: "Shadows",
                         path: "/design-tokens/shadows.html"
                     },
                     {
-                        title: 'Spacing',
+                        title: "Spacing",
                         path: "/design-tokens/spacing.html"
                     },
                     {
-                        title: 'Transitions',
+                        title: "Transitions",
                         path: "/design-tokens/transitions.html"
                     },
                     {
-                        title: 'Z-Indexes',
+                        title: "Z-Indexes",
                         path: "/design-tokens/z-index.html"
-                    },
+                    }
                 ]
             },
-            'changelog.html'
+            "changelog.html"
         ]
     },
     plugins: [

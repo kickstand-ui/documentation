@@ -22,7 +22,7 @@
 }
 ---
 
-# Table
+# Table Utility Classes
 
 Kickstand UI's table utilities are designed to provide consistency with your table designs.
 

@@ -16,6 +16,21 @@
 
 # Changelog
 
+## 2.1.0
+
+### Fixed
+
+- Hide [card](components/card.md) subheading if there is no value
+- Update [badge](./components/badge.md) background color to use CSS variable
+- [show utility class](utilities/display.md) hid element
+
+### New
+
+- List [utility classes](utilities/list.md)
+- Text transform [utility classes](utilities/text.md#transforms)
+- White/black/transparent [utility classes](utilities/colors.md)
+- Hide [form field label](forms/form-field.md#hide-label)
+
 ## 2.0.0
 
 - Upgrade to Stencil 2.0

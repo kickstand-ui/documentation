@@ -22,7 +22,7 @@
 }
 ---
 
-# Position
+# Position Utility Classes
 
 Positioning content and displaying it consistently can be very tricky. Kickstand UI's position utility classes can be used to quickly position content without custom styles.
 

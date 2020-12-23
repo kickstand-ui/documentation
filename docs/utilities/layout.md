@@ -22,13 +22,14 @@
 }
 ---
 
-# Layout
+# Layout Utility Classes
 
 Kickstand UI's layout utility classes consist of width and height utilities to quickly manage responsive layouts.
 
 ## Widths
 
 <div class="my-xxl">
+    <div class="my-md p-sm bg-light w-content">w-content</div>
     <div class="my-md p-sm bg-light w-10">w-10</div>
     <div class="my-md p-sm bg-light w-20">w-20</div>
     <div class="my-md p-sm bg-light w-25">w-25</div>
@@ -46,6 +47,7 @@ Kickstand UI's layout utility classes consist of width and height utilities to q
 </div>
 
 ```html
+<div class="w-content">w-content</div>
 <div class="w-10">w-10</div>
 <div class="w-20">w-20</div>
 <div class="w-25">w-25</div>

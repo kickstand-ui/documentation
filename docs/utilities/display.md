@@ -22,19 +22,25 @@
 }
 ---
 
-# Display
+# Display Utility Classes
 
 Kickstand UI's display utility classes provide a way for you to easily adjust responsive layouts.
 
 ## Classes
 
-| Class                                             | CSS Rule                           |
-| ------------------------------------------------- | ---------------------------------- |
-| `display-block`                                   | `display: block;`                  |
-| `display-flex` [more info](/layout/flex-box.html) | `display: flex;`                   |
-| `display-inline`                                  | `display: inline;`                 |
-| `display-inline-block`                            | `display: inline-block;`           |
-| `display-inline-flex`                             | `display: inline-flex;`            |
+| Class                                             | CSS Rule                                                         |
+| ------------------------------------------------- | ---------------------------------------------------------------- |
+| `display-block`                                   | `display: block`                                                 |
+| `display-flex` [more info](/layout/flex-box.html) | `display: flex`                                                  |
+| `display-inline`                                  | `display: inline`                                                |
+| `display-inline-block`                            | `display: inline-block`                                          |
+| `display-inline-flex`                             | `display: inline-flex`                                           |
+| `show`                                            | `display: initial`                                               |
+| `hide`                                            | `display: none`                                                  |
+| `visible`                                         | `visibility: visible`                                            |
+| `invisible`                                       | `visibility: hidden`                                             |
+| `sr-only`                                         | visible only to screen readers                                   |
+| `full-width`                                      | ignores existing width constrains and spans the full viewport    |
 
 
 <div class="my-xl">
@@ -79,7 +85,7 @@ Also, if you are relying on tools like Google Translate to provide localized con
 
 ## Full Width
 
-If you need a container to ignore the width of the container it is in (like the [mega menu](./../components/dropdown.md)), you can add the `full-width` utility class to it and it will spann the full width of the browser window.
+If you need a container to ignore the width of the container it is in (like the [mega menu](./../components/dropdown.md)), you can add the `full-width` utility class to it and it will span the full width of the browser window.
 
 ## Responsive Classes
 

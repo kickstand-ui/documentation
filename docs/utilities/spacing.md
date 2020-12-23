@@ -22,7 +22,7 @@
 }
 ---
 
-# Spacing
+# Spacing Utility Classes
 
 Kickstand UI's spacing utility classes are designed to make positioning and alignment of components and content quick and easy.
 

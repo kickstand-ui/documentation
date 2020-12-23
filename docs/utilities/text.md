@@ -22,30 +22,30 @@
 }
 ---
 
-# Text
+# Text Utility Classes
 
 Kickstand UI's text utility classes can be used to quickly style text throughout your application without custom styles.
 
 ## Sizes
 
 <div class="my-xl">
-    <div class="text-xxs">text-xxs</div>
-    <div class="text-xs">text-xs</div>
-    <div class="text-sm">text-sm</div>
-    <div class="text-md">text-md</div>
-    <div class="text-lg">text-lg</div>
-    <div class="text-xl">text-xl</div>
     <div class="text-xxl">text-xxl</div>
+    <div class="text-xl">text-xl</div>
+    <div class="text-lg">text-lg</div>
+    <div class="text-md">text-md</div>
+    <div class="text-sm">text-sm</div>
+    <div class="text-xs">text-xs</div>
+    <div class="text-xxs">text-xxs</div>
 </div>
 
 ```html
-<div class="text-xxs">text-xxs</div>
-<div class="text-xs">text-xs</div>
-<div class="text-sm">text-sm</div>
-<div class="text-md">text-md</div>
-<div class="text-lg">text-lg</div>
-<div class="text-xl">text-xl</div>
 <div class="text-xxl">text-xxl</div>
+<div class="text-xl">text-xl</div>
+<div class="text-lg">text-lg</div>
+<div class="text-md">text-md</div>
+<div class="text-sm">text-sm</div>
+<div class="text-xs">text-xs</div>
+<div class="text-xxs">text-xxs</div>
 ```
 
 ## Decoration
@@ -76,4 +76,18 @@ Kickstand UI's text utility classes can be used to quickly style text throughout
 <div class="text-left">text-left</div>
 <div class="text-center">text-center</div>
 <div class="text-right">text-right</div>
+```
+
+## Transforms
+
+<div class="my-xl">
+    <div class="my-md p-sm bg-light-light text-uppercase">text-uppercase</div>
+    <div class="my-md p-sm bg-light-light text-lowercase">TEXT-LOWERCASE</div>
+    <div class="my-md p-sm bg-light-light text-capitalize">text-right</div>
+</div>
+
+```html
+<div class="my-md p-sm bg-light-light text-uppercase">text-uppercase</div>
+<div class="my-md p-sm bg-light-light text-lowercase">TEXT-LOWERCASE</div>
+<div class="my-md p-sm bg-light-light text-capitalize">text-right</div>
 ```

@@ -142,7 +142,7 @@ By default, Kickstand UI's modal can be dismissed using the close button, the es
             <iframe src="https://giphy.com/embed/Qa5dsjQjlCqOY" width="100%" height="100%" frameBorder="0" class="giphy-embed position-absolute" allowFullScreen></iframe>
         </div>
         <p>
-            <a href="https://giphy.com/gifs/the-office-michael-scott-graduation-Qa5dsjQjlCqOY">via GIPHY<a>
+            <a href="https://giphy.com/gifs/the-office-michael-scott-graduation-Qa5dsjQjlCqOY">via GIPHY</a>
         </p>
         <ks-modal-footer>
             <ks-button hides="prevent-close_modal">Got It!</ks-button>

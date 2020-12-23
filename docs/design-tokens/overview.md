@@ -14,7 +14,7 @@
 }
 ---
 
-# Design Tokens
+# Overview
 
 Design tokens are the basic building blocks of your application and form the foundation of your design system. These are a set of pre-defined values that are reused throughout you application to create UI consistency and build your brand identity. As you will see, there are many different types of design tokens available including typography, spacing units, and color.
 

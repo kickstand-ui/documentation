@@ -42,6 +42,22 @@ The `label` property provides the label for your form field. This property is al
 Every form field _must_ have a label for usability purposes and `placeholder` text is not a suitable replacement for a label.
 :::
 
+## Hide Label
+
+There are times where the context may be enough to allow you to get away without an explicit label on the input field (a search field, for example). Rather than omit the label, you can hide it for sighted users using the `hide-label` property.
+
+<div class="my-xxl">
+    <ks-form-field label="search by product id" placeholder="Search by product ID..." icon="search" hide-label></ks-form-field>
+</div>
+
+```html
+<ks-form-field label="search by product id" placeholder="Search by product ID..." icon="search" hide-label></ks-form-field>
+```
+
+:::warning NOTE
+This should be only sone on the rarest of exceptions. If possible, an explicit/visible label should be used to improve the user experience.
+:::
+
 ## Help Text
 
 The `help-text` is additional information provided for the user to increase input accuracy. Developers have commonly used `placeholder` text for this information in the past, but this results in some usability issues which include:
@@ -79,13 +95,14 @@ To improve usability, the help text is displayed above the form field and is act
 
 ## Tooltip Text
 
-If you need to provide the user with additional information that may not need to be displayed every time a user interacts with the form, you can display it in a tooltip.
+If you need to provide the user with additional information that may not need to be displayed every time a user interacts with the form, you can display it in a [tooltip](../components/tooltip.md).
 
 <div class="my-xl">
     <ks-form-field
         label="Email"
         type="email"
         tooltip-text="Used for password recovery"
+        tooltip-size="md"
         />
 </div>
 
@@ -93,7 +110,8 @@ If you need to provide the user with additional information that may not need to
 <ks-form-field
     label="Email"
     type="email"
-    tooltip-text="Used for password recovery">
+    tooltip-text="Used for password recovery"
+    tooltip-size="md">
 </ks-form-field>
 ```
 
@@ -218,13 +236,9 @@ Kickstand UI's components use one-way data binding so that data flows in a singl
 <ks-form-field label="Name" id="binding_test" class="mb-md"></ks-form-field>
 <b>Bound Value: </b><span id="bound_value"></span>
 <script>
-    (function(){
-        let formField = document.getElementById('binding_test');
-        let value = document.getElementById('bound_value');
-        formField.addEventListener('updated', function (e) {
-            value.innerText = e.detail.value;
-        });
-    })();
+    let formField = document.getElementById('binding_test');
+    let value = document.getElementById('bound_value');
+    formField.addEventListener('updated', (e) => value.innerText = e.detail.value);
 </script>
 ```
 
@@ -354,6 +368,7 @@ These features include:
 | `helpText`              | `help-text`               | additional information that displays below the form label            | `string`                                                                                                        | `undefined`  |
 | `invalid`               | `invalid`                 | toggles whether the form is valid or not            | `boolean`                                                                                                       | `false`      |
 | `label`                 | `label`                   | the form field label            | `string`                                                                                                        | `undefined`  |
+| `hideLabel`                 | `hide-label`                   | hides input label           | `boolean`                                                                                                        | `false`  |
 | `max`                   | `max`                     | the max value for `number` and `spin-box` input types            | `number`                                                                                                        | `undefined`  |
 | `maxErrorMessage`       | `max-error-message`       | the error message that will display if the `max` value has been exceeded            | `string`                                                                                          | `Your value must be no greater than {max}.`                                     |
 | `maxlength`             | `maxlength`               | the maximum number of characters a field will allow            | `number`                                                                                          | `undefined`                                                                             |
@@ -371,6 +386,7 @@ These features include:
 | `step`                  | `step`                    | when using a `spin-box` the amount it will increment/decrement            | `number`                                                                                                        | `undefined`  |
 | `stepErrorMessage`      | `step-error-message`      | the error message that will display if the value is not divisible by the `step` value            | `string`                                                                                          | `This field is required.`                                                            |
 | `tooltipText`           | `tooltip-text`            | if set, an indicatory will appear and when hovered/focused on will display this content in a tooltip (supports HTML)           | `string`                                                                                                        | `undefined`  |
+| `tooltipSize`           | `tooltip-size`            | set the size of the tooltip           | `sm`, `md`, `lg`, or `xl`                                                                                                        | `sm`  |
 | `type`                  | `type`                    | the input type            | `"date"`, `"email"`, `"hidden"`, `"number"`, `"password"`, `"search"`, `"textarea"`, `"tel"`, `"text"`, or `"url"` | `'text'`     |
 | `typeErrorMessage`      | `type-error-message`      | the error message that will display if the value does not match the input `type`            | `string`                                                                                          | `Your value must be a valid {type}.` |
 | `value`                 | `value`                   | the input value            | `number` or `string`                                                                                              | `''`         |
