@@ -16,6 +16,10 @@
 
 # Changelog
 
+## 2.1.1
+
+- fixed black/white background utility classes
+
 ## 2.1.0
 
 ### Fixed
