@@ -25,8 +25,9 @@
 ### New
 
 - [Inline Forms](forms/form.md#inline-forms)
-- [Form Field Sizes](forms/form-field.md#sizes)
-- [Loading Overlay Themes](components/loading.md#theme)
+- [Form field sizes](forms/form-field.md#sizes)
+- [Updated button sizes](components/button.md#sizes)
+- [Loading overlay themes](components/loading.md#theme)
 
 ## 2.1.1
 
