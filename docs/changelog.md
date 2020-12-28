@@ -16,6 +16,18 @@
 
 # Changelog
 
+## 2.2.0
+
+### Fixed
+
+- [Side Drawer](components/side-drawer.md) not properly closing when using keyboard shortcuts
+
+### New
+
+- [Inline Forms](forms/form.md#inline-forms)
+- [Form Field Sizes](forms/form-field.md#sizes)
+- [Loading Overlay Themes](components/loading.md#theme)
+
 ## 2.1.1
 
 - fixed black/white background utility classes

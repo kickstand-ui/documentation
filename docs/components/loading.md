@@ -80,6 +80,10 @@ The loading overlay combine the `<ks-loading>` element and the [`<ks-overlay>`](
 <ks-loading-overlay icon="circle_spinner" />
 ```
 
+### Theme
+
+You can choose the theme color of the overlay background using the `theme` property. the options are `light` and `dark`.
+
 ## Sizes
 
 Changing the size of the `<ks-loading />` is as easy as changing the font size on the element. You can quickly do that without aline of CSS using one of the [text utility classes](/utilities/text.html) (`<ks-loading class="text-lg" />`).
