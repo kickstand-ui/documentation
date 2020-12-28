@@ -44,6 +44,50 @@ Most of the properties (`action`, `enctype`, `method`, and `target`) are standar
 </ks-form>
 ```
 
+## Inline Forms
+
+Occasionally there is a need to simplify forms and combine the input and submit button into a single line.
+
+<div class="my-xxl">
+    <ks-form inline>
+        <ks-form-field label="Search" type="search" placeholder="Search..." hide-label></ks-form-field>
+        <ks-button type="submit">
+            <ks-icon icon="search" label="search"></ks-icon>
+        </ks-button>
+    </ks-form>
+</div>
+
+```html
+<ks-form>
+    <ks-form-field label="Search" type="search" placeholder="Search..." hide-label></ks-form-field>
+    <ks-button type="submit">
+        <ks-icon icon="search" label="search"></ks-icon>
+    </ks-button>
+</ks-form>
+```
+
+## Styling Forms
+
+The form is designed to stand out from the other content in order to increase conversion. Styling forms is easy using CSS, but you can also easily do os using utility classes. The follow example removes the border, background, and padding from the form, but similar utility classes could be used to create custom form styles.
+
+<div class="my-xxl">
+    <ks-form class="p-none b-none bg-transparent" inline>
+        <ks-form-field label="Search" type="search" placeholder="Search..." hide-label></ks-form-field>
+        <ks-button type="submit">
+            <ks-icon icon="search" label="search"></ks-icon>
+        </ks-button>
+    </ks-form>
+</div>
+
+```html
+<ks-form class="p-none b-none bg-transparent" inline>
+    <ks-form-field label="Search" type="search" placeholder="Search..." hide-label></ks-form-field>
+    <ks-button type="submit">
+        <ks-icon icon="search" label="search"></ks-icon>
+    </ks-button>
+</ks-form>
+```
+
 ## Submission
 
 In a standard HTML form, submission causes the page to reload. In Kickstand UI's forms, that behavior is prevented by default to allow for client-side validation and precessing, but if the `action` property is populated, the default behavior will resume.
@@ -105,11 +149,11 @@ Getting this data is simple as setting up a standard event listener.
     <ks-button type="submit">Submit Me</ks-button>
 </ks-form>
 <script>
-    let myForm = document.getelementById('my_form');
+    let myForm = document.getElementById('my_form');
     myForm.addEventListener('submitted', (e) => {
         let myFormData = e.detail;
         // do something with the form data
-    })
+    });
 </script>
 ```
 
@@ -137,6 +181,7 @@ The error message will also be accompanied by an icon for those users that are n
 
 | Property       | Attribute       | Description                                                                          | Type                                            | Default                                                                                  |
 | -------------- | --------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| `inline`      | `inline`       | toggles the inline layout of the form                                                   | `boolean`                                       | `false`                                                                                  |
 | `action`       | `action`        | The URL that processes the form submission.                                          | `string`                                        | `undefined`                                                                              |
 | `enctype`      | `enctype`       | This is the MIME type of the form submission                                         | `string`                                        | `'One or more of the from fields are not valid. Please, review the form and try again.'` |
 | `errorMessage` | `error-message` | The message that displays at the footer of the form if there is a validation problem | `string`                                        | `'One or more of the from fields are not valid. Please, review the form and try again.'` |

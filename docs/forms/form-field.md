@@ -155,6 +155,21 @@ You can also adjust the location of the icon using the `icon-direction` property
 </ks-form-field>
 ```
 
+## Sizes
+
+The form fields come in 2 sizes - small, medium, and large. These sizes match the corresponding [button sizes](../components/button.md#sizes) if you are using the [inline form feature](form.md#inline-forms).
+
+<div class="my-xl">
+    <ks-form-field class="mb-md" label="Small Input" size="sm"></ks-form-field>
+    <ks-form-field class="mb-md" label="Medium Input (Default)" size="md"></ks-form-field>
+    <ks-form-field label="Large Input" size="lg"></ks-form-field>
+</div>
+
+```html
+<ks-form-field label="Small Input" size="sm"></ks-form-field>
+<ks-form-field label="Medium Input (Default)" size="md"></ks-form-field>
+<ks-form-field label="Large Input" size="lg"></ks-form-field>
+```
 
 ## Error Messages
 

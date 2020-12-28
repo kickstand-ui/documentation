@@ -231,6 +231,7 @@ The loading overlay has the same features, but is also built with the [`<ks-over
 | Property      | Attribute      | Description | Type                                                     | Default        |
 | ------------- | -------------- | ----------- | -------------------------------------------------------- | -------------- |
 | `absolute`    | `absolute`     | controls where overlay displays            | `boolean`                                                | `false`        |
+| `theme`    | `theme`     | customizes the the overlay theme            | `light` or `dark`                                                | `light`        |
 | `message`     | `message`      | text to display with loading icon             | `string`                                                 | `'Loading...'` |
 | `showMessage` | `show-message` | toggle message visibility            | `boolean`                                                | `false`    |
 | `size`        | `size`         | size of icon            | `"lg"`, `"md"`, `"sm"`, `"xl"`, `"xs"`, `"xxl"`, or `"xxs"` | `'sm'`         |
