@@ -48,6 +48,20 @@ Kickstand UI's text utility classes can be used to quickly style text throughout
 <div class="text-xxs">text-xxs</div>
 ```
 
+## Family
+
+<div class="my-xl">
+    <div class="text-base">text-base</div>
+    <div class="text-accent">text-accent</div>
+    <div class="text-monospace">text-monospace</div>
+</div>
+
+```html
+<div class="text-base">text-base</div>
+<div class="text-accent">text-accent</div>
+<div class="text-monospace">text-monospace</div>
+```
+
 ## Decoration
 
 <div class="my-xl">

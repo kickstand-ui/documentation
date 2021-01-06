@@ -68,7 +68,7 @@ You can create parameters on how large or small the input value can be using the
 
 You can specify the amount by which you increment and decrement the value by using the `step` property.
 
-<div class="my-lg">
+<div class="my-xl">
     <ks-form-field label="Quantity" type="spin-box" step="10"></ks-form-field>
 </div>
 
@@ -80,12 +80,26 @@ You can specify the amount by which you increment and decrement the value by usi
 
 Disabling the control will prevent any interaction with the value.
 
-<div class="my-lg">
+<div class="my-xl">
     <ks-form-field label="Quantity" type="spin-box" value="7" disabled></ks-form-field>
 </div>
 
 ```html
 <ks-form-field label="Quantity" type="spin-box" value="7" disabled></ks-form-field>
+```
+
+## Sizes
+
+<div class="my-xl display-flex align-end sm:display-block sm:flex-column sm:align-start">
+    <ks-form-field label="Small" type="spin-box" size="sm"></ks-form-field>
+    <ks-form-field label="Medium" type="spin-box" size="md" class="ml-md sm:ml-none"></ks-form-field>
+    <ks-form-field label="Large" type="spin-box" size="lg" class="ml-md sm:ml-none"></ks-form-field>
+</div>
+
+```html
+<ks-form-field label="Small" type="spin-box" size="sm"></ks-form-field>
+<ks-form-field label="Medium" type="spin-box" size="md"></ks-form-field>
+<ks-form-field label="Large" type="spin-box" size="lg"></ks-form-field>
 ```
 
 ## Accessibility

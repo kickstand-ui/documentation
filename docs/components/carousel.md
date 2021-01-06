@@ -258,6 +258,10 @@ If `autoplay` is true, you can adjust the time interval between each slide using
 </ks-carousel>
 ```
 
+### Play/Pause
+
+In order to provide better usability, a play and pause button will be added to the carousel in case content moves too quickly or if it is too distracting.
+
 ## Slide Content
 
 There are a number of great properties available for `<ks-carousel-slide>`, but one of the nicest features is the ability to place content wherever you want on the slide using the `align` and `position` properties. the table below represents a slide and the available positions for slide content and the property values that will make it happen.

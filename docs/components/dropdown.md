@@ -116,6 +116,58 @@ Depending on where the drop-down is placed on the page, you may want to have the
 </div>
 ```
 
+## States
+
+### Disabled
+
+<div class="my-xl">
+    <ks-dropdown text="Account" disabled>
+        <ks-dropdown-item prevent-close><span>Welcome, Agent Michael Scarn!</span></ks-dropdown-item>
+        <ks-dropdown-item>
+            <a href="#">Order History</a>
+        </ks-dropdown-item>
+        <ks-dropdown-item>
+            <a href="#">Account Settings</a>
+        </ks-dropdown-item>
+        <ks-dropdown-item>
+            <a href="#">Wish Lists</a>
+        </ks-dropdown-item>
+        <ks-dropdown-item>
+            <ks-button>Sign Out</ks-button>
+        </ks-dropdown-item>
+    </ks-dropdown>
+</div>
+
+```html
+<ks-dropdown disabled>
+</ks-dropdown>
+```
+
+### Disabled
+
+<div class="my-xl">
+    <ks-dropdown text="Account" loading>
+        <ks-dropdown-item prevent-close><span>Welcome, Agent Michael Scarn!</span></ks-dropdown-item>
+        <ks-dropdown-item>
+            <a href="#">Order History</a>
+        </ks-dropdown-item>
+        <ks-dropdown-item>
+            <a href="#">Account Settings</a>
+        </ks-dropdown-item>
+        <ks-dropdown-item>
+            <a href="#">Wish Lists</a>
+        </ks-dropdown-item>
+        <ks-dropdown-item>
+            <ks-button>Sign Out</ks-button>
+        </ks-dropdown-item>
+    </ks-dropdown>
+</div>
+
+```html
+<ks-dropdown loading>
+</ks-dropdown>
+```
+
 ## Mega Menu
 
 Drop-down menus are great for displaying a list of available actions, however mega menus are a popular way to provide collapsible rich-text content. They are popular to use within a main menu to provide media-rich interactions, but their use can extend well beyond that. By default, the mega menu will expand the full width of the viewport.
@@ -302,6 +354,9 @@ If a standard dropdown is used (not a mega-menu), then the dropdown items have t
 | `hideIndicator` | `hide-indicator` | `boolean`          | `false` | toggles whether the drop-down button indicator (chevron) is displayed            |
 | `megaMenu`      | `mega-menu`      | `boolean`          | `false` | controls whether the menu displays as a mega menu |
 | `collapse`      | `collapse`       | `xxs`, `xs`, `sm`, `md`, `lg`, or `xl`         | `xs` | controls when the dropdown contents will adjust to fit the viewport for smaller screen sizes |
+| `disabled`      | `disabled`       | `boolean` | `undefined` | enables/disables button |
+| `loading`      | `loading`         | `boolean` | `undefined` | enabling this will show the loading icon and disable the button |
+| `size`          | `size`           | `"md"`, `"lg"`, `"sm"`, `"xl"`, or `"xs"` | `'md'` | controls the size of the button |
 
 #### Methods
 

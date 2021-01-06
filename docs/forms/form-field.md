@@ -407,7 +407,8 @@ These features include:
 | `value`                 | `value`                   | the input value            | `number` or `string`                                                                                              | `''`         |
 | `validateOnInput`       | `validate-on-input`       | toggles the validation timing at time of input            | `boolean`                                                                                                                                 | `false`                                                                                 |
 | `icon`                 | `icon`                   | icon displayed in the input field            | `string`                                                                                              | `undefined`         |
-| `iconDirection`       | `icon-direction`       | determines the position of the icon            | `"left"` or `"right"`                                                                                                                                 | `"right"`                                                                                 |
+| `iconDirection`       | `icon-direction`       | determines the position of the icon            | `"left"` or `"right"`                                                                                                                                 | `"right"`                                                                              |
+| `inputClass`      | `input-class`      | Adds classes directly on the input element | `undefined` |
 
 ## Events
 

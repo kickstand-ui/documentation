@@ -16,6 +16,25 @@
 
 # Changelog
 
+## 2.3.0
+
+### Fixed
+
+- [Icon](components/icons.md) layout sizing
+- Fix button controls in small screen resolutions in [gallery component](./components/gallery.md)
+
+### New
+
+- Added `button-class` attribute to [button component](./components/button.md)
+  - `css-class` attribute will continue to work, but will be deprecated in v3
+- Added `disabled`, `loading`, and `size` button attributes to the [dropdown component](components/dropdown.md) for more control
+- add `width`, `height`, and `aspect-ratio` props to the [image component](components/images.md)
+- add `input-class` property to the [form field component](forms/form-field.md)
+- update close button colors to `dark` for [modal](components/modal.md) and [side drawer](components/side-drawer.md) components
+- add sizes to [spin-box](forms/spin-box.md)
+- add [font-family](utilities/text.md#family) utility classes
+- add play/pause button for autoplay in [carousel component](components/carousel.md)
+
 ## 2.2.0
 
 ### Fixed
