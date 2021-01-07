@@ -16,6 +16,10 @@
 
 # Changelog
 
+## 2.3.2
+
+- Fix new [image](components/images.md) `width` and `heigh` attributes when rendered within other components
+
 ## 2.3.1
 
 ### Fix
