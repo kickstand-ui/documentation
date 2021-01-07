@@ -16,6 +16,14 @@
 
 # Changelog
 
+## 2.3.1
+
+### Fix
+
+- Add `stretch` option for [grid component](layout/grid.md)'s `position` property
+- Add new `height`, `width`, and `aspect-ratio` properties to [card](components/card.md) and [carousel](components/carousel.md) components
+- Fix `loading` and `disabled` state for the [dropdown component](components/dropdown.md)
+
 ## 2.3.0
 
 ### Fixed

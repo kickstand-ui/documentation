@@ -374,3 +374,6 @@ In order to make the carousel _more_ accessible, it is treated like a tab compon
 | `threshold` | `threshold` | `number`                          | `300`       | how soon the lazy-loaded image should load before the component enters the viewport (in pixels)            |
 | `clickable` | `clickable` | `boolean`                         | `false`     | makes entire slide clickable |
 | `href`      | `href`      | `string`                          | `undefined` | where to link the slide to |
+| `height`      | `height`       | `number`     | `undefined` | sets the `height` attribute on the `img` element            |
+| `width`       | `width`        | `number`  | `undefined` | sets the `width` attribute on the `img` element            |
+| `aspectRatio` | `aspect-ratio` | `string`  | `undefined` | sets the `width` and `height` attribute on the `img` element based on |

@@ -277,6 +277,9 @@ The footer has the `role="contentinfo"` attribute added to it to provide assisti
 | `imgDirection`    | `img-direction`     | `top`, `bottom`, `left`, `right`, or `behind` | `top` | position of image in relation to the content |
 | `href`    | `href`     | `string` | `undefined` | if url is added, the image will become clickable |
 | `clickable`    | `clickable`     | `boolean` | `undefined` | if true,the entire card will become clickable and link to the location defined in the `href` attribute |
+| `height`      | `height`       | `number`     | `undefined` | sets the `height` attribute on the `img` element            |
+| `width`       | `width`        | `number`  | `undefined` | sets the `width` attribute on the `img` element            |
+| `aspectRatio` | `aspect-ratio` | `string`  | `undefined` | sets the `width` and `height` attribute on the `img` element based on |
 
 ### `<ks-card-body>`
 
