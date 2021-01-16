@@ -86,7 +86,7 @@ One of the priorities of Kickstand UI is to make creating applications as effort
 **Kickstand 2.0** now uses _CSS Variables_ to standardize all design tokens across your application!
 
 <div class="my-lg text-center">
-    <ks-button display="hollow" href="/design-tokens/design-tokens.html">Customize Your Project</ks-button>
+    <ks-button display="hollow" href="/design-tokens/overview.html">Customize Your Project</ks-button>
 </div>
 
 ## Browser Support

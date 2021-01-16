@@ -27,17 +27,21 @@ There are two ways to customize your design tokens:
 
 ### SASS
 
-It is highly recommended that you take advantage of the SASS tooling that is provided as part of the Kickstand UI framework. They are designed to make updating and maintain your system easy and efficient. Feel free to download the variables template and add to your application to begin customizing your application.
+It is highly recommended that you take advantage of the SASS tooling that is provided as part of the Kickstand UI framework. They are designed to make updating and maintain your system easy and efficient. The documentation for the design token will also provide you with any corresponding SASS tools to help you implement the design system.
 
-<div class="text-center mt-xl">
+Download the variables template and add to your application to begin customizing your application.
+
+<div class="text-center mt-xxl">
     <ks-button href="/downloads/sass_variables.zip" display="hollow" download>Download SASS Variables Template</ks-button>
 </div>
 
 ### CSS
 
-Not everyone is in a position to or likes the idea of using a preprocessor for compiling their styles. If you are planning on using the precompiled styles, it is still very easy to customize the design system to meet your needs. All of the design tokens are converted to CSS variables so you can updated them in a central place and have it globally update your application. You can download the variables template and add it to your project.
+Not everyone is in a position to or likes the idea of using a preprocessor for compiling their styles. If you are planning on using the precompiled styles, it is still very easy to customize the design system to meet your needs. All of the design tokens are converted to CSS variables so you can updated them in a central place and have it globally update your application.
 
-<div class="text-center my-xl">
+Download the variables template and add it to your project after Kickstand UI to override the default tokens.
+
+<div class="text-center my-xxl">
     <ks-button href="/downloads/css_variables.zip" display="hollow" download>Download CSS Variables Template</ks-button>
 </div>
 
@@ -49,4 +53,4 @@ Make sure your custom CSS files are loaded after Kickstand UI's style to endure 
 
 The documentation provided in this section will provide you with information on how to use the design tokens for both SASS and CSS. It is _highly_ recommended that you use one or the other in your application. Trying to use both could result in confusion a potential code inconsistencies.
 
-Thank you for choosing Kickstand UI and feel free to [reach out](../contact.md)!.
+Thank you for choosing Kickstand UI and please [reach out](../contact.md)!
