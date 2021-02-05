@@ -16,6 +16,25 @@
 
 # Changelog
 
+## 2.4
+
+### Fix
+
+- form field icon positioning when error messages and help text are visible
+- prevent click events from executing on disabled [buttons](components/button.md)
+- inline [button](components/button.md) styles
+- text cropping on `select` input
+
+### New
+
+- Add update [spin-box](forms/spin-box.md) input changes to trigger the `changed` event.
+- Add `auto-expand` feature for [autocomplete component](./forms/autocomplete.md)
+- Add show/hide methods to [drop-downs](components/dropdown.md) to control drop-downs programmatically
+- Add dynamic link tags for framework router support in [breadcrumbs](components/breadcrumbs.md), [buttons](components/button.md), [cards](components/card.md), [carousels](components/carousel.md), [galleries](components/gallery.md), and [menu bar](components/menu-bar.md).
+- `text-normal` utility class now resets all text styles
+- removed `tab-index` prop from [button](components/button.md)
+- add `cleared` event listener to the [search input](forms/search.md)
+
 ## 2.3.2
 
 - Fix new [image](components/images.md) `width` and `heigh` attributes when rendered within other components
