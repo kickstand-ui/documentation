@@ -16,6 +16,26 @@
 
 # Changelog
 
+## 2.5.1
+
+### Fix
+
+- Update borders to use default values
+
+### New
+
+- Add disabled and indeterminate states for [checkboxes](forms/checkbox.md), [checklists](forms/checklist.md), and [radio lists](forms/radiolist.md)
+
+## 2.5.0
+
+### Fix
+
+- Remove unused utility functions
+
+### New
+
+- Add props for [file upload](./forms/file.md)
+
 ## 2.4
 
 ### Fix

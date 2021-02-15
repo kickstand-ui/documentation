@@ -34,6 +34,26 @@ The `checkbox` type allows you to select single values for submission in a form.
 <ks-form-field type="checkbox" label="I accept the terms and conditions" />
 ```
 
+## Disabled
+
+<div class="my-xl">
+    <ks-form-field type="checkbox" label="Disabled Checkbox" disabled />
+</div>
+
+```html
+<ks-form-field type="checkbox" label="Disabled Checkbox" disabled />
+```
+
+## Indeterminate
+
+<div class="my-xl">
+    <ks-form-field type="checkbox" label="Indeterminate Checkbox" indeterminate />
+</div>
+
+```html
+<ks-form-field type="checkbox" label="Indeterminate Checkbox" indeterminate />
+```
+
 ## Usage
 
 For more information on how to use the `form field` component and it's available configurations, check out the [documentation](./form-field.md).

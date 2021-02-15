@@ -31,7 +31,7 @@ Checklists are great if users need to be able to choose multiple options from a 
         <option selected>michael.scott@dundermifflin.com</option>
         <option>dwight.schrutte@dundermifflin.com</option>
         <option>pam.beasley@dundermifflin.com</option>
-        <option>jim.halpert@dundermifflin.com</option>
+        <option disabled>jim.halpert@dundermifflin.com</option>
         <option>Meredith.palmer@dundermifflin.com</option>
     </ks-form-field>
 </div>
@@ -41,7 +41,7 @@ Checklists are great if users need to be able to choose multiple options from a 
     <option selected>michael.scott@dundermifflin.com</option>
     <option>dwight.schrutte@dundermifflin.com</option>
     <option>pam.beasley@dundermifflin.com</option>
-    <option>jim.halpert@dundermifflin.com</option>
+    <option disabled>jim.halpert@dundermifflin.com</option>
     <option>Meredith.palmer@dundermifflin.com</option>
 </ks-form-field>
 ```

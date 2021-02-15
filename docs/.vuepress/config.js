@@ -143,6 +143,7 @@ module.exports = {
                     "/forms/datalist.html",
                     "/forms/date.html",
                     "/forms/email.html",
+                    "/forms/file.html",
                     "/forms/number.html",
                     "/forms/password.html",
                     "/forms/radiolist.html",

@@ -28,9 +28,9 @@ Checklists are great if users need to be able to choose multiple options from a 
 
 <div class="my-xl">
     <ks-form-field type="radiolist" label="Choose your next office mate">
-        <option value="michael.scott@dundermifflin.com">Michael Scott</option>
+        <option selected value="michael.scott@dundermifflin.com">Michael Scott</option>
         <option value="dwight.schrutte@dundermifflin.com">Dwight Schrutte</option>
-        <option value="pam.beasley@dundermifflin.com" selected>Pam Beasley</option>
+        <option disabled value="pam.beasley@dundermifflin.com">Pam Beasley</option>
         <option value="jim.halpert@dundermifflin.com">Jim Halpert</option>
         <option value="Meredith.palmer@dundermifflin.com">Meredith Palmer</option>
     </ks-form-field>
@@ -38,9 +38,9 @@ Checklists are great if users need to be able to choose multiple options from a 
 
 ```html
 <ks-form-field type="radiolist" label="Choose your next office mate">
-    <option value="michael.scott@dundermifflin.com">Michael Scott</option>
+    <option selected value="michael.scott@dundermifflin.com">Michael Scott</option>
     <option value="dwight.schrutte@dundermifflin.com">Dwight Schrutte</option>
-    <option value="pam.beasley@dundermifflin.com" selected>Pam Beasley</option>
+    <option disabled value="pam.beasley@dundermifflin.com">Pam Beasley</option>
     <option value="jim.halpert@dundermifflin.com">Jim Halpert</option>
     <option value="Meredith.palmer@dundermifflin.com">Meredith Palmer</option>
 </ks-form-field>
