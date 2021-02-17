@@ -27,31 +27,37 @@
 The `checkbox` type allows you to select single values for submission in a form. If you would like to provide multiple options, check out the [checklist component](./checklist.md).
 
 <div class="my-xl">
-    <ks-form-field type="checkbox" label="I accept the terms and conditions" />
+    <ks-form-field type="checkbox" label="Unchecked" />
+    <ks-form-field type="checkbox" label="Checked" checked />
 </div>
 
 ```html
-<ks-form-field type="checkbox" label="I accept the terms and conditions" />
+<ks-form-field type="checkbox" label="Unchecked" />
+<ks-form-field type="checkbox" label="Checked" checked />
 ```
 
 ## Disabled
 
 <div class="my-xl">
-    <ks-form-field type="checkbox" label="Disabled Checkbox" disabled />
+    <ks-form-field type="checkbox" label="Disabled Unchecked" disabled />
+    <ks-form-field type="checkbox" label="Disabled Checked" disabled checked />
 </div>
 
 ```html
-<ks-form-field type="checkbox" label="Disabled Checkbox" disabled />
+<ks-form-field type="checkbox" label="Disabled Unchecked" disabled />
+<ks-form-field type="checkbox" label="Disabled Checked" disabled checked />
 ```
 
 ## Indeterminate
 
 <div class="my-xl">
     <ks-form-field type="checkbox" label="Indeterminate Checkbox" indeterminate />
+    <ks-form-field type="checkbox" label="Disabled Indeterminate Checkbox" indeterminate disabled />
 </div>
 
 ```html
 <ks-form-field type="checkbox" label="Indeterminate Checkbox" indeterminate />
+<ks-form-field type="checkbox" label="Disabled Indeterminate Checkbox" indeterminate disabled />
 ```
 
 ## Usage
