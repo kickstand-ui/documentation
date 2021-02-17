@@ -86,6 +86,7 @@ The value returned from a checklist form field is an array of the values that ha
 
 ```json
 {
+    value: ["michael.scott@dundermifflin.com", "pam.beasley@dundermifflin.com"],
     isValid: true,
     validity: {
         badInput: false
@@ -99,8 +100,7 @@ The value returned from a checklist form field is an array of the values that ha
         typeMismatch: false
         valid: true
         valueMissing: false
-    },
-    value: ["michael.scott@dundermifflin.com", "pam.beasley@dundermifflin.com"]
+    }
 }
 ```
 
