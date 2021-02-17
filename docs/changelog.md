@@ -16,6 +16,18 @@
 
 # Changelog
 
+## 2.5.3
+
+### Fix
+
+- Adjust the [checkbox](forms/checkbox.md) indeterminate styling
+
+## 2.5.2
+
+## Fix
+
+- Add missing attribute bindings for file upload
+
 ## 2.5.1
 
 ### Fix
