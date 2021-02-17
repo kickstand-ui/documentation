@@ -51,11 +51,13 @@ A switch is not an alternative to a [checkbox](/components/form-field.html#check
 ## Disable
 
 <div class="my-xl">
-    <ks-switch label="Show Pricing" disable></ks-switch>
+    <ks-switch label="Disabled Switch" disable></ks-switch><br>
+    <ks-switch label="Disabled Checked Switch" disable checked></ks-switch>
 </div>
 
 ```html
-<ks-switch label="Show Pricing" disable></ks-switch>
+<ks-switch label="Disabled Switch" disable></ks-switch><br>
+<ks-switch label="Disabled Checked Switch" disable checked></ks-switch>
 ```
 
 ## Utilities

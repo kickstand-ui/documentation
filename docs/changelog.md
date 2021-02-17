@@ -16,6 +16,16 @@
 
 # Changelog
 
+## 2.5.4
+
+### Fix
+
+- `top` and `bottom` responsive margin utility classes were set to negative
+
+### Add
+
+- Improve disabled styles for [switches](components/switch.md) and [checkboxes](forms/checkbox.md).
+
 ## 2.5.3
 
 ### Fix
