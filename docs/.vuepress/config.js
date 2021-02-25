@@ -266,6 +266,16 @@ module.exports = {
                     }
                 ]
             },
+            {
+                title: "Guides",
+                collapsable: true,
+                children: [
+                    "/guides/overview.html",
+                    "/guides/contact-form.html",
+                    "/guides/password-confirmation.html",
+                    "/guides/adding-search.html",
+                ]
+            },
             "changelog.html"
         ]
     },
