@@ -16,6 +16,22 @@
 
 # Changelog
 
+## 2.6.0
+
+### Fix
+
+- Data not available on `submitted` event in [form component](forms/form.md) unless using `timeOut`
+- Image display in [card component](components/card.md) for IE 11
+- Tab display in [tabs component](components/tabs.md) for IE 11
+- Positioning for [modal component](components/modal.md) for IE 11
+- [Spin-Box](forms/spin-box.md) support for IE 11
+
+### Add
+
+- Improved styling for [range component](forms/range.md)
+- Adjust input icon and button display in [form field component](forms/form-field.md)
+- Rotate animation fallback in [loading component](components/loading.md) for IE 11
+
 ## 2.5.4
 
 ### Fix
@@ -34,7 +50,7 @@
 
 ## 2.5.2
 
-## Fix
+### Fix
 
 - Add missing attribute bindings for file upload
 

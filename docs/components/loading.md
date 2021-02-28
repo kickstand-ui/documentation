@@ -29,10 +29,10 @@ Kickstand UI's loading component is designed to communicate unseen progress to t
 ## Types
 
 <div class="my-xl">
-    <ks-loading icon="ring_spinner"></ks-loading>
-    <ks-loading icon="circle_spinner"></ks-loading>
-    <ks-loading icon="ellipsis_pulse"></ks-loading>
-    <ks-loading icon="ellipsis_typing"></ks-loading>
+    <ks-loading class="m-sm" icon="ring_spinner"></ks-loading>
+    <ks-loading class="m-sm" icon="circle_spinner"></ks-loading>
+    <ks-loading class="m-sm" icon="ellipsis_pulse"></ks-loading>
+    <ks-loading class="m-sm" icon="ellipsis_typing"></ks-loading>
 </div>
 
 ```html
