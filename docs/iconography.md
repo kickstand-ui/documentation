@@ -48,15 +48,15 @@ The brand-specific icons (facebook, twitter, etc.) did not follow all of these g
 There are a few animated icons that have been created to help convey loading states to your users. These icons are also available in the [loading component](./loading.md) with some additional features.
 
 <div class="my-xl text-lg">
-    <ks-icon icon="ring_spinner" class="mr-lg" />
-    <ks-icon icon="circle_spinner" class="mr-lg" />
-    <ks-icon icon="ellipsis_pulse" class="mr-lg" />
-    <ks-icon icon="ellipsis_typing" class="mr-lg" />
+    <ks-icon icon="loading_ring_spinner" class="mr-lg" />
+    <ks-icon icon="loading_circle_spinner" class="mr-lg" />
+    <ks-icon icon="loading_ellipsis_pulse" class="mr-lg" />
+    <ks-icon icon="loading_ellipsis_typing" class="mr-lg" />
 </div>
 
 ```html
-<ks-icon icon="ring_spinner" />
-<ks-icon icon="circle_spinner" />
-<ks-icon icon="ellipsis_pulse" />
-<ks-icon icon="ellipsis_typing" />
+<ks-icon icon="loading_ring_spinner" />
+<ks-icon icon="loading_circle_spinner" />
+<ks-icon icon="loading_ellipsis_pulse" />
+<ks-icon icon="loading_ellipsis_typing" />
 ```
