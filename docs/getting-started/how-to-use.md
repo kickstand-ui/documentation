@@ -49,9 +49,9 @@ Methods are used to expose functionality for the component. An example would be 
 ```js
 let modal = document.querySelector('ks-modal');
 
-modal.open();
+modal.show();
 // or
-modal.close();
+modal.hide();
 ```
 
 ## Events
