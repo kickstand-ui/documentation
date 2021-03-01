@@ -170,10 +170,8 @@ Here is the working form:
             const searchModal = document.querySelector('#search_1_modal');
             const searchContent = searchModal.querySelector('#search_1_data');
             searchForm.addEventListener('submitted', (event) => {
-                setTimeout(function() {
-                    searchContent.innerText = JSON.stringify(event.detail, null, 2);
-                    searchModal.show();
-                });
+                searchContent.innerText = JSON.stringify(event.detail, null, 2);
+                searchModal.show();
             });
         })();
     </script>
@@ -201,11 +199,9 @@ Here is the complete code:
     const searchForm = document.querySelector('#search_1');
 
     searchForm.addEventListener('submitted', (event) => {
-        setTimeout(() => {
-            let formData = event.detail;
-            searchContent.innerText = JSON.stringify(formData, null, 2);
-            searchModal.show();
-        });
+        let formData = event.detail;
+        searchContent.innerText = JSON.stringify(formData, null, 2);
+        searchModal.show();
     });
 </script>
 ```
@@ -265,11 +261,9 @@ Now we will replace our previous logic that displayed the form data in a modal w
 
 ```js
 searchForm.addEventListener('submitted', (event) => {
-    setTimeout(() => {
-        let formData = event.detail;
-        let names = getFilteredNames(formData[0].value);
-        setResults('search_2_results', names);
-    });
+    let formData = event.detail;
+    let names = getFilteredNames(formData[0].value);
+    setResults('search_2_results', names);
 });
 ```
 
@@ -316,11 +310,9 @@ There may be times where you want to have the results filter as the user types i
 <script>
     const search3 = document.querySelector('#search_3');
     search3.addEventListener('updated', (event) => {
-        setTimeout(() => {
-            let fieldData = event.detail;
-            let names = getFilteredNames(fieldData.value);
-            setResults('search_3_results', names);
-        });
+        let fieldData = event.detail;
+        let names = getFilteredNames(fieldData.value);
+        setResults('search_3_results', names);
     });
 </script>
 ```
@@ -386,50 +378,25 @@ If you are filtering a list locally like we are here, filtering the results on e
         const search2 = document.querySelector('#search_2');
         setResults('search_2_results', getFilteredNames());
         search2.addEventListener('submitted', (event) => {
-            setTimeout(() => {
-                let formData = event.detail;
-                let names = getFilteredNames(formData.formFieldData[0].value);
-                setResults('search_2_results', names);
-            });
+            let formData = event.detail;
+            let names = getFilteredNames(formData.formFieldData[0].value);
+            setResults('search_2_results', names);
         });
 
         const search3 = document.querySelector('#search_3');
         setResults('search_3_results', getFilteredNames());
         search3.addEventListener('updated', (event) => {
-            setTimeout(() => {
-                let fieldData = event.detail;
-                let names = getFilteredNames(fieldData.value);
-                setResults('search_3_results', names);
-            });
+            let fieldData = event.detail;
+            let names = getFilteredNames(fieldData.value);
+            setResults('search_3_results', names);
         });
 
         const search4 = document.querySelector('#search_4');
         setResults('search_4_results', getFilteredNames());
         search4.addEventListener('updated', (event) => {
-            setTimeout(() => {
-                let fieldData = event.detail;
-                let names = getFilteredNames(fieldData.value);
-                setResults('search_4_results', names);
-            });
+            let fieldData = event.detail;
+            let names = getFilteredNames(fieldData.value);
+            setResults('search_4_results', names);
         });
     }, 100);
 </script>
-
-<style>
-.ks-form-field .input-wrapper .icon-right {
-    margin-right: 0;
-}
-
-.ks-form-field .input-wrapper .icon-right .input-icon {
-    margin-right: 0.75rem;
-}
-
-.ks-form-field .icon-right .button {
-    margin-right: 0;
-    font-size: 1rem;
-}
-
-.ks-form-field .icon-right .button svg {
-    font-size: 1rem;
-}
-</style>

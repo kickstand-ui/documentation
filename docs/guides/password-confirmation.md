@@ -219,27 +219,24 @@ if(password.value === confirmPassword.value) {
         const confirmPasswordForm = document.querySelector('#confirm_password_form');
 
         confirmPasswordForm.addEventListener('submitted', (event) => {
-            setTimeout(() => {
-                const formData = event.detail;
+            const formData = event.detail;
 
-                if(!formData.isValid)
-                    return;
+            if(!formData.isValid)
+                return;
 
-                console.log(formData);
-                const password = formData.formFieldData.find(x => x.name === 'password')
-                const confirmPassword = formData.formFieldData.find(x => x.name === 'confirm-password');
+            const password = formData.formFieldData.find(x => x.name === 'password')
+            const confirmPassword = formData.formFieldData.find(x => x.name === 'confirm-password');
 
-                if(password.value === confirmPassword.value) {
-                    confirmPasswordForm.invalid = false;
-                    const username = formData.formFieldData.find(x => x.name === 'username');
-                    alert(`Welcome to the app, ${username.value}!`);
-                } else {
-                    confirmPasswordForm.invalid = true;
-                    const confirmPasswordField = document.querySelector('#confirm_password');
-                    confirmPasswordField.defaultErrorMessage = 'Your passwords do not match';
-                    confirmPasswordField.invalid = true;
-                }
-            });
+            if(password.value === confirmPassword.value) {
+                confirmPasswordForm.invalid = false;
+                const username = formData.formFieldData.find(x => x.name === 'username');
+                alert(`Welcome to the app, ${username.value}!`);
+            } else {
+                confirmPasswordForm.invalid = true;
+                const confirmPasswordField = document.querySelector('#confirm_password');
+                confirmPasswordField.defaultErrorMessage = 'Your passwords do not match';
+                confirmPasswordField.invalid = true;
+            }
         });
     }, 100);
 })();
