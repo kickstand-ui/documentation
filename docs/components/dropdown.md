@@ -143,7 +143,7 @@ Depending on where the drop-down is placed on the page, you may want to have the
 </ks-dropdown>
 ```
 
-### Disabled
+### Loading
 
 <div class="my-xl">
     <ks-dropdown text="Account" loading>
