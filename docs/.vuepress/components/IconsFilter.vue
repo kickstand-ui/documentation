@@ -9,7 +9,7 @@
                 @updated="(e) => (iconSearch = e.detail.value)"
             ></ks-form-field>
         </div>
-        <div class="display-flex align-center justify-center flex-wrap">
+        <div class="display-flex align-center space-between flex-wrap">
             <button
                 :id="`icon_${icon}`"
                 :title="icon"

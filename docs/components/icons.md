@@ -24,41 +24,32 @@
 
 # Icons
 
-<IconsFilter />
-
-## About
-
-The Kickstand UI icon library is a compilation of commonly used icons for applications and websites. All icons are SVGs to improve performance, accessibility, and provide flexible implementation.
-
-The icons were developed using the following guidelines:
-
-- 24x24 Grid
-- 1.5 stroke width
-- 1.5 minimum negative space between elements
-- fills and strokes inherit from the current color
-
-The icons were developed in [Adobe XD](https://www.adobe.com/products/xd.html) and the file is available for [download here](https://github.com/break-stuff/kickstand-ui/blob/master/kickstand-ui_icons.xd).
-
-:::tip Note
-The brand-specific icons (facebook, twitter, etc.) did not follow all of these guidelines. Every effort was made to make sure they were consistent with their existing brand guidelines.
-:::
-
-## Animated Icons
-
-There are a few animated icons that have been created to help convey loading states to your users. These icons are also available in the [loading component](./loading.md) with some additional features.
+The icon component is designed to take advantage of Kickstand UI's icon library. To see a full list of available icons, check out the [iconography page](../iconography.md).
 
 <div class="my-xl text-lg">
-    <ks-icon icon="ring_spinner" class="mr-lg" />
-    <ks-icon icon="circle_spinner" class="mr-lg" />
-    <ks-icon icon="ellipsis_pulse" class="mr-lg" />
-    <ks-icon icon="ellipsis_typing" class="mr-lg" />
+    <ks-icon icon="search" class="mr-lg" />
+    <ks-icon icon="question" class="mr-lg" />
 </div>
 
 ```html
-<ks-icon icon="ring_spinner" />
-<ks-icon icon="circle_spinner" />
-<ks-icon icon="ellipsis_pulse" />
-<ks-icon icon="ellipsis_typing" />
+<ks-icon icon="search"></ks-icon>
+<ks-icon icon="question"></ks-icon>
+```
+
+## Labels
+
+By default the icon will have the attribute `aria-hidden="true"` to prevent confusion with assistive technologies. If you are using icons in place of text for things like icon buttons, you can pass the text to the `label` property or the ID of the container with the text to be read using the `labelled-by` property.
+
+<div class="my-xxl">
+    <ks-button>
+        <ks-icon icon="user" label="user settings"></ks-icon>
+    </ks-button>
+</div>
+
+```html
+<ks-button>
+    <ks-icon icon="user" label="user settings"></ks-icon>
+</ks-button>
 ```
 
 ## Properties

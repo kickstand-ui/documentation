@@ -211,6 +211,7 @@ module.exports = {
                     }
                 ]
             },
+            '/iconography.html',
             {
                 title: "Design Tokens",
                 collapsable: true,
