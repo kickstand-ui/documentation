@@ -70,16 +70,19 @@ form.addEventListener('submitted', (event) => {
 });
 ```
 
-<script>
+<!-- <script>
     (function () {
-        setTimeout(() => {
+        window.addEventListener('DOMContentLoaded', function() {
             const contactForm = document.querySelector('#contact_form');
             contactForm.addEventListener('submitted', (event) => {
                 console.log('CONTACT FORM DATA', event.detail);
             });
-        }, 100);
+        }, false);
+
+        // setTimeout(() => {
+        // }, 100);
     })();
-</script>
+</script> -->
 
 
 If we submit the form without filling out any fields, we will see the following data in the console:
@@ -146,3 +149,5 @@ form.addEventListener('submitted', (event) => {
     // send form values to the server
 });
 ```
+
+<ContactFormGuide />
