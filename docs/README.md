@@ -16,7 +16,7 @@ footer: Kickstand UI | MIT Licensed
         Tools to help you build applications <em class="b-b-xxxs b-b-light-lighter">everyone</em> can love!
     </h3>
     <div class="text-center my-xl">
-        <ks-button size="lg" display="hollow" class="mr-xl sm:mr-none" color="light" css-class="text-light-lighter" href="https://github.com/break-stuff/kickstand-ui">
+        <ks-button size="lg" display="hollow" class="mr-xl sm:mr-none sm:mb-lg" color="light" css-class="text-light-lighter" href="https://github.com/break-stuff/kickstand-ui">
             <ks-icon icon="github" class="mr-sm"></ks-icon> GitHub
         </ks-button>
         <ks-button class="sm:display-block" size="lg" color="light" href="/getting-started/installation.html">
