@@ -16,6 +16,47 @@
 
 # Changelog
 
+## 2.6.6
+
+### Fix
+
+- [Card component](components/card.md) display for IE 11
+
+## 2.6.5
+
+### Fix
+
+- [Spin-Box](forms/spin-box.md) support for IE 11
+
+## 2.6.4
+
+### Fix
+
+- [Card component](components/card.md) layout for IE 11
+
+### Update
+
+- [Autocomplete](forms/autocomplete.md) UX improvements
+- 
+
+## 2.6.3
+
+### Fix
+
+- [Animated Icon](components/icons.md) spacing
+
+## 2.6.2
+
+### Fix
+
+- [Icon](components/icons.md) spacing
+
+## 2.6.1
+
+### Fix
+
+- Fix [form](forms/form.md) submission timing.
+
 ## 2.6.0
 
 ### Fix
