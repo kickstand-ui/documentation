@@ -16,6 +16,7 @@
                 @click="copy(icon)"
                 display="clear"
                 v-for="icon in filteredIcons"
+                :key="icon"
                 class="text-center my-md"
                 style="width: 90px; background: transparent; border: 0"
             >

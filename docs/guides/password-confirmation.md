@@ -97,9 +97,7 @@ Adding custom validation to the Confirm Password is fairly straight forward. We 
 The first thing we should do is add add an event listener for the form's `submitted` event.
 
 ```js
-const confirmPasswordForm = document.querySelector('#confirm_password');
-
-confirmPasswordForm.addEventListener('submitted', (event) => {
+$('#confirm_password').on('submitted', (event) => {
     const formData = event.detail;
 
     // do something cool!
@@ -131,7 +129,7 @@ The `formData` is an object that has the form field data as well as some validat
 Now that we are listening for the `submitted` event and have the form data, let's verify that the form passed the initial validation we added to the fields before adding custom our validation. If it's not, let's skip the custom validation check.
 
 ```js
-confirmPasswordForm.addEventListener('submitted', (event) => {
+$('#confirm_password').on('submitted', (event) => {
     const formData = event.detail;
 
     if(!formData.isValid)
@@ -146,7 +144,7 @@ confirmPasswordForm.addEventListener('submitted', (event) => {
 If the form is valid, let's check to see if the `Password` and `Confirm Password` field values match. Here we will select the field by the `name` property. The `name` property is auto-generated based on the form label. If you are worried about this changing, you can set the name manually by setting the `name` property on the `<ks-form-field>` component.
 
 ```js
-confirmPasswordForm.addEventListener('submitted', (event) => {
+$('#confirm_password').on('submitted', (event) => {
     const formData = event.detail;
 
     if(!formData.isValid)
@@ -177,7 +175,7 @@ if(password.value === confirmPassword.value) {
     confirmPasswordForm.invalid = false;
     alert(`Welcome to the app, ${username.value}!`);
 } else {
-    const confirmPasswordField = document.querySelector('#confirm_password');
+    const confirmPasswordField = $('#confirm_password');
     confirmPasswordForm.invalid = true; // 1
     confirmPasswordField.defaultErrorMessage = 'Your passwords do not match'; // 2
     confirmPasswordField.invalid = true; // 3
@@ -214,9 +212,9 @@ if(password.value === confirmPassword.value) {
 </div>
 
 ```js
-const confirmPasswordForm = document.querySelector('#confirm_password');
+const passwordForm = $('#confirm_password_form');
 
-confirmPasswordForm.addEventListener('submitted', (event) => {
+passwordForm.on('submitted', (event) => {
     const formData = event.detail;
 
     if(!formData.isValid)
@@ -227,11 +225,11 @@ confirmPasswordForm.addEventListener('submitted', (event) => {
 
     if(password.value === confirmPassword.value) {
         const username = formData.formFieldData.find(x => x.name === 'username');
-        confirmPasswordForm.invalid = false;
+        passwordForm.invalid = false;
         alert(`Welcome to the app, ${username.value}!`);
     } else {
-        const confirmPasswordField = document.querySelector('#confirm_password');
-        confirmPasswordForm.invalid = true; // 1
+        const confirmPasswordField = $('#confirm_password');
+        passwordForm.invalid = true; // 1
         confirmPasswordField.defaultErrorMessage = 'Your passwords do not match'; // 2
         confirmPasswordField.invalid = true; // 3
     }

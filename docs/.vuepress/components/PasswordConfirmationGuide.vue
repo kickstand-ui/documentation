@@ -1,10 +1,12 @@
 <template></template>
 <script>
+import { $ } from "kickstand-ui";
+
 export default {
     mounted() {
-        const confirmPasswordForm = document.querySelector('#confirm_password_form');
+        const passwordForm = $('#confirm_password_form');
 
-        confirmPasswordForm.addEventListener('submitted', (event) => {
+        passwordForm.on('submitted', (event) => {
             const formData = event.detail;
 
             if(!formData.isValid)
@@ -14,12 +16,12 @@ export default {
             const confirmPassword = formData.formFieldData.find(x => x.name === 'confirm-password');
 
             if(password.value === confirmPassword.value) {
-                confirmPasswordForm.invalid = false;
+                passwordForm.invalid = false;
                 const username = formData.formFieldData.find(x => x.name === 'username');
                 alert(`Welcome to the app, ${username.value}!`);
             } else {
-                confirmPasswordForm.invalid = true;
-                const confirmPasswordField = document.querySelector('#confirm_password');
+                passwordForm.invalid = true;
+                const confirmPasswordField = $('#confirm_password');
                 confirmPasswordField.defaultErrorMessage = 'Your passwords do not match';
                 confirmPasswordField.invalid = true;
             }

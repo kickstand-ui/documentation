@@ -117,9 +117,7 @@ First, let's add a form and listen for the submitted event:
     ...
 </ks-form>
 <script>
-    const searchForm = document.querySelector('#search_1');
-
-    searchForm.addEventListener('submitted', (event) => {
+    $('#search_1').on('submitted', (event) => {
         ...
     });
 </script>
@@ -133,20 +131,15 @@ Next, for display purposes, let's display the search results in a modal when it 
 <ks-modal id="search_1_modal" modal-title="You just submitted...">
     <pre id="search_1_data" class="bg-light"></pre>
 </ks-modal>
-
-<script>
-    const searchModal = document.querySelector('#search_1_modal');
-    const searchContent = searchModal.querySelector('#search_1_data');
-</script>
 ```
 
 When the form gets submitted, let's set the search form content in the modal and show the modal.
 
 ```js
-searchForm.addEventListener('submitted', (event) => {
+$('#search_1').on('submitted', (event) => {
     let formData = event.detail;
-    searchContent.innerText = JSON.stringify(formData, null, 2);
-    searchModal.show();
+    $('#search_1_data').innerText = JSON.stringify(formData, null, 2);
+    $('#search_1_modal').show();
 });
 ```
 
@@ -183,14 +176,10 @@ Here is the complete code:
 
 
 <script>
-    const searchModal = document.querySelector('#search_1_modal');
-    const searchContent = searchModal.querySelector('#search_1_data');
-    const searchForm = document.querySelector('#search_1');
-
-    searchForm.addEventListener('submitted', (event) => {
+    $('#search_1').on('submitted', (event) => {
         let formData = event.detail;
-        searchContent.innerText = JSON.stringify(formData, null, 2);
-        searchModal.show();
+        $('#search_1_data').innerText = JSON.stringify(formData, null, 2);
+        $('#search_1_modal').show();
     });
 </script>
 ```
@@ -240,8 +229,7 @@ Finally, we will be displaying the results in a table and will be updating the U
 
 <script>
     function setResults(id, results) {
-        const tableResults = document.querySelector(`#${id}`);
-        tableResults.innerHTML = results.map((result) => `<tr><td>${result}</td></tr>`).join();
+        $(`#${id}`).innerHTML = results.map((result) => `<tr><td>${result}</td></tr>`).join();
     }
 </script>
 ```
@@ -249,7 +237,7 @@ Finally, we will be displaying the results in a table and will be updating the U
 Now we will replace our previous logic that displayed the form data in a modal with the logic to filter and display our list.
 
 ```js
-searchForm.addEventListener('submitted', (event) => {
+$('#search_2').on('submitted', (event) => {
     let formData = event.detail;
     let names = getFilteredNames(formData[0].value);
     setResults('search_2_results', names);
@@ -297,8 +285,7 @@ There may be times where you want to have the results filter as the user types i
 </table>
 
 <script>
-    const search3 = document.querySelector('#search_3');
-    search3.addEventListener('updated', (event) => {
+    $('#search_3').on('updated', (event) => {
         let fieldData = event.detail;
         let names = getFilteredNames(fieldData.value);
         setResults('search_3_results', names);

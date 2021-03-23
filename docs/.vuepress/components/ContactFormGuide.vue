@@ -1,13 +1,12 @@
-<template>
-    
-</template>
+<template></template>
 <script>
-    export default {
-        mounted() {
-            const contactForm = document.querySelector('#contact_form');
-            contactForm.addEventListener('submitted', (event) => {
-                console.log('CONTACT FORM DATA', event.detail);
-            });
-        }
-    }
+import { $ } from "kickstand-ui";
+
+export default {
+    mounted() {
+        $("#contact_form").on("submitted", (event) => {
+            console.log("CONTACT FORM DATA", event.detail);
+        });
+    },
+};
 </script>

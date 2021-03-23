@@ -64,26 +64,10 @@ Translating those requirements into code is actually pretty straight forward wit
 Now that we have the form set up, we need to get the form data to submit to the server. The form emits a `submitted` event when the user clicks the submit button or presses `enter`. That event also emits the form data as well as the form validation information.
 
 ```js
-const form = document.querySelector('#contact_form');
-form.addEventListener('submitted', (event) => {
+$('#contact_form').on('submitted', (event) => {
     console.log('CONTACT FORM DATA', event.detail);
 });
 ```
-
-<!-- <script>
-    (function () {
-        window.addEventListener('DOMContentLoaded', function() {
-            const contactForm = document.querySelector('#contact_form');
-            contactForm.addEventListener('submitted', (event) => {
-                console.log('CONTACT FORM DATA', event.detail);
-            });
-        }, false);
-
-        // setTimeout(() => {
-        // }, 100);
-    })();
-</script> -->
-
 
 If we submit the form without filling out any fields, we will see the following data in the console:
 
@@ -132,8 +116,7 @@ In this example, we can see that the field is invalid because `valueMissing` is 
 Now that we have the form data, we can use it however we need. As a quick example we will check if the form is valid, and if it is, send it to the server.
 
 ```js
-const form = document.querySelector('#contact_form');
-form.addEventListener('submitted', (event) => {
+$('#contact_form').on('submitted', (event) => {
     let formData = event.detail;
 
     if(!formData.isValid)
