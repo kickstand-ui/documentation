@@ -4,26 +4,26 @@ import { $ } from "kickstand-ui";
 
 export default {
     mounted() {
-        const passwordForm = $('#confirm_password_form');
+        const $passwordForm = $('#confirm_password_form');
 
-        passwordForm.on('submitted', (event) => {
+        $passwordForm.on('submitted', (event) => {
             const formData = event.detail;
 
             if(!formData.isValid)
                 return;
 
-            const password = formData.formFieldData.find(x => x.name === 'password')
-            const confirmPassword = formData.formFieldData.find(x => x.name === 'confirm-password');
+            const passwordFieldData = formData.formFieldData.find(x => x.name === 'password')
+            const confirmPasswordFieldData = formData.formFieldData.find(x => x.name === 'confirm-password');
 
-            if(password.value === confirmPassword.value) {
-                passwordForm.invalid = false;
+            if(passwordFieldData.value === confirmPasswordFieldData.value) {
+                $passwordForm.invalid = false;
                 const username = formData.formFieldData.find(x => x.name === 'username');
                 alert(`Welcome to the app, ${username.value}!`);
             } else {
-                passwordForm.invalid = true;
-                const confirmPasswordField = $('#confirm_password');
-                confirmPasswordField.defaultErrorMessage = 'Your passwords do not match';
-                confirmPasswordField.invalid = true;
+                $passwordForm.invalid = true;
+                const $confirmPasswordField = $('#confirm_password');
+                $confirmPasswordField.defaultErrorMessage = 'Your passwords do not match';
+                $confirmPasswordField.invalid = true;
             }
         });
     },

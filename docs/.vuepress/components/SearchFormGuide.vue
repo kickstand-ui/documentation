@@ -4,11 +4,11 @@ import { $ } from "kickstand-ui";
 
 export default {
     mounted() {
-        const searchModal = $("#search_1_modal");
-        const searchContent = searchModal.querySelector("#search_1_data");
+        const $searchModal = $("#search_1_modal");
+        const $searchContent = $searchModal.find("#search_1_data");
         $("#search_1").on("submitted", (event) => {
-            searchContent.innerText = JSON.stringify(event.detail, null, 2);
-            searchModal.show();
+            $searchContent.innerText = JSON.stringify(event.detail, null, 2);
+            $searchModal.show();
         });
 
         function getFilteredNames(search) {

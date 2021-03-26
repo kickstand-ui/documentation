@@ -133,4 +133,8 @@ $('#contact_form').on('submitted', (event) => {
 });
 ```
 
+:::tip NOTE
+This guide uses the Kickstand UI [DOM utilities](../utilities/dom-utilities.md) to help keep the code clean and easy to read.
+:::
+
 <ContactFormGuide />

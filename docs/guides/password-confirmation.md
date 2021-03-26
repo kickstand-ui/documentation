@@ -104,6 +104,10 @@ $('#confirm_password').on('submitted', (event) => {
 });
 ```
 
+:::tip NOTE
+This guide uses the Kickstand UI [DOM utilities](../utilities/dom-utilities.md) to help keep the code clean and easy to read.
+:::
+
 The `formData` is an object that has the form field data as well as some validation information.
 
 ```js
@@ -150,10 +154,10 @@ $('#confirm_password').on('submitted', (event) => {
     if(!formData.isValid)
         return;
 
-    const password = formData.formFieldData.find(x => x.name === 'password')
-    const confirmPassword = formData.formFieldData.find(x => x.name === 'confirm-password');
+    const $password = formData.formFieldData.find(x => x.name === 'password')
+    const $confirmPassword = formData.formFieldData.find(x => x.name === 'confirm-password');
 
-    if(password.value === confirmPassword.value) {
+    if($password.value === $confirmPassword.value) {
         // submit the form
     } else {
         // let the user know they don't match
@@ -172,13 +176,13 @@ We won't go over submitting the form today, so we will just add a quick `alert` 
 ```js
 if(password.value === confirmPassword.value) {
     const username = formData.formFieldData.find(x => x.name === 'username');
-    confirmPasswordForm.invalid = false;
+    $confirmPasswordForm.invalid = false;
     alert(`Welcome to the app, ${username.value}!`);
 } else {
-    const confirmPasswordField = $('#confirm_password');
-    confirmPasswordForm.invalid = true; // 1
-    confirmPasswordField.defaultErrorMessage = 'Your passwords do not match'; // 2
-    confirmPasswordField.invalid = true; // 3
+    const $confirmPasswordField = $('#confirm_password');
+    $confirmPasswordForm.invalid = true; // 1
+    $confirmPasswordField.defaultErrorMessage = 'Your passwords do not match'; // 2
+    $confirmPasswordField.invalid = true; // 3
 }
 ```
 
@@ -220,18 +224,18 @@ passwordForm.on('submitted', (event) => {
     if(!formData.isValid)
         return;
 
-    const password = formData.formFieldData.find(x => x.name === 'password')
-    const confirmPassword = formData.formFieldData.find(x => x.name === 'confirm-password');
+    const $password = formData.formFieldData.find(x => x.name === 'password')
+    const $confirmPassword = formData.formFieldData.find(x => x.name === 'confirm-password');
 
-    if(password.value === confirmPassword.value) {
+    if($password.value === $confirmPassword.value) {
         const username = formData.formFieldData.find(x => x.name === 'username');
-        passwordForm.invalid = false;
+        $passwordForm.invalid = false;
         alert(`Welcome to the app, ${username.value}!`);
     } else {
-        const confirmPasswordField = $('#confirm_password');
-        passwordForm.invalid = true; // 1
-        confirmPasswordField.defaultErrorMessage = 'Your passwords do not match'; // 2
-        confirmPasswordField.invalid = true; // 3
+        const $confirmPasswordField = $('#confirm_password');
+        $passwordForm.invalid = true; // 1
+        $confirmPasswordField.defaultErrorMessage = 'Your passwords do not match'; // 2
+        $confirmPasswordField.invalid = true; // 3
     }
 });
 ```

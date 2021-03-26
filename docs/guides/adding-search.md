@@ -123,6 +123,10 @@ First, let's add a form and listen for the submitted event:
 </script>
 ```
 
+:::tip NOTE
+This guide uses the Kickstand UI [DOM utilities](../utilities/dom-utilities.md) to help keep the code clean and easy to read.
+:::
+
 ### Display Results
 
 Next, for display purposes, let's display the search results in a modal when it gets submitted.
