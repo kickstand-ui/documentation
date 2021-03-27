@@ -65,14 +65,14 @@ So, in order to optimize the example above we can update the code like this:
 
 ```js
 const $myForm = $('ks-form');
-const $myFields = myForm.findAll('ks-form-field');
+const $myFields = $myForm.findAll('ks-form-field');
 ```
 
 ### Using TypeScript
 
 ```ts
 const $myForm = $<HTMLKsFormElement>('ks-form');
-const $myFields = myForm.findAll<HTMLKsButtonElement>('ks-form-field');
+const $myFields = $myForm.findAll<HTMLKsButtonElement>('ks-form-field');
 ```
 
 ## `.on()`
