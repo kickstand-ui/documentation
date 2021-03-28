@@ -93,28 +93,28 @@ Notes are used for fixed messages that are always visible and used to call out i
 
 <div class="my-lg">
     <ks-alert color="primary" note class="mb-md">
-        This is a <b>primary</b> alert.
+        This is a <b>primary</b> note.
     </ks-alert>
     <ks-alert color="secondary" note class="mb-md">
-        This is a <b>secondary</b> alert.
+        This is a <b>secondary</b> note.
     </ks-alert>
     <ks-alert color="success" note class="mb-md">
-        This is a <b>success</b> alert.
+        This is a <b>success</b> note.
     </ks-alert>
     <ks-alert color="info" note class="mb-md">
-        This is a <b>info</b> alert.
+        This is a <b>info</b> note.
     </ks-alert>
     <ks-alert color="warning" note class="mb-md">
-        This is a <b>warning</b> alert.
+        This is a <b>warning</b> note.
     </ks-alert>
     <ks-alert color="danger" note class="mb-md">
-        This is a <b>danger</b> alert.
+        This is a <b>danger</b> note.
     </ks-alert>
     <ks-alert color="light" note class="mb-md">
-        This is a <b>light</b> alert.
+        This is a <b>light</b> note.
     </ks-alert>
     <ks-alert color="dark" note>
-        This is a <b>dark</b> alert.
+        This is a <b>dark</b> note.
     </ks-alert>
 </div>
 
