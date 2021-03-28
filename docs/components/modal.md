@@ -211,16 +211,29 @@ You can also programmatically show and hide modals. It is as simple as using Jav
     ...
 </ks-modal>
 <script>
-    let testButton = document.getElementById("test_button");
-    let testModal = document.getElementById("test_modal");
+    let $testButton = document.getElementById("test_button");
+    let $testModal = document.getElementById("test_modal");
 
     // add click event listener to button
-    testButton.addEventListener("click", () => {
+    $testButton.addEventListener("click", () => {
         // show loading overlay
-        testModal.show();
+        $testModal.show();
 
         // hide after 3 seconds
-        setTimeout(() => testModal.hide(), 3000);
+        setTimeout(() => $testModal.hide(), 3000);
+    });
+
+
+    // with DOM utilities
+    let $testButton = $("#test_button");
+
+    // add click event listener to button
+    $("#test_button").on("click", () => {
+        // show loading overlay
+        $testModal.show();
+
+        // hide after 3 seconds
+        setTimeout(() => $testModal.hide(), 3000);
     });
 </script>
 ```
@@ -260,9 +273,14 @@ The modal component is built using the [`<ks-overlay>`](/components/overlay.html
 </ks-modal>
 
 <script>
-    let myModal = document.getElementById("my_modal");
+    let $myModal = document.getElementById("my_modal");
 
-    myModal.addEventListener("hidden", () => {
+    $myModal.addEventListener("hidden", () => {
+        // do something...
+    });
+
+    // using DOM utilities
+    $("my_modal").on("hidden", () => {
         // do something...
     });
 </script>

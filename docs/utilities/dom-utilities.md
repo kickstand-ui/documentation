@@ -26,6 +26,18 @@
 
 Unlike the rest of Kickstand UI's utilities, DOM utilities are for JavaScript. These utilities are designed to keep your JavaScript/TypeScript clean and easy to read.
 
+## Installation
+
+If you are using the library from the CDN, these methods will automatically be included. If you are using the `npm` package, you can import them from the `kickstand-ui` package.
+
+```js
+import { $, $$ } from 'kickstand-ui';
+```
+
+:::tip NOTE
+The only methods that need to be imported are `$` and `$$`. The others will automatically be included with the library reference.
+:::
+
 ## `$()` and `$$()`
 
 These two methods may look similar to another popular JavaScript library, but these are just a simple abstractions of `document.querySelector()` (`$`) and `document.querySelectorAll()` (`$$`). There are a few things to be aware of:
@@ -41,8 +53,8 @@ These two methods may look similar to another popular JavaScript library, but th
 </ks-form-field>
 
 <script>
-    const $myForm = $('ks-form'); // returns the first `ks-form` element it finds
-    const $myFields = $$('ks-form-field'); // returns all form fields
+    const $myForm = $('ks-form'); // returns the first `ks-form` element it finds on the page
+    const $myFields = $$('ks-form-field'); // returns all form fields on the page
 </script>
 ```
 
@@ -77,7 +89,7 @@ const $myFields = $myForm.findAll<HTMLKsButtonElement>('ks-form-field');
 
 ## `.on()`
 
-The `.on()` method is an abstraction of `addEventListener()`. Similarly, this method take 2 parameters: the event and a function.
+The `.on()` method is an abstraction of `addEventListener()`. Similarly, this method take 2 parameters: the event and a callback function.
 
 ```js
 $myForm.on('submitted', () => {

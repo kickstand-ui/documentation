@@ -29,10 +29,19 @@ The first is directly in the markup:
 The second is programmatically through JavaScript:
 
 ```js
-let modal = document.querySelector('ks-modal');
+let $modal = document.querySelector('ks-modal');
 
-modal.size = 'sm';
+$modal.size = 'sm';
+
+// using DOM utilities
+let $modal = $('ks-modal');
+
+$modal.size = 'sm';
 ```
+
+:::tip NOTE
+Be sure to check out Kickstand UI's [DOM Utilities](../utilities/dom-utilities.md) to help keep your code clean and easy to read.
+:::
 
 There are three main types of interaction available for each component - _Properties_, _Methods_, and _Events_. In the documentation for the components you will find information for each of these interactions that are available for the component.
 
@@ -47,11 +56,11 @@ The example above shows how you can change the size of the modal using the `size
 Methods are used to expose functionality for the component. An example would be how you can open or close the modal using the API provided when the element is selected.
 
 ```js
-let modal = document.querySelector('ks-modal');
+let $modal = document.querySelector('ks-modal');
 
-modal.show();
+$modal.show();
 // or
-modal.hide();
+$modal.hide();
 ```
 
 ## Events
@@ -63,9 +72,14 @@ Events are available for executing your own logic when an event happens. When an
 ```
 
 ```js
-let firstNameInput = document.getElementById('first_name');
+let $firstNameInput = document.getElementById('first_name');
 
-firstNameInput.addEventListener('updated', event => {
+$firstNameInput.addEventListener('updated', event => {
+    /* your logic */
+});
+
+// using DOM utilities
+$('first_name').on('updated', event => {
     /* your logic */
 });
 ```
@@ -87,11 +101,14 @@ The pattern for the element type is as follows:
 ```
 
 ```tsx
-let modal = document.querySelector<HTMLKsModalElement>('#my_modal');
+let $modal = document.querySelector<HTMLKsModalElement>('#my_modal');
+
+// using DOM utilities
+let $modal = $<HTMLKsModalElement>('#my_modal');
 ```
 
 or
 
 ```tsx
-let modal = document.querySelector('#my_modal') as HTMLKsModalElement;
+let $modal = document.querySelector('#my_modal') as HTMLKsModalElement;
 ```

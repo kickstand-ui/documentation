@@ -92,6 +92,9 @@ Rather than expanding and collapsing the slide by setting the `expanded` propert
 <script>
     let slide1 = document.querySelector('#slide_1');
     slide1.toggleSlide();
+
+    // or with DOM utilities
+    $('#slide_1').toggleSlide();
 </script>
 ```
 

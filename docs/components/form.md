@@ -105,8 +105,14 @@ Getting this data is simple as setting up a standard event listener.
     <ks-button type="submit">Submit Me</ks-button>
 </ks-form>
 <script>
-    let myForm = document.getelementById('my_form');
-    myForm.addEventListener('submitted', (e) => {
+    let $myForm = document.getElementById('my_form');
+    $myForm.addEventListener('submitted', (e) => {
+        let myFormData = e.detail;
+        // do something with the form data
+    })
+
+    // using DOM utilities
+    $('#my_form').on('submitted', (e) => {
         let myFormData = e.detail;
         // do something with the form data
     })

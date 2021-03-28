@@ -215,15 +215,16 @@ You can also manually trigger field validation by selecting the field and execut
 ```html
 <ks-form-field id="username" label="Username" required></ks-form-field>
 <script>
-    (function(){
-        let username = document.getElementById('username');
-        username.validate();
+    let $username = $('username');
+    $username.validate();
 
-        // you can also get the field data
-        username.validate().then(fieldData => {
-            // do something awesome
-        });
-    })();
+    // you can also get the field data
+    $username.validate().then(fieldData => {
+        // do something awesome with the fieldData
+    });
+
+    // or
+    const fieldData = await $username.validate();
 </script>
 ```
 
@@ -238,10 +239,9 @@ Kickstand UI's components use one-way data binding so that data flows in a singl
     <b>Bound Value: </b><span id="bound_value"></span>
     <script>
         (function(){
-            let formField = document.getElementById('binding_test');
-            let value = document.getElementById('bound_value');
-            formField.addEventListener('updated', function (e) {
-                value.innerText = e.detail.value;
+            let $boundValue = $('#bound_value');
+            $('#binding_test').on('updated', function (e) {
+                $boundValue.innerText = e.detail.value;
             });
         })();
     </script>
@@ -251,9 +251,9 @@ Kickstand UI's components use one-way data binding so that data flows in a singl
 <ks-form-field label="Name" id="binding_test" class="mb-md"></ks-form-field>
 <b>Bound Value: </b><span id="bound_value"></span>
 <script>
-    let formField = document.getElementById('binding_test');
-    let value = document.getElementById('bound_value');
-    formField.addEventListener('updated', (e) => value.innerText = e.detail.value);
+    $('#binding_test').on('updated', (e) => {
+        $('#bound_value').innerText = e.detail.value;
+    });
 </script>
 ```
 
@@ -326,12 +326,10 @@ For example, if you have an input that performs a server-side action when the us
     <ks-form-field id="without_debounce" label="Without Debounce" />
     <script>
         (function(){
-            let withDebounce = document.getElementById('with_debounce');
-            let withoutDebounce = document.getElementById('without_debounce');
-            withDebounce.addEventListener('updated', function(e) {
+            $('#with_debounce').on('updated', function(e) {
                 alert(`I waited until you finished entering: ${e.detail.value}`);
             });
-            withoutDebounce.addEventListener('updated', function(e) {
+            $('#without_debounce').on('updated', function(e) {
                 alert(`You entered: ${e.detail.value}`);
             });
         })();
@@ -343,18 +341,13 @@ For example, if you have an input that performs a server-side action when the us
 <ks-form-field id="without_debounce" label="Without Debounce" />
 
 <script>
-    (function(){
-        let withDebounce = document.getElementById('with_debounce');
-        let withoutDebounce = document.getElementById('without_debounce');
-
-        withDebounce.addEventListener('updated', function(e) {
-            alert(`I waited until you finished entering: ${e.detail.value}`);
-        });
-        
-        withoutDebounce.addEventListener('updated', function(e) {
-            alert(`You entered: ${e.detail.value}`);
-        });
-    })();
+    $('#with_debounce').on('updated', function(e) {
+        alert(`I waited until you finished entering: ${e.detail.value}`);
+    });
+    
+    $('#without_debounce').on('updated', function(e) {
+        alert(`You entered: ${e.detail.value}`);
+    });
 </script>
 ```
 

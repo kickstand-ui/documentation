@@ -149,8 +149,7 @@ Getting this data is simple as setting up a standard event listener.
     <ks-button type="submit">Submit Me</ks-button>
 </ks-form>
 <script>
-    let myForm = document.getElementById('my_form');
-    myForm.addEventListener('submitted', (e) => {
+    $('my_form').on('submitted', (e) => {
         let myFormData = e.detail;
         // do something with the form data
     });
@@ -159,6 +158,8 @@ Getting this data is simple as setting up a standard event listener.
 
 :::tip Note
 If you are using a JavaScript framework, your implementation may vary. Be sure to review the documentation for event listening best practices.
+
+This example uses Kickstand UI's [DOM Utilities](../utilities/dom-utilities.md) to help keep the code dimple and easy to read.
 :::
 
 ## Validation

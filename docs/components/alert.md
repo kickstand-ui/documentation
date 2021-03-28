@@ -198,7 +198,6 @@ By default, if the alert is dismissible, it will be hidden initially. If you wou
 </ks-alert>
 ```
 
-
 ## Accessibility
 
 Alerts have `role="alert"` on the container to signal to assistive technology that they require the user’s immediate attention.

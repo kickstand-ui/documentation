@@ -216,11 +216,19 @@ The example below shows how you can set it programmatically.
 <ks-button id="loading_button">Click To Load</ks-button>
 
 <script>
-    let loadingButton = document.getElementById('loading_button');
+    let $loadingButton = document.getElementById('loading_button');
 
-    loadingButton.addEventListener('click', () => {
-        loadingButton.loading = true;
-        setTimeout(() => loadingButton.loading = false, 3000);
+    $loadingButton.addEventListener('click', () => {
+        $loadingButton.loading = true;
+        setTimeout(() => $loadingButton.loading = false, 3000);
+    });
+
+    // or with DOM utilities
+    let $loadingButton = $('#loading_button');
+
+    $loadingButton.on('click', () => {
+        $loadingButton.loading = true;
+        setTimeout(() => $loadingButton.loading = false, 3000);
     });
 </script>
 ```

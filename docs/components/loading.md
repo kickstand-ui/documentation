@@ -141,13 +141,18 @@ The parent container must have the CSS rule `position: relative;` set. Feel free
     <ks-button id="absolute_button">Show Absolute Overlay</ks-button>
     <ks-loading-overlay id="absolute_overlay" size="xxl" absolute />
     <script>
-        let absoluteButton = document.getElementById('absolute_button');
-        let absoluteOverlay = document.getElementById('absolute_overlay');
-        absoluteButton.addEventListener('click', () => {
-            absoluteOverlay.show();
-            setTimeout(function() {
-                absoluteOverlay.hide();
-            }, 3000);
+        let $absoluteButton = document.getElementById('absolute_button');
+        let $absoluteOverlay = document.getElementById('absolute_overlay');
+        $absoluteButton.addEventListener('click', () => {
+            $absoluteOverlay.show();
+            setTimeout(() => $absoluteOverlay.hide(), 3000);
+        });
+
+        // or using DOM utilities
+        let $absoluteOverlay = $('#absolute_overlay');
+        $('#absolute_button').on('click', () => {
+            $absoluteOverlay.show();
+            setTimeout(() => $absoluteOverlay.hide(), 3000);
         });
     </script>
 </div>
@@ -178,19 +183,31 @@ Showing and hiding the loading overlay is as simple as using JavaScript to selec
 <ks-button id="test_button">Show Overlay</ks-button>
 <ks-loading-overlay id="test_overlay" size="xxl" />
 <script>
-    let testOverlay = document.getElementById('test_overlay');
-    let testButton = document.getElementById('test_button');
+    let $testOverlay = document.getElementById('test_overlay');
+    let $testButton = document.getElementById('test_button');
 
     // add click event listener to button
-    testButton.addEventListener('click', () => {
+    $testButton.addEventListener('click', () => {
         // show loading overlay
-        testOverlay.show();
+        $testOverlay.show();
 
         // hide after 3 seconds
-        setTimeout(function() {
-            testOverlay.hide();
-        }, 3000);
+        setTimeout(() => $testOverlay.hide(), 3000);
     });
+
+
+    // using DOM utilities
+    let $testOverlay = $('#test_overlay');
+
+    // add click event listener to button
+    $('test_button').on('click', () => {
+        // show loading overlay
+        $testOverlay.show();
+
+        // hide after 3 seconds
+        setTimeout(() => $testOverlay.hide(), 3000);
+    });
+
 </script>
 ```
 
@@ -254,9 +271,15 @@ The loading overlay has the same features, but is also built with the [`<ks-over
 </ks-loading-overlay>
 
 <script>
-    let myOverlay = document.getElementById('my_overlay');
+    let $myOverlay = document.getElementById('my_overlay');
 
-    myOverlay.addEventListener('hidden', () => {
+    $myOverlay.addEventListener('hidden', () => {
+        // do something...
+    });
+
+
+    // using DOM utilities
+    $('#my_overlay').on('hidden', () => {
         // do something...
     });
 </script>

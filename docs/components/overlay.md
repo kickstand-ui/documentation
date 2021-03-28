@@ -156,19 +156,30 @@ You can also programmatically show and hide overlays. It is as simple as using J
     <ks-img lazy src="/images/demo/100-percent-michael-scott.png" alt="michael scott thinking">
 </ks-overlay>
 <script>
-    let testButton = document.getElementById('test_button');
-    let testOverlay = document.getElementById('test_overlay');
+    let $testButton = document.getElementById('test_button');
+    let $testOverlay = document.getElementById('test_overlay');
 
     // add click event listener to button
-    testButton.addEventListener('click', () => {
+    $testButton.addEventListener('click', () => {
         // show loading overlay
-        testOverlay.show();
+        $testOverlay.show();
 
         // hide after 3 seconds
-        setTimeout(function() {
-            testOverlay.hide();
-        }, 3000);
+        setTimeout(() => $testOverlay.hide(), 3000);
     });
+
+    // using DOM utilities
+    let $testOverlay = $('#test_overlay');
+
+    // add click event listener to button
+    $('#test_button').on('click', () => {
+        // show loading overlay
+        $testOverlay.show();
+
+        // hide after 3 seconds
+        setTimeout(() => $testOverlay.hide(), 3000);
+    });
+
 </script>
 ```
 
@@ -209,9 +220,14 @@ The overlay component has a number of built-in accessibility features to make ov
 </ks-overlay>
 
 <script>
-    let myOverlay = document.getElementById('my_overlay');
+    let $myOverlay = document.getElementById('my_overlay');
 
-    myOverlay.addEventListener('hidden', () => {
+    $myOverlay.addEventListener('hidden', () => {
+        // do something when the overlay closes...
+    });
+
+    // with DOM utilities
+    $('#my_overlay').on('hidden', () => {
         // do something when the overlay closes...
     });
 </script>

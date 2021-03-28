@@ -77,13 +77,17 @@ If you need to customize the layout or placement of the label, this component wo
 ```html
 <ks-switch label="Show Pricing" id="pricing"></ks-switch>
 <script>
-    (function(){
-        const switch = document.getElementById('pricing');
-        switch.addEventListener('updated', function (event) {
-            const value = event.detail.value;
-            // do something awesome
-        });
-    })();
+    const $switch = document.getElementById('pricing');
+    $switch.addEventListener('updated', function (event) {
+        const value = event.detail.value;
+        // do something awesome
+    });
+
+    // using DOM utils
+    $('pricing').on('updated', function (event) {
+        const value = event.detail.value;
+        // do something awesome
+    });
 </script>
 ```
 

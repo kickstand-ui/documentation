@@ -164,18 +164,28 @@ You can also programmatically show and hide side-drawers. It is as simple as usi
     <p>I will close in 3 seconds...</p>
 </ks-side-drawer>
 <script>
-    let testButton = document.getElementById('test_button');
-    let testDrawer = document.getElementById('test_drawer');
+    let $testButton = document.getElementById('test_button');
+    let $testDrawer = document.getElementById('test_drawer');
 
     // add click event listener to button
-    testButton.addEventListener('click', () => {
+    $testButton.addEventListener('click', () => {
         // show loading overlay
-        testDrawer.show();
+        $testDrawer.show();
 
         // hide after 3 seconds
-        setTimeout(function() {
-            testDrawer.hide();
-        }, 3000);
+        setTimeout(() => $testDrawer.hide(), 3000);
+    });
+
+    // using DOM utils
+    let $testDrawer = document.getElementById('test_drawer');
+
+    // add click event listener to button
+    $('#test_button').on('click', () => {
+        // show loading overlay
+        $testDrawer.show();
+
+        // hide after 3 seconds
+        setTimeout(() => $testDrawer.hide(), 3000);
     });
 </script>
 ```
@@ -215,9 +225,14 @@ The side-drawer component is built using the [`<ks-overlay>`](/components/overla
 </ks-side-drawer>
 
 <script>
-    let myDrawer = document.getElementById('my_drawer');
+    let $myDrawer = document.getElementById('my_drawer');
 
-    myDrawer.addEventListener('hidden', () => {
+    $myDrawer.addEventListener('hidden', () => {
+        // do something...
+    });
+
+    // using DOM utils
+    $('#my_drawer').on('hidden', () => {
         // do something...
     });
 </script>
