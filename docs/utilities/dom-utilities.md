@@ -4,11 +4,11 @@
     "meta": [
         {
             "property": "og:title",
-            "content": "Border Radius Utilities - Kickstand UI"
+            "content": "DOM Utilities - Kickstand UI"
         },
         {
             "property": "og:image",
-            "content": "https://kickstand-ui.com/images/screen_shots/dom-utilities.png"
+            "content": "https://kickstand-ui.com/images/kickstand_card.png"
         },
         {
             "property": "og:description",
@@ -16,7 +16,7 @@
         },
         {
             "property": "twitter:image:src",
-            "content": "https://kickstand-ui.com/images/screen_shots/dom-utilities.png"
+            "content": "https://kickstand-ui.com/images/kickstand_card.png"
         }
     ]
 }
