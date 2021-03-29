@@ -1,12 +1,12 @@
 <template></template>
 <script>
-import { $ } from "kickstand-ui";
 
 export default {
-    mounted() {
-        const $searchModal = $("#search_1_modal");
+    async mounted() {
+        const kickstand = await import("kickstand-ui");
+        const $searchModal = kickstand.$("#search_1_modal");
         const $searchContent = $searchModal.find("#search_1_data");
-        $("#search_1").on("submitted", (event) => {
+        kickstand.$("#search_1").on("submitted", (event) => {
             $searchContent.innerText = JSON.stringify(event.detail, null, 2);
             $searchModal.show();
         });
@@ -27,27 +27,27 @@ export default {
         }
 
         function setResults(id, results) {
-            $(`#${id}`).innerHTML = results
+            kickstand.$(`#${id}`).innerHTML = results
                 .map((result) => `<tr><td>${result}</td></tr>`)
                 .join("");
         }
 
         setResults("search_2_results", getFilteredNames());
-        $("#search_2").on("submitted", (event) => {
+        kickstand.$("#search_2").on("submitted", (event) => {
             let formData = event.detail;
             let names = getFilteredNames(formData.formFieldData[0].value);
             setResults("search_2_results", names);
         });
 
         setResults("search_3_results", getFilteredNames());
-        $("#search_3").on("updated", (event) => {
+        kickstand.$("#search_3").on("updated", (event) => {
             let fieldData = event.detail;
             let names = getFilteredNames(fieldData.value);
             setResults("search_3_results", names);
         });
 
         setResults("search_4_results", getFilteredNames());
-        $("#search_4").on("updated", (event) => {
+        kickstand.$("#search_4").on("updated", (event) => {
             let fieldData = event.detail;
             let names = getFilteredNames(fieldData.value);
             setResults("search_4_results", names);

@@ -1,10 +1,10 @@
 <template></template>
 <script>
-import { $ } from "kickstand-ui";
 
 export default {
-    mounted() {
-        const $passwordForm = $('#confirm_password_form');
+    async mounted() {
+        const kickstand = await import("kickstand-ui");
+        const $passwordForm = kickstand.$('#confirm_password_form');
 
         $passwordForm.on('submitted', (event) => {
             const formData = event.detail;

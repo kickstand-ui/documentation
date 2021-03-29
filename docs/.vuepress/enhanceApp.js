@@ -7,6 +7,7 @@ export default ({
     router, // the router instance for the app
     siteData // site metadata
 }) => {
+    Element = Element || {};
     Vue.config.ignoredElements = [/ks-\w*/];
 
     applyPolyfills().then(() => {
