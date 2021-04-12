@@ -64,6 +64,22 @@ Kickstand UI was written using [SASS](https://sass-lang.com/). Using SASS is not
 
 If you are planning on using the compiled CSS, you can find it at `kickstand-ui/dist/kickstand-ui/kickstand-ui.css`.
 
+## Editor Integrations
+
+Kickstand UI provides a `custom-elements.json` configuration file. This file provides data for editors to generate auto-complete and validation for components.
+
+### VS Code
+
+If it doesn't already exist, create a file at the root of your project in `.vscode/settings.json` and paste the following code into it. If it does exits, just add the `html.customData` property to the top of the file.
+
+```json
+{
+    "html.customData": [
+        "./node_modules/kickstand-ui/dist/custom-elements.json"
+    ]
+}
+```
+
 ## Framework Integrations
 
 <div class="display-flex flex-wrap align-center space-around my-lg">

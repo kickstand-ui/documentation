@@ -16,6 +16,12 @@
 
 # Changelog
 
+## 2.8.0
+
+### Add
+
+- Add [editor integrations](getting-started/installation.md#editor-integrations)
+
 ## 2.6.6
 
 ### Fix
