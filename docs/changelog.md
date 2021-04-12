@@ -22,6 +22,16 @@
 
 - Add [editor integrations](getting-started/installation.md#editor-integrations)
 
+## 2.7.0
+
+### Add
+
+- [DOM Utilities](utilities/dom-utilities.md)
+
+### Fix
+
+- Accessibility for [autocomplete](forms/autocomplete.md)
+
 ## 2.6.6
 
 ### Fix
