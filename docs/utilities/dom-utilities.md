@@ -69,22 +69,22 @@ const $myFields = $$<HTMLKsButtonElement>('ks-form-field'); // returns all form 
 Prefixing your variables with a `$` is not necessary, but if you prefix your variables that contain DOM elements with it, it makes it much easier to distinguish them from your other variables.
 :::
 
-## `.find()` and `.findAll()`
+## `.query()` and `.queryAll()`
 
-Similar to the methods above, `.find()` and `.findAll()` use `querySelector()` and `querySelectorAll()` respectively, but rather than look through the whole `document` they look within a selected `element`. This provides better performance and more accurate results.
+Similar to the methods above, `.query()` and `.queryAll()` use `querySelector()` and `querySelectorAll()` respectively, but rather than look through the whole `document` they look within a selected `element`. This provides better performance and more accurate results.
 
 So, in order to optimize the example above we can update the code like this:
 
 ```js
 const $myForm = $('ks-form');
-const $myFields = $myForm.findAll('ks-form-field');
+const $myFields = $myForm.queryAll('ks-form-field');
 ```
 
 ### Using TypeScript
 
 ```ts
 const $myForm = $<HTMLKsFormElement>('ks-form');
-const $myFields = $myForm.findAll<HTMLKsButtonElement>('ks-form-field');
+const $myFields = $myForm.queryAll<HTMLKsButtonElement>('ks-form-field');
 ```
 
 ## `.on()`

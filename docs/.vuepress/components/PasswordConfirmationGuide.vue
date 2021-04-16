@@ -12,12 +12,12 @@ export default {
             if(!formData.isValid)
                 return;
 
-            const passwordFieldData = formData.formFieldData.find(x => x.name === 'password')
-            const confirmPasswordFieldData = formData.formFieldData.find(x => x.name === 'confirm-password');
+            const passwordFieldData = formData.formFieldData.query(x => x.name === 'password')
+            const confirmPasswordFieldData = formData.formFieldData.query(x => x.name === 'confirm-password');
 
             if(passwordFieldData.value === confirmPasswordFieldData.value) {
                 $passwordForm.invalid = false;
-                const username = formData.formFieldData.find(x => x.name === 'username');
+                const username = formData.formFieldData.query(x => x.name === 'username');
                 alert(`Welcome to the app, ${username.value}!`);
             } else {
                 $passwordForm.invalid = true;

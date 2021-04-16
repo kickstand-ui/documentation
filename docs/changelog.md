@@ -16,6 +16,19 @@
 
 # Changelog
 
+## 2.8.2
+
+### Fix
+
+- Update [overlay component](components/overlay.md) accessibility to use `aria-modal` attribute
+- Remove `rotate` property from [icon component](components/icons.md) to allow icon animations
+
+## 2.8.1
+
+### Fix
+
+- Update `find` and `findAll` [DOM Utilities](utilities/dom-utilities.md) to `query` and `queryAll` to prevent confusion with the `find` array function.
+
 ## 2.8.0
 
 ### Add

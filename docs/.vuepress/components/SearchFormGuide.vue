@@ -5,7 +5,7 @@ export default {
     async mounted() {
         const kickstand = await import("kickstand-ui");
         const $searchModal = kickstand.$("#search_1_modal");
-        const $searchContent = $searchModal.find("#search_1_data");
+        const $searchContent = $searchModal.query("#search_1_data");
         kickstand.$("#search_1").on("submitted", (event) => {
             $searchContent.innerText = JSON.stringify(event.detail, null, 2);
             $searchModal.show();
