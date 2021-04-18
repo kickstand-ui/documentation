@@ -84,7 +84,7 @@ const $myFields = $myForm.queryAll('ks-form-field');
 
 ```ts
 const $myForm = $<HTMLKsFormElement>('ks-form');
-const $myFields = $myForm.queryAll<HTMLKsButtonElement>('ks-form-field');
+const $myFields = $myForm.queryAll<HTMLKsFormFieldElement>('ks-form-field');
 ```
 
 ## `.on()`
