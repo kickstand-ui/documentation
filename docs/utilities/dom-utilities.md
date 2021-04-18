@@ -73,7 +73,7 @@ Prefixing your variables with a `$` is not necessary, but if you prefix your var
 
 Similar to the methods above, `.query()` and `.queryAll()` use `querySelector()` and `querySelectorAll()` respectively, but rather than look through the whole `document` they look within a selected `element`. This provides better performance and more accurate results.
 
-So, in order to optimize the example above we can update the code like this:
+So, in order to optimize the example above, we can update the code like this:
 
 ```js
 const $myForm = $('ks-form');
