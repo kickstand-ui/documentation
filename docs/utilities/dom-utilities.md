@@ -62,7 +62,7 @@ These two methods may look similar to another popular JavaScript library, but th
 
 ```ts
 const $myForm = $<HTMLKsFormElement>('ks-form'); // returns the first `ks-form` element it finds
-const $myFields = $$<HTMLKsButtonElement>('ks-form-field'); // returns all form fields
+const $myFields = $$<HTMLKsFormFieldElement>('ks-form-field'); // returns all form fields
 ```
 
 :::tip NOTE
