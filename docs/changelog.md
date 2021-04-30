@@ -16,6 +16,12 @@
 
 # Changelog
 
+## 2.9.0
+
+### Fix
+
+- Responsive [modals](components/modal.md)
+
 ## 2.8.2
 
 ### Fix
