@@ -69,6 +69,23 @@ Kickstand UI's menu component is designed to provide a responsive navigation hea
             <a href="#">About</a>
         </ks-menu-item>
         <ks-menu-item>
+            <ks-dropdown text="Account" display="link" position="right">
+                <ks-dropdown-item prevent-close><span>Welcome, Agent Michael Scarn!</span></ks-dropdown-item>
+                <ks-dropdown-item>
+                    <a href="#">Order History</a>
+                </ks-dropdown-item>
+                <ks-dropdown-item>
+                    <a href="#">Account Settings</a>
+                </ks-dropdown-item>
+                <ks-dropdown-item>
+                    <a href="#">Wish Lists</a>
+                </ks-dropdown-item>
+                <ks-dropdown-item>
+                    <ks-button>Sign Out</ks-button>
+                </ks-dropdown-item>
+            </ks-dropdown>
+        </ks-menu-item>
+        <ks-menu-item>
             <ks-button color="secondary" size="sm" href="#">Shop Now</ks-button>
         </ks-menu-item>
     </ks-menu-row>

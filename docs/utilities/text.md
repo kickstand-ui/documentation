@@ -97,11 +97,11 @@ Kickstand UI's text utility classes can be used to quickly style text throughout
 <div class="my-xl">
     <div class="my-md p-sm bg-light-light text-uppercase">text-uppercase</div>
     <div class="my-md p-sm bg-light-light text-lowercase">TEXT-LOWERCASE</div>
-    <div class="my-md p-sm bg-light-light text-capitalize">text-right</div>
+    <div class="my-md p-sm bg-light-light text-capitalize">text-capitalize</div>
 </div>
 
 ```html
 <div class="my-md p-sm bg-light-light text-uppercase">text-uppercase</div>
 <div class="my-md p-sm bg-light-light text-lowercase">TEXT-LOWERCASE</div>
-<div class="my-md p-sm bg-light-light text-capitalize">text-right</div>
+<div class="my-md p-sm bg-light-light text-capitalize">text-capitalize</div>
 ```
