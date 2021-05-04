@@ -55,19 +55,19 @@ Buttons are used to perform actions in forms, modals, and more. Kickstand UI but
 ## Sizes
 
 <div class="my-xl">
-    <ks-button size="xs">xs button</ks-button>
-    <ks-button size="sm">sm button</ks-button>
-    <ks-button size="md">md button</ks-button>
-    <ks-button size="lg">lg button</ks-button>
-    <ks-button size="xl">xl button</ks-button>
+    <ks-button class="mb-sm" size="xs">x-small button</ks-button>
+    <ks-button class="mb-sm" size="sm">small button</ks-button>
+    <ks-button class="mb-sm" size="md">medium button</ks-button>
+    <ks-button class="mb-sm" size="lg">large button</ks-button>
+    <ks-button class="mb-sm" size="xl">x-large button</ks-button>
 </div>
 
 ```html
-<ks-button size="xs">xs button</ks-button>
-<ks-button size="sm">sm button</ks-button>
-<ks-button size="md">md button</ks-button>
-<ks-button size="lg">lg button</ks-button>
-<ks-button size="xl">xl button</ks-button>
+<ks-button size="xs">x-small button</ks-button>
+<ks-button size="sm">small button</ks-button>
+<ks-button size="md">medium button</ks-button>
+<ks-button size="lg">large button</ks-button>
+<ks-button size="xl">x-large button</ks-button>
 ```
 
 ## Display
