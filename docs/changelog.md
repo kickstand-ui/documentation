@@ -16,6 +16,20 @@
 
 # Changelog
 
+## 2.10.0
+
+### Fix
+
+- Update [dropdown component](./components/dropdown.md) to prevent multiple window listeners
+- Move focus element in [tooltip](components/tooltip.md) to wrapper `span` rather than on element
+- Remove unnecessary `roles` from [card components](components/card.md)
+
+### Add
+
+- Update [accordion](components/accordion.md) to be improve semantics and accessibility and removed inaccurate `role` attributes
+- Add label for [form field tooltip icon](forms/form-field.md#tooltip-text)
+- Add props to control loading overlay in the [button component](components/button.md)
+
 ## 2.9.0
 
 ### Fix

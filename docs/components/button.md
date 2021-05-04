@@ -168,7 +168,6 @@ Buttons are used to perform actions in forms, modals, and more. Kickstand UI but
 <ks-button display="link" color="dark">dark</ks-button>
 ```
 
-
 :::warning
 The `solid` display option will automatically select and appropriate contrasting color to meet the WCAG 2.0 AA standard, but the other are up to your discretion. Please make sure you use these cautiously and test them for sufficient color contrast.
 :::
@@ -236,6 +235,8 @@ The example below shows how you can set it programmatically.
 If a button is loading, it is also disabled.
 :::
 
+You also have the same controls available that you have with the [loading overlay](./loading.md#loading-overlay) component using the following props: `loading-theme`, `loading-message`, `show-loading-message`, and `loading-icon`.
+
 ## HREF
 
 If the `href` property is populated, it will change the behavior of therefore change semantics of the markup. Buttons are for performing actions and anchors are for linking to content.
@@ -295,3 +296,7 @@ There are a number of accessibility features built in to the button to promote t
 | `tabIndex`      | `tab-index`      | adds a `tabindex` attribute on the button element                                                                 | `number`                                                                                           | `undefined` |
 | `target`        | `target`         | adds `target` [attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target) to anchor tags | `string`                                                                                           | `undefined` |
 | `type`          | `type`           | controls the button `type` attribute                                                                              | `"button"`, `"reset"`, or `"submit"`                                                               | `'button'`  |
+| `loadingTheme`          | `loading-theme`           | controls theme of loading overlay  | `"light"`, `"dark"` | `'light'`  |
+| `loadingMessage`          | `loading-message`           | controls message displayed when loading overlay is shown  | `string` | `Loading...`  |
+| `showLoadingMessage`          | `show-loading-message`           | controls whether or not the loading message is visually displayed  | `boolean` | `false`  |
+| `loadingIcon`          | `loading-icon`           | controls which loading icon is displayed  | `string` | `loading_circle_spinner`  |
