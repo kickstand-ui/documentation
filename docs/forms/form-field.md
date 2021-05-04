@@ -115,6 +115,10 @@ If you need to provide the user with additional information that may not need to
 </ks-form-field>
 ```
 
+:::tip NOTE
+You can customize the label assigned to the icon using the `tooltip-label` property
+:::
+
 ## Input Icon
 
 To improve usability, icons can be added to your input specifying an [icon name](./../components/icons.md) in the `icon` property.
@@ -395,6 +399,7 @@ These features include:
 | `stepErrorMessage`      | `step-error-message`      | the error message that will display if the value is not divisible by the `step` value            | `string`                                                                                          | `This field is required.`                                                            |
 | `tooltipText`           | `tooltip-text`            | if set, an indicatory will appear and when hovered/focused on will display this content in a tooltip (supports HTML)           | `string`                                                                                                        | `undefined`  |
 | `tooltipSize`           | `tooltip-size`            | set the size of the tooltip           | `sm`, `md`, `lg`, or `xl`                                                                                                        | `sm`  |
+| `tooltipLabel`           | `tooltip-label`            | the label assigned to the tooltip icon           | string                                                                                                        | `"additional information"`  |
 | `type`                  | `type`                    | the input type            | `"date"`, `"email"`, `"hidden"`, `"number"`, `"password"`, `"search"`, `"textarea"`, `"tel"`, `"text"`, or `"url"` | `'text'`     |
 | `typeErrorMessage`      | `type-error-message`      | the error message that will display if the value does not match the input `type`            | `string`                                                                                          | `Your value must be a valid {type}.` |
 | `value`                 | `value`                   | the input value            | `number` or `string`                                                                                              | `''`         |
