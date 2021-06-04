@@ -15,6 +15,11 @@
 ---
 
 # Changelog
+## 2.11.0
+
+### Add
+
+- Add slot change listeners for the [breadcumbs](components/breadcrumbs.md), [carousel](components/carousel.md), and [tabs](components/tabs.md) components.
 
 ## 2.10.0
 
