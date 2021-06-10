@@ -29,7 +29,7 @@ Accordions are used to group and toggle (expand/collapse) sections of related co
 <div class="my-lg">
     <ks-accordion>
         <ks-accordion-slide heading="Michael Scott" expanded>
-            "Guess what, I have flaws. What are they? Oh I don't know. I sing in the shower. Sometimes I spend too much time volunteering. Occasionally I'll hit somebody with my car. So sue me."
+            "Guess what, I have flaws. What are they? Oh I don't know. I sing in the shower. Sometimes I spend too much time volunteering. Occasionally I'll hit somebody with my car. So sue me." <a href="#">Test</a>
         </ks-accordion-slide>
         <ks-accordion-slide heading="Jim Halpert">
             "I am about to do something very bold in this job that I've never done before... try."
@@ -37,7 +37,7 @@ Accordions are used to group and toggle (expand/collapse) sections of related co
         <ks-accordion-slide heading="Stanley Hudson">
             "I have been trying to get on jury duty every year since I was 18 years old. To get and go sit in an air-conditioned room, downtown, judging people, while my lunch was paid for. That is the life."
         </ks-accordion-slide>
-        <ks-accordion-slide heading="Dwight Schrute">
+        <ks-accordion-slide heading="Dwight Schrute <ks-badge hollow class='ml-sm'>New</ks-badge>">
             "I’m an early bird and I’m a night owl. So I’m wise and I have worms."
         </ks-accordion-slide>
     </ks-accordion>
@@ -54,11 +54,15 @@ Accordions are used to group and toggle (expand/collapse) sections of related co
     <ks-accordion-slide heading="Stanley Hudson">
         "I have been trying to get on jury duty every year since I was 18 years old. To get and go sit in an air-conditioned room, downtown, judging people, while my lunch was paid for. That is the life."
     </ks-accordion-slide>
-    <ks-accordion-slide heading="Dwight Schrute">
+    <ks-accordion-slide heading="Dwight Schrute <ks-badge hollow class='ml-sm'>New</ks-badge>">
         "I’m an early bird and I’m a night owl. So I’m wise and I have worms."
     </ks-accordion-slide>
 </ks-accordion>
 ```
+
+:::tip NOTE
+As you can see in the last slide, `heading` attribute supports markup to increase functionality and flexibility.
+:::
 
 ## Expanded
 
@@ -100,7 +104,7 @@ Rather than expanding and collapsing the slide by setting the `expanded` propert
 
 ## Accessibility
 
-Each of the headings has `role="tab"` and the content body has `role="tabpanel"` to help screen readers identify and associate interactive elements. The header also uses the `aria-controls` attribute to associate the header with the slide content.
+Each of the headings is wrapped in an `h3` tag to identify them as heading landmarks to assistive technologies and uses a button to toggle the content. The slide body is wrapped in the `section` tag to identify the content in a region. The header uses the `aria-controls` attribute to associate the header with the slide content.
 
 When a slide is expanded the header has the attribute `aria-expanded="true"` to communicate to screen readers that the content is visible. Otherwise the `aria-expanded` attribute is set to `false`.
 

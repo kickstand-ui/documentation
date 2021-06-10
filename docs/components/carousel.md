@@ -349,6 +349,7 @@ In order to make the carousel _more_ accessible, it is treated like a tab compon
 - The slides are assigned `role="tabpanel"` and the indicators are assigned `role="tablist"` and `role="tab"` respectively.
 - The slides are hidden by default (`aria-hidden="true"`) and are set to `false` when they are selected
 - Indicators are not selected by default (`aria-selected="false"`) and are set to `true` when the related slide has been selected
+- When users are focused anywhere within the carousel, they can use the <kbd class="text-dark">←</kbd> (left) and <kbd class="text-dark">→</kbd> (right) arrow keys to move between slides.
 
 ## Properties
 

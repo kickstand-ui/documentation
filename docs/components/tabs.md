@@ -37,7 +37,7 @@ Kickstand UI's tabs component are a useful way to group related information in a
         <ks-tab tab-text="Facebook">
             <img src="/images/demo/costumes/jim_as_facebook.jpg" alt="jim dressed as facebook" />
         </ks-tab>
-        <ks-tab tab-text="Popeye">
+        <ks-tab tab-text="Popeye <ks-badge class='ml-xxs'>New</ks-badge>">
             <img src="/images/demo/costumes/jim_as_popeye.jpeg" alt="jim dressed as popeye" />
         </ks-tab>
     </ks-tabs>
@@ -54,11 +54,15 @@ Kickstand UI's tabs component are a useful way to group related information in a
     <ks-tab tab-text="Facebook">
         <img src="/images/demo/costumes/jim_as_facebook.jpg" alt="jim dressed as facebook" />
     </ks-tab>
-    <ks-tab tab-text="Popeye">
+    <ks-tab tab-text="Popeye <ks-badge class='ml-sm'>New</ks-badge>">
         <img src="/images/demo/costumes/jim_as_popeye.jpeg" alt="jim dressed as popeye" />
     </ks-tab>
 </ks-tabs>
 ```
+
+:::tip NOTE
+As you can see in the last tab, the `tab-text` attribute supports markup to increase functionality and flexibility.
+:::
 
 ## Positioning
 

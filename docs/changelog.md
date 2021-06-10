@@ -15,6 +15,21 @@
 ---
 
 # Changelog
+
+## 2.12.0
+
+### Add
+
+- Add markup support for [accordion](components/accordion.md) headings
+- Add markup support for [tab text](components/tabs.md)
+- Add keyboard navigation support for the [carousel component](components/carousel.md)
+- Add `link-text` property for the [gallery component](components/gallery.md)
+- Add listener to watch for slot changes in [gallery component](components/gallery.md)
+
+### Fix
+
+- Tag references in the `README.md` file
+
 ## 2.11.0
 
 ### Add
