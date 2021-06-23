@@ -124,6 +124,7 @@ module.exports = {
                     "/components/overlay.html",
                     "/components/progress-bar.html",
                     "/components/responsive-embed.html",
+                    "/components/scroll-to-top.html",
                     "/components/side-drawer.html",
                     "/components/switch.html",
                     "/components/tabs.html",
