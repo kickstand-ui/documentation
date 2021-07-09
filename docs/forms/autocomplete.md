@@ -89,6 +89,27 @@ You can also specify alternate search terms by using the `search` attribute. Whe
 </ks-form-field>
 ```
 
+## Auto-Expand
+
+You can configure the options list to expand when the user focuses on the input field using the `auto-expand` property.
+
+<div class="my-lg">
+    <ks-form-field label="Employee" type="autocomplete" auto-expand>
+        <option>Michael Scott</option>
+        <option>Dwight Schrute</option>
+        <option>Pam Beesly</option>
+        <option>Jim Halpert</option>
+        <option>Angela Martin</option>
+        <option>Ryan Howard</option>
+    </ks-form-field>
+</div>
+
+```html
+<ks-form-field label="Employee" type="autocomplete" auto-expand>
+    ...
+</ks-form-field>
+```
+
 ## Usage
 
 For more information on how to use the `form field` component and it's available configurations, check out the [documentation](./form-field.md).

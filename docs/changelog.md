@@ -16,6 +16,22 @@
 
 # Changelog
 
+## 2.13.x
+
+### Add
+
+- Created new [skip-to-content](components/skip-to-content.md) utility class
+- Create new [scroll-to-top](components/scroll-to-top.md) component
+- Create new [table utility classes](utilities/table.md) for sticky headers and columns
+- Add [autcomplete](forms/autocomplete.md#auto-expand) `auto-expand` functionality
+
+### Fix
+
+- [Menu Bar](components/menu-bar.md) component home link for icon and tagline
+- [Menu Bar](components/menu-bar.md) link color for dropdown button element on inverted menus
+- [Menu Bar](components/menu-bar.md) mobile drop-down display
+- Removed redundancy in [Autocomplete](forms/autocomplete.md) IDs
+
 ## 2.12.0
 
 ### Add
