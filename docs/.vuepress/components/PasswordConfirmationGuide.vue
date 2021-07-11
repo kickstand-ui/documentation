@@ -28,8 +28,8 @@
 <script>
 export default {
     async mounted() {
-        const { $ } = await import("kickstand-ui");
-        const $passwordForm = $('#confirm_password_form');
+        const kickstand = await import("kickstand-ui");
+        const $passwordForm = kickstand.$('#confirm_password_form');
 
         $passwordForm.on('submitted', (event) => {
             const formData = event.detail;
@@ -46,7 +46,7 @@ export default {
                 alert(`Welcome to the app, ${username.value}!`);
             } else {
                 $passwordForm.invalid = true;
-                const $confirmPasswordField = $('#confirm_password');
+                const $confirmPasswordField = kickstand.$('#confirm_password');
                 $confirmPasswordField.defaultErrorMessage = 'Your passwords do not match';
                 $confirmPasswordField.invalid = true;
             }
