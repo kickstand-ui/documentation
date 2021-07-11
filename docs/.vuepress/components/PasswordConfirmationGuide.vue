@@ -1,10 +1,35 @@
-<template></template>
-<script>
+<template>
+    <ks-form id="confirm_password_form">
+        <ks-form-field
+            id="username"
+            label="Username"
+            required>
+        </ks-form-field>
+        <ks-form-field
+            id="password"
+            label="Password"
+            type="password"
+            help-text="Must be at least 8 characters and include 1 special character"
+            minlength="8"
+            pattern="^.*(?=.*[a-zA-Z])(?=.*[!#$%&?]).*$"
+            pattern-error-message="You are missing a special character"
+            required>
+        </ks-form-field>
+        <ks-form-field
+            id="confirm_password"
+            label="Confirm Password"
+            type="password"
+            required>
+        </ks-form-field>
+        <ks-button type="submit">Submit</ks-button>
+    </ks-form>
 
+</template>
+<script>
 export default {
     async mounted() {
-        const kickstand = await import("kickstand-ui");
-        const $passwordForm = kickstand.$('#confirm_password_form');
+        const { $ } = await import("kickstand-ui");
+        const $passwordForm = $('#confirm_password_form');
 
         $passwordForm.on('submitted', (event) => {
             const formData = event.detail;
@@ -12,12 +37,12 @@ export default {
             if(!formData.isValid)
                 return;
 
-            const passwordFieldData = formData.formFieldData.query(x => x.name === 'password')
-            const confirmPasswordFieldData = formData.formFieldData.query(x => x.name === 'confirm-password');
+            const passwordFieldData = formData.formFieldData.find(x => x.name === 'password')
+            const confirmPasswordFieldData = formData.formFieldData.find(x => x.name === 'confirm-password');
 
             if(passwordFieldData.value === confirmPasswordFieldData.value) {
                 $passwordForm.invalid = false;
-                const username = formData.formFieldData.query(x => x.name === 'username');
+                const username = formData.formFieldData.find(x => x.name === 'username');
                 alert(`Welcome to the app, ${username.value}!`);
             } else {
                 $passwordForm.invalid = true;

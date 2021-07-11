@@ -8,7 +8,7 @@
         },
         {
             "property": "og:image",
-            "content": "https://kickstand-ui.com/images/screen_shots/autocomplete.png"
+            "content": "https://kickstand-ui.com/images/kickstand_card.png"
         },
         {
             "property": "og:description",
@@ -16,7 +16,7 @@
         },
         {
             "property": "twitter:image:src",
-            "content": "https://kickstand-ui.com/images/screen_shots/autocomplete.png"
+            "content": "https://kickstand-ui.com/images/kickstand_card.png"
         }
     ]
 }
@@ -188,32 +188,34 @@ if(password.value === confirmPassword.value) {
 
 ## Complete Code and Demo
 
-<div class="my-xxxl">
-    <ks-form id="confirm_password_form">
-        <ks-form-field
-            id="username"
-            label="Username"
-            required>
-        </ks-form-field>
-        <ks-form-field
-            id="password"
-            label="Password"
-            type="password"
-            help-text="Must be at least 8 characters and include 1 special character"
-            minlength="8"
-            pattern="^.*(?=.*[a-zA-Z])(?=.*[!#$%&?]).*$"
-            pattern-error-message="You are missing a special character"
-            required>
-        </ks-form-field>
-        <ks-form-field
-            id="confirm_password"
-            label="Confirm Password"
-            type="password"
-            required>
-        </ks-form-field>
-        <ks-button type="submit">Submit</ks-button>
-    </ks-form>
-</div>
+<PasswordConfirmationGuide />
+
+```html
+<ks-form id="confirm_password_form">
+    <ks-form-field
+        id="username"
+        label="Username"
+        required>
+    </ks-form-field>
+    <ks-form-field
+        id="password"
+        label="Password"
+        type="password"
+        help-text="Must be at least 8 characters and include 1 special character"
+        minlength="8"
+        pattern="^.*(?=.*[a-zA-Z])(?=.*[!#$%&?]).*$"
+        pattern-error-message="You are missing a special character"
+        required>
+    </ks-form-field>
+    <ks-form-field
+        id="confirm_password"
+        label="Confirm Password"
+        type="password"
+        required>
+    </ks-form-field>
+    <ks-button type="submit">Submit</ks-button>
+</ks-form>
+```
 
 ```js
 const passwordForm = $('#confirm_password_form');
@@ -239,5 +241,3 @@ passwordForm.on('submitted', (event) => {
     }
 });
 ```
-
-<PasswordConfirmationGuide />
