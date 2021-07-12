@@ -188,7 +188,14 @@ if(password.value === confirmPassword.value) {
 
 ## Complete Code and Demo
 
-<PasswordConfirmationGuide />
+<p class="codepen" data-height="700" data-default-tab="html,result" data-slug-hash="dyWpBbR" data-editable="true" data-user="break-stuff" style="height: 700px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/break-stuff/pen/dyWpBbR">
+  Kickstand UI Sign Up Form</a> by break-stuff (<a href="https://codepen.io/break-stuff">@break-stuff</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+### Final Code
 
 ```html
 <ks-form id="confirm_password_form">
