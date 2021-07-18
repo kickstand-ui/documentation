@@ -16,6 +16,18 @@
 
 # Changelog
 
+## 2.14.0
+
+## Add
+
+- Fallback `src` for [image component](components/images.md)
+- [Alert Icons](components/alert.md#icons)
+
+## Fix
+
+- Adjusted [form field button](forms/form-field.md) button layout
+- Adjusted [loading icon](components/loading.md) layout
+
 ## 2.13.x
 
 ### Add

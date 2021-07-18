@@ -166,6 +166,18 @@ You can add some more structure to your alerts by adding a heading to your using
 <ks-alert header="Note Heading" note>This is a note with a heading.</ks-alert>
 ```
 
+## Icon
+
+As you can see, alerts have a default icon to provide users who may be unable to distinguish color that the alert is important content. You can change the icon using `icon` attribute and can choose from the list of [Kickstand UI's icons](../iconography.md). You can also hide the icon using the `hide-icon` attribute.
+
+<div class="my-xl">
+    <ks-alert header="Changing Icon" icon="flag">You can change the icon using `icon` attribute and can choose from the list of <a href="/iconography.html">Kickstand UI's icons</a>.</ks-alert>
+</div>
+
+```html
+<ks-alert header="Changing Icon" icon="flag">...</ks-alert>
+```
+
 ## Dismissible
 
 You have the ability to show or hide a selected overlay by setting the `dismissible` property to `true`.
@@ -220,6 +232,8 @@ Since notes are static containers for calling out important information, `role="
 | `color`  | `color`   | `"danger"`, `"dark"`, `"info"`, `"light"`, `"link"`, `"primary"`, `"secondary"`, `"success"`, or `"warning"` | `'primary'` | the color of the button based on the theme color palette           |
 | `header` | `header`  | `string`   | `undefined` | the header text for the alert            |
 | `note`   | `note`    | `boolean`  | `undefined` | display alert as a note            |
+| `icon`   | `icon`    | `string`  | `warning` | the icon that displays in the alert            |
+| `hideIcon`   | `hide-icon`    | `boolean`  | `false` | if `true`, this will hide the icon           |
 | `dismissible`   | `dismissible`    | `boolean`  | `false` | whether or not user can dismiss or hide the alert            |
 | `display`   | `display`    | `boolean`  | `false` | if dismissible this will set the initial visibility           |
 | `closeText`   | `close-text`    | `string`  | `undefined` | the label for the close button            |

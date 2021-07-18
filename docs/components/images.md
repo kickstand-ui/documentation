@@ -24,7 +24,44 @@
 
 # Images
 
-The Kickstand UI image component comes with a number of added features to help improve your page load times as well as the performance of your page once it is loaded.
+The Kickstand UI image component comes with a number of added features to help improve your page load times as well as the user experience once it is loaded.
+
+The default component looks and feels a lot like a normal `img` element. You use the `src` and `alt` attributes just as you normally would.
+
+<div class="my-xl text-center">
+    <ks-img
+        src="/images/demo/michael_scott_jesus.jpg"
+        alt="Michael Scott Jesus"
+        class="w-50 mx-auto"
+        />
+</div>
+
+```html
+<ks-img src="/images/demo/michael_scott_jesus.jpg" alt="Michael Scott"></ks-img>
+```
+
+## Fallback Image
+
+If the image specified in the `src` attribute fails for any reason, you can specify a fallback or default image using the `fallback-src` attribute.
+
+<div class="my-xl text-center">
+    <ks-img
+        src="/nonexistent-image.jpg"
+        fallback-src="/images/demo/100-percent-Michael-Scott.png"
+        alt="Michael Scott"
+        class="w-50 mx-auto"
+        lazy
+        />
+</div>
+
+```html
+<ks-img
+    src="/nonexistent-image.jpg"
+    fallback-src="/images/demo/100-percent-Michael-Scott.png"
+    alt="Michael Scott"
+    lazy
+    />
+```
 
 ## Lazy-Loading
 
@@ -54,7 +91,7 @@ You can explicitly specify the width and height on an image using the `height` a
 
 ## Aspect Ratio
 
-Sometimes you don't always know what the height and width will be on an image depending on the screen size or because the content is dynamically generated. In these cases it is better to specify an aspect ratio and Kickstand UI will auto-generate the height and the width on the fly for you. This is especially important if you are lazy-loading images because the browser does not know how to calculate how much space the image will occupy until the image is downloaded and rendered.
+Sometimes you don't always know what the height and width will be on an image depending on the screen size or because the content is dynamically generated. In these cases, it is better to specify an aspect ratio and Kickstand UI will auto-generate the height and the width on the fly for you. This is especially important if you are lazy-loading images because the browser does not know how to calculate how much space the image will occupy until the image is downloaded and rendered.
 
 <div class="my-xl text-center">
     <ks-img
@@ -67,7 +104,7 @@ Sometimes you don't always know what the height and width will be on an image de
 </div>
 
 ```html
-<ks-img aspect-ratio="3:2" lazy></ks-img>
+<ks-img aspect-ratio="3:2"></ks-img>
 ```
 
 ## Properties
@@ -77,22 +114,8 @@ Sometimes you don't always know what the height and width will be on an image de
 | `alt`       | `alt`       | alternate text for image                                           | `string`  | `undefined` |
 | `lazy`      | `lazy`      | toggles whether an image will be lazy loaded                       | `boolean` | `undefined` |
 | `src`       | `src`       | url to image                                                       | `string`  | `undefined` |
+| `fallbackSrc`       | `fallback-src`       | image url used if `src` image fails                                                       | `string`  | `undefined` |
 | `threshold` | `threshold` | distance from the bottom of the viewport a lazy image will display (in pixels) | `number`  | `300`       |
 | `height`      | `height`       | sets the `height` attribute on the `img` element            | `any`     | `undefined` |
 | `width`       | `width`        | sets the `width` attribute on the `img` element            | `number`  | `undefined` |
 | `aspectRatio` | `aspect-ratio` | sets the `width` and `height` attribute on the `img` element based on the defined aspect-ratio           | `string`  | `undefined` |
-
-<div class="my-xl text-center">
-    <ks-img
-        src="/images/demo/100-percent-Michael-Scott.png"
-        alt="Michael Scott with quote on whiteboard"
-        class="w-50 mx-auto"
-        aspect-ratio="4:3"
-        lazy
-        />
-    <div class="text-lg mt-sm">I was lazy-loaded!!!</div>
-</div>
-
-```html
-<ks-img src="/images/demo/100-percent-Michael-Scott.png" alt="Michael Scott with quote on whiteboard" aspect-ratio="4:3" lazy threshold="500"></ks-img>
-```
