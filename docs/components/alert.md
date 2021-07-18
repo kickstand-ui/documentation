@@ -171,11 +171,11 @@ You can add some more structure to your alerts by adding a heading to your using
 As you can see, alerts have a default icon to provide users who may be unable to distinguish color that the alert is important content. You can change the icon using `icon` attribute and can choose from the list of [Kickstand UI's icons](../iconography.md). You can also hide the icon using the `hide-icon` attribute.
 
 <div class="my-xl">
-    <ks-alert header="Changing Icon" icon="flag">You can change the icon using `icon` attribute and can choose from the list of <a href="/iconography.html">Kickstand UI's icons</a>.</ks-alert>
+    <ks-alert header="Change Icon" icon="octagon_warning_fill">Using <a href="/iconography.html">Kickstand UI's icons</a> you can change the alert icon to better fit your needs.</ks-alert>
 </div>
 
 ```html
-<ks-alert header="Changing Icon" icon="flag">...</ks-alert>
+<ks-alert header="Change Icon" icon="octagon_warning_fill">...</ks-alert>
 ```
 
 ## Dismissible
@@ -196,7 +196,7 @@ You have the ability to show or hide a selected overlay by setting the `dismissi
 </ks-alert>
 ```
 
-By default, if the alert is dismissible, it will be hidden initially. If you would like the alert to display initially, you can add the `display` property and it will display by default.
+By default, if the alert is dismissible, it will be hidden initially. If you would like the alert to display, you can add the `display` property and it will display by default.
 
 <div class="my-lg">
     <ks-alert header="Now You See Me" dismissible display>
