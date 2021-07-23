@@ -113,11 +113,11 @@ The `<ks-form>` element emits a `submitted` event when it is submitted by pressi
 First, let's add a form and listen for the submitted event:
 
 ```html
-<ks-form id="search_1" class="p-none b-none bg-transparent" inline>
+<ks-form id="search" inline>
     ...
 </ks-form>
 <script>
-    $('#search_1').on('submitted', (event) => {
+    $('#search').on('submitted', (event) => {
         ...
     });
 </script>
@@ -132,61 +132,29 @@ This guide uses the Kickstand UI [DOM utilities](../utilities/dom-utilities.md) 
 Next, for display purposes, let's display the search results in a modal when it gets submitted.
 
 ```html
-<ks-modal id="search_1_modal" modal-title="You just submitted...">
-    <pre id="search_1_data" class="bg-light"></pre>
+<ks-modal id="search_modal" modal-title="You just submitted...">
+    <pre id="search_data" class="bg-light-light"></pre>
 </ks-modal>
 ```
 
 When the form gets submitted, let's set the search form content in the modal and show the modal.
 
 ```js
-$('#search_1').on('submitted', (event) => {
+$('#search').on('submitted', (event) => {
     let formData = event.detail;
-    $('#search_1_data').innerText = JSON.stringify(formData, null, 2);
-    $('#search_1_modal').show();
+    $('#search_data').innerText = JSON.stringify(formData, null, 2);
+    $('#search_modal').show();
 });
 ```
 
 ### Final Result
 
-Here is the working form:
-
-<div class="mb-xl w-40">
-    <ks-form id="search_1" class="p-none b-none bg-transparent" inline>
-        <ks-form-field label="Search" type="search"></ks-form-field>
-        <ks-button type="submit">
-            <ks-icon icon="search" label="search"></ks-icon>
-        </ks-button>
-    </ks-form>
-    <ks-modal id="search_1_modal" modal-title="You just submitted...">
-        <pre id="search_1_data" class="bg-light"></pre>
-    </ks-modal>
-</div>
-
-Here is the complete code:
-
-```html
-<ks-form id="search_1" class="p-none b-none bg-transparent" inline>
-    <ks-form-field label="Search" type="search" size="sm"></ks-form-field>
-    <ks-button type="submit" size="sm">
-        <ks-icon icon="search" label="search"></ks-icon>
-    </ks-button>
-</ks-form>
-
-<!-- Modal to display search data -->
-<ks-modal id="search_1_modal" modal-title="You just submitted...">
-    <pre id="search_1_data" class="bg-light"></pre>
-</ks-modal>
-
-
-<script>
-    $('#search_1').on('submitted', (event) => {
-        let formData = event.detail;
-        $('#search_1_data').innerText = JSON.stringify(formData, null, 2);
-        $('#search_1_modal').show();
-    });
-</script>
-```
+<p class="codepen" data-height="600" data-default-tab="html,result" data-slug-hash="gOWxKQy" data-editable="true" data-user="break-stuff" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/break-stuff/pen/gOWxKQy">
+  Kickstand UI Getting Search Input Value</a> by break-stuff (<a href="https://codepen.io/break-stuff">@break-stuff</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## Filtering Data
 
@@ -227,7 +195,7 @@ Finally, we will be displaying the results in a table and will be updating the U
             <th>Names</th>
         </tr>
     </thead>
-    <tbody id="search_2_results">
+    <tbody id="search_results">
     </tbody>
 </table>
 
@@ -241,31 +209,21 @@ Finally, we will be displaying the results in a table and will be updating the U
 Now we will replace our previous logic that displayed the form data in a modal with the logic to filter and display our list.
 
 ```js
-$('#search_2').on('submitted', (event) => {
+$('#search').on('submitted', (event) => {
     let formData = event.detail;
     let names = getFilteredNames(formData[0].value);
-    setResults('search_2_results', names);
+    setResults('search_results', names);
 });
 ```
 
-<div class="w-30 mt-xxl">
-    <ks-form id="search_2" class="p-none b-none bg-transparent" inline>
-        <ks-form-field label="Search 2" type="search"></ks-form-field>
-        <ks-button type="submit">
-            <ks-icon icon="search" label="search"></ks-icon>
-        </ks-button>
-    </ks-form>
-</div>
+### Filter Result
 
-<table class="table striped">
-    <thead>
-        <tr>
-            <th>Names</th>
-        </tr>
-    </thead>
-    <tbody id="search_2_results">
-    </tbody>
-</table>
+<p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="YzVxvgR" data-editable="true" data-user="break-stuff" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/break-stuff/pen/YzVxvgR">
+  Kickstand UI - Filtering Data</a> by break-stuff (<a href="https://codepen.io/break-stuff">@break-stuff</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## Auto-Submitting Search
 
@@ -275,62 +233,50 @@ There may be times where you want to have the results filter as the user types i
 - listen for the `updated` event (which will be emitted each time the user types)
 - execute our `getFilteredNames` and `setResults` functions we created above to update our UI
 
-```html
-<ks-form-field id="search_3" label="Search 3" type="search" icon="search"></ks-form-field>
-
-<table class="table striped">
-    <thead>
-        <tr>
-            <th>Names</th>
-        </tr>
-    </thead>
-    <tbody id="search_3_results">
-    </tbody>
-</table>
-
-<script>
-    $('#search_3').on('updated', (event) => {
-        let fieldData = event.detail;
-        let names = getFilteredNames(fieldData.value);
-        setResults('search_3_results', names);
-    });
-</script>
-```
-
-<div class="w-30 mt-xxl">
-    <ks-form-field id="search_3" label="Search 3" type="search" icon="search"></ks-form-field>
-</div>
-
-<table class="table striped">
-    <thead>
-        <tr>
-            <th>Names</th>
-        </tr>
-    </thead>
-    <tbody id="search_3_results">
-    </tbody>
-</table>
+<p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="mdmMjEN" data-editable="true" data-user="break-stuff" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/break-stuff/pen/mdmMjEN">
+  Kickstand UI - Auto-Submitting Search</a> by break-stuff (<a href="https://codepen.io/break-stuff">@break-stuff</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ## Debounce
 
-If you are filtering a list locally like we are here, filtering the results on every key stroke is probably fine. However, if you are pulling the results from an API, you probably don't want to make request to the server every time the user makes a key stoke. To help with this you can use the `debounce` property to wait for the user to stop typing before the code executes. Let's add a debounce method to the form field to delay the filter by half a second (500 milliseconds).
+If you are filtering a list locally like we are here, executing the filter on every key stroke is probably fine. However, if you are pulling the results from a server, you probably don't want to make request to the server every time the user types. To help with this you can use the `debounce` property to wait for the user to stop typing before the code executes. Let's add a debounce method to the form field to delay the filter by half a second (`500 milliseconds`).
+
+<p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="QWvqGae" data-editable="true" data-user="break-stuff" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/break-stuff/pen/QWvqGae">
+  Kickstand UI - Sign Up Form</a> by break-stuff (<a href="https://codepen.io/break-stuff">@break-stuff</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+## Accessibility
+
+The finish touch is to improve the usability by adding some accessibility love to our search. A nice feature is provide feedback to the user when search results change. If a user can see the screen, they can easily detect changes in the search results, but it's a bit more difficult for users that rely on assistive technologies. To help with that, we need a way to provide that feedback using assistive technologies.
+
+Fortunately, the [`aria-live`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions) attribute is designed to do just that and, fortunately, Kickstand UI's [alert component](../components/alert.md) has it built-in.
+
+The first thing we will add is an alert to the page and add the `sr-only` class to it so it is visually hidden but still available to assistive technologies.
 
 ```html
-<ks-form-field id="search_4" label="Search 4" type="search" icon="search" debounce="500"></ks-form-field>
+<ks-alert class="sr-only"><span id="search_count"></span> results found</ks-alert>
 ```
 
-<div class="w-30 mt-xxl">
-    <ks-form-field id="search_4" label="Search 4" type="search" icon="search" debounce="500"></ks-form-field>
-</div>
+We have added a `span` tag with the ID `search_count` as our placeholder. Let's add some JavaScript to update it when the search results change. Since we have the `aria-live` attribute on the alert, it will broadcast the change every time we update the results.
 
-<table class="table striped">
-    <thead>
-        <tr>
-            <th>Names</th>
-        </tr>
-    </thead>
-    <tbody id="search_4_results">
-    </tbody>
-</table>
+```js
+function setResults(id, results) {
+  $('#search_count').innerText = results.length;
+  $(`#${id}`).innerHTML = results
+    .map((result) => `<tr><td>${result}</td></tr>`)
+    .join("");
+}
+```
 
-<SearchFormGuide />
+<p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="WNjZpOz" data-editable="true" data-user="break-stuff" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/break-stuff/pen/WNjZpOz">
+  Kickstand UI - Debounce</a> by break-stuff (<a href="https://codepen.io/break-stuff">@break-stuff</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
