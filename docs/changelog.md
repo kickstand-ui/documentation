@@ -16,6 +16,16 @@
 
 # Changelog
 
+## 2.15.0
+
+## Add
+
+- `formData` property for easy [form results](https://kickstand-ui.com/forms/form.html#submission)
+
+## Fix
+
+- Remove duplicate icon from [form](https://kickstand-ui.com/forms/form.html) error message
+
 ## 2.14.0
 
 ## Add
