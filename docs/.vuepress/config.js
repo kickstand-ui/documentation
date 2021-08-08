@@ -281,7 +281,7 @@ module.exports = {
                     "/guides/contact-form.html",
                     "/guides/password-confirmation.html",
                     "/guides/adding-search.html",
-                    // "/guides/star-rating.html",
+                    "/guides/star-rating.html",
                 ]
             },
             "changelog.html"
