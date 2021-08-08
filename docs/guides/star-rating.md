@@ -313,7 +313,7 @@ The "Rating:" label feels redundant for sighted users, but, by default, the icon
 
 ## Display the Score
 
-The final piece is to display the correct amount of filled in stars. This is as simple ass adding some inline styling to the filled in stars that sets the `max-width` to the appropriate width percentage related to the score.
+The final piece is to display the correct amount of filled in stars. This is as simple as adding some inline styling to the filled in stars that sets the `max-width` to the appropriate width percentage related to the score.
 
 ```html
 <span class="filled-stars" style="max-width: 70%;">
@@ -364,6 +364,13 @@ The final piece is to display the correct amount of filled in stars. This is as 
 </div>
 
 ## Final Result
+
+<p class="codepen" data-height="600" data-default-tab="html,result" data-slug-hash="gOWKzWj" data-editable="true" data-user="break-stuff" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/break-stuff/pen/gOWKzWj">
+  Kickstand UI - Sign Up Form</a> by break-stuff (<a href="https://codepen.io/break-stuff">@break-stuff</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 ### Final HTML
 

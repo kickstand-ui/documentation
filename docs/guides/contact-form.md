@@ -30,12 +30,12 @@ In this guide you will see how to easily create forms, add validation, and get f
 
 The contact form will have the following requirements:
 
-| Field        | Requirements                                       |
-| ------------ | -------------------------------------------------- |
-| Name         | required                                           |
-| Email        | required, email validation                         |
-| Phone Number | optional, must follow the pattern XXX-XXX-XXXX     |
-| Comments     | required, multi-line free-form text field          |
+| Field        | Requirements                                   |
+| ------------ | ---------------------------------------------- |
+| Name         | required                                       |
+| Email        | required, email validation                     |
+| Phone Number | optional, must follow the pattern XXX-XXX-XXXX |
+| Comments     | required, multi-line free-form text field      |
 
 Translating those requirements into code is actually pretty straight forward with Kickstand UI.
 
@@ -43,7 +43,7 @@ Translating those requirements into code is actually pretty straight forward wit
 <ks-form>
     <ks-form-field label="Name" required></ks-form-field>
     <ks-form-field label="Email" type="email" required></ks-form-field>
-    <ks-form-field label="Phone Number" help-text="XXX-XXX-XXXX" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" pattern-error-message="Must be in the XXX-XXX-XXXX format"></ks-form-field>
+    <ks-form-field label="Phone Number" name="phoneNumber" help-text="XXX-XXX-XXXX" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" pattern-error-message="Must be in the XXX-XXX-XXXX format"></ks-form-field>
     <ks-form-field label="Comment" type="textarea" required></ks-form-field>
     <ks-button type="submit">Submit</ks-button>
 </ks-form>
@@ -53,7 +53,7 @@ Translating those requirements into code is actually pretty straight forward wit
     <ks-form id="contact_form">
         <ks-form-field label="Name" required></ks-form-field>
         <ks-form-field label="Email" type="email" required></ks-form-field>
-        <ks-form-field label="Phone Number" help-text="XXX-XXX-XXXX" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" pattern-error-message="Must be in the XXX-XXX-XXXX format"></ks-form-field>
+        <ks-form-field label="Phone Number" name="phoneNumber" help-text="XXX-XXX-XXXX" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" pattern-error-message="Must be in the XXX-XXX-XXXX format"></ks-form-field>
         <ks-form-field label="Comment" type="textarea" required></ks-form-field>
         <ks-button type="submit">Submit</ks-button>
     </ks-form>
@@ -65,7 +65,7 @@ Now that we have the form set up, we need to get the form data to submit to the 
 
 ```js
 $('#contact_form').on('submitted', (event) => {
-    console.log('CONTACT FORM DATA', event.detail);
+    alert(JSON.stringify(event.detail, null, 2));
 });
 ```
 
@@ -73,10 +73,26 @@ If we submit the form without filling out any fields, we will see the following 
 
 ```js
 {
+    isValid: false,
+    formData: {...}
     formFieldData: [...],
-    isValid: false
 }
 ```
+
+### Form Data
+
+The `formData` property is a summary `<ks-form-field>` input values. Property name is derived automatically from the `label` property. You can set this to a custom value using the `name` property on the `<ks-form-field>` element.
+
+```js
+formData: {
+    name: "",
+    email: "",
+    phoneNumber: "",
+    comment: ""
+}
+```
+
+### Form Field Data
 
 When we expand the `formFieldData` array, we will see some great information about each of our fields. For example, let's take a look at the first field in the array. It should be for the "Name" field.
 
@@ -117,19 +133,19 @@ Now that we have the form data, we can use it however we need. As a quick exampl
 
 ```js
 $('#contact_form').on('submitted', (event) => {
-    let formData = event.detail;
+    const contactForm = event.detail;
 
-    if(!formData.isValid)
+    if(!contactForm.isValid)
         return;
     
-    let formValues = {
-        name: formData.formFieldData.find(x => x.name === 'name'),
-        email: formData.formFieldData.find(x => x.name === 'email'),
-        phoneNumber: formData.formFieldData.find(x => x.name === 'phone-number'),
-        comments: formData.formFieldData.find(x => x.name === 'comments')
-    };
-
-    // send form values to the server
+    fetch('https://example.com/profile', {
+        method: 'POST', // or 'PUT'
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(contactForm.formData),
+    })
+    .then(...);
 });
 ```
 

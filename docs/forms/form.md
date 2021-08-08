@@ -97,6 +97,10 @@ To collect form data easily, a custom event emitter has been added to provide fi
 ```js
 {
     isValid: false,
+    formData: {
+        name: "",
+        email: "bad.email"
+    },
     formFieldData: [
         {
             name: "name",

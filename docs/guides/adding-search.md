@@ -210,8 +210,8 @@ Now we will replace our previous logic that displayed the form data in a modal w
 
 ```js
 $('#search').on('submitted', (event) => {
-    let formData = event.detail;
-    let names = getFilteredNames(formData[0].value);
+    let searchValue = event.detail.formData.search;
+    let names = getFilteredNames(searchValue);
     setResults('search_results', names);
 });
 ```
