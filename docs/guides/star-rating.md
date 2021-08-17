@@ -187,6 +187,7 @@ First, let's position the stars inline and overlay the filled stars over the top
 #### CSS
 
 ```css
+/* add positioning to the wrapper to prevent filled-stars from moving outside of the component */
 .star-rating .star-wrapper {
     display: inline-block;
     position: relative;
@@ -196,6 +197,7 @@ First, let's position the stars inline and overlay the filled stars over the top
     display: flex;
 }
 
+/* place the filled stars over the top of the empty stars */
 .star-rating .star-wrapper .filled-stars {
     display: flex;
     position: absolute;
@@ -219,6 +221,7 @@ If you are using Sass, nesting your styles will take care of that for you.
 
 ```scss
 .star-rating {
+    /* add positioning to the wrapper to prevent filled-stars from moving outside of the component */
     .star-wrapper {
         display: inline-block;
         position: relative;
@@ -227,6 +230,7 @@ If you are using Sass, nesting your styles will take care of that for you.
             display: flex;
         }
 
+        /* place the filled stars over the top of the empty stars */
         .filled-stars {
             display: flex;
             position: absolute;
@@ -305,7 +309,7 @@ It should now look something like this.
 
 ### Hide Label
 
-The "Rating:" label feels redundant for sighted users, but, by default, the icons are hidden to screen readers. Let's hide the label for sighted users, but keep it visible for assistive technologies. In order to do that, we will wrap it in a `span` and add the [`sr-only`](../utilities/display.md#screen-reader-only) (screen reader only) utility class to it so hide the content.
+The "Rating:" label feels redundant for sighted users, but, by default, the icons are hidden to screen readers. Let's hide the label for sighted users, but keep it visible for assistive technologies. In order to do that, we will wrap it in a `span` and add the [`sr-only`](../utilities/display.md#screen-reader-only) (screen reader only) utility class to it.
 
 ```html
 <strong class="score"><span class="sr-only">Rating:</span> 3.5</strong>
@@ -363,7 +367,7 @@ The final piece is to display the correct amount of filled in stars. This is as 
     <strong class="score"><span class="sr-only">Rating:</span> 1</strong>
 </div>
 
-## Final Result
+## Try It Out
 
 <p class="codepen" data-height="600" data-default-tab="html,result" data-slug-hash="gOWKzWj" data-editable="true" data-user="break-stuff" style="height: 600px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/break-stuff/pen/gOWKzWj">
