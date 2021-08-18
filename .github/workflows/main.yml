@@ -8,16 +8,16 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Generate static files in wwwroot
+    - name: Generate static vuepress files
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
     - run: npm ci
     - run: npm run build
 
-    - name: Init new repo in wwwroot and commit generated files
+    - name: Init new repo in dist and commit generated files
       run: |
-        cd wwwroot
+        cd dist
         git init
         git add -A
         git config --local user.email "action@github.com"
