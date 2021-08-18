@@ -18,6 +18,7 @@ jobs:
     - name: Init new repo in dist and commit generated files
       run: |
         cd ./docs/.vuepress/dist
+        echo 'kickstand-ui.com' > CNAME
         git init
         git add -A
         git config --local user.email "action@github.com"
