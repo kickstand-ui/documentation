@@ -16,6 +16,13 @@
 
 # Changelog
 
+## 2.16.0
+
+## Add
+
+- Created new `clear` function and `cleared` event to [forms](forms/form.md#clearing-forms)
+- Optimized [icon](components/icons.md) format for better performance
+
 ## 2.15.0
 
 ## Add

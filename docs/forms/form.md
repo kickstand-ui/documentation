@@ -166,6 +166,12 @@ If you are using a JavaScript framework, your implementation may vary. Be sure t
 This example uses Kickstand UI's [DOM Utilities](../utilities/dom-utilities.md) to help keep the code dimple and easy to read.
 :::
 
+## Clearing Forms
+
+When a user cancels and action, closes a modal with a form in it, or backs out of a process, you may want to reset a form so it is fresh and clean the next time the user comes to the form. You can easily do the with the `clear` method. This will reset the form and restore its pristine condition. 
+
+Whenever a form is cleared or reset, you can listen for the event using the `cleared` event listener. 
+
 ## Validation
 
 When the form is submitted, each of the fields will be validated. If any of the fields are invalid, the form's state will be set to "invalid" and an error message will appear at the bottom of the form. You can customize this error message using the `error-message` property.
@@ -199,3 +205,12 @@ The error message will also be accompanied by an icon for those users that are n
 | Event       | Description                                  | Type                     |
 | ----------- | -------------------------------------------- | ------------------------ |
 | `submitted` | the event emitted when the form is submitted | `CustomEvent<IFormData>` |
+| `cleared` | the event emitted when the form is cleared or reset | `CustomEvent` |
+
+## Methods
+
+### `clear() => Promise<void>`
+
+#### Returns
+
+Type: `Promise<void>`
