@@ -92,6 +92,8 @@ The form is designed to stand out from the other content in order to increase co
 
 In a standard HTML form, submission causes the page to reload. In Kickstand UI's forms, that behavior is prevented by default to allow for client-side validation and precessing, but if the `action` property is populated, the default behavior will resume.
 
+Forms can be submitted with a submit button, but can also be submitted programmatically using the `submit` method. When executing the submit method, the form will also perform form validation and emit the `submitted` event.
+
 To collect form data easily, a custom event emitter has been added to provide field data and validation information - `submitted`. Below is an example of the form data (type `IFormData`) provided by the event for the form above:
 
 ```js
@@ -210,6 +212,16 @@ The error message will also be accompanied by an icon for those users that are n
 ## Methods
 
 ### `clear() => Promise<void>`
+
+This will clear all form values and reset any error messages.
+
+#### Returns
+
+Type: `Promise<void>`
+
+### `submit() => Promise<void>`
+
+This will perform validation and emit the `submitted` event.
 
 #### Returns
 
