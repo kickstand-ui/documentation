@@ -16,31 +16,42 @@
 
 # Changelog
 
+## 2.17.0
+
+### Add
+
+- Support for async options (fetched from the server) for [autocomplete component](forms/autocomplete.md);
+
+### Fix
+
+- Keyboard functionality for `auto-expand` feature for [autocomplete component](forms/autocomplete.md)
+- Display option text instead of value when option is selected for [autocomplete component](forms/autocomplete.md)
+
 ## 2.16.0
 
-## Add
+### Add
 
 - Created new `clear` function and `cleared` event to [forms](forms/form.md#clearing-forms)
 - Optimized [icon](components/icons.md) format for better performance
 
 ## 2.15.0
 
-## Add
+### Add
 
 - `formData` property for easy [form results](https://kickstand-ui.com/forms/form.html#submission)
 
-## Fix
+### Fix
 
 - Remove duplicate icon from [form](https://kickstand-ui.com/forms/form.html) error message
 
 ## 2.14.0
 
-## Add
+### Add
 
 - Fallback `src` for [image component](components/images.md)
 - [Alert Icons](components/alert.md#icons)
 
-## Fix
+### Fix
 
 - Adjusted [form field button](forms/form-field.md) button layout
 - Adjusted [loading icon](components/loading.md) layout
