@@ -16,6 +16,18 @@
 
 # Changelog
 
+## 2.17.2
+
+### Add
+
+- Add HTML sanitizer for elements that set `innerHTML`
+
+## 2.17.1
+
+### Fix
+
+- Removed console logs
+
 ## 2.17.0
 
 ### Add
