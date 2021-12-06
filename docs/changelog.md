@@ -16,6 +16,18 @@
 
 # Changelog
 
+## 2.17.4
+
+### Fix
+
+- Display appropriate value in input for [autocomplete](forms/autocomplete.md) when set using the `value` property
+
+## 2.17.3
+
+### Fix
+
+- Update SASS implementation to remove deprecation warnings.
+
 ## 2.17.2
 
 ### Add
