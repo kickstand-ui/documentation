@@ -372,6 +372,7 @@ In order to make the carousel _more_ accessible, it is treated like a tab compon
 | `alt`       | `alt`       | `string`                          | `undefined` | alt text for slide image            |
 | `lazy`      | `lazy`      | `boolean`                         | `false`     | lazy-load slide image            |
 | `src`       | `src`       | `string`                          | `undefined` | image source            |
+| `fallbackSrc`       | `fallback-src`       | `string`                          | `undefined` | image source if `src` fails           |
 | `threshold` | `threshold` | `number`                          | `300`       | how soon the lazy-loaded image should load before the component enters the viewport (in pixels)            |
 | `clickable` | `clickable` | `boolean`                         | `false`     | makes entire slide clickable |
 | `href`      | `href`      | `string`                          | `undefined` | where to link the slide to |

@@ -271,6 +271,7 @@ The footer has the `role="contentinfo"` attribute added to it to provide assisti
 | Property | Attribute | Type     | Default     | Description |
 | -------- | --------- | -------- | ----------- | ----------- |
 | `imgSrc`   | `img-src`    | `string` | `undefined` | URL for card image  |
+| `fallbackSrc`   | `fallback-src`    | `string` | `undefined` | URL for card image if `imgSrc` fails  |
 | `alt`    | `alt`     | `string` | `undefined` | alt text for image |
 | `lazy`    | `lazy`     | `boolean` | `undefined` | whether or not the card image is lazy-loaded |
 | `threshold`    | `threshold`     | `number` | `300` | how soon the lazy-loaded image should load before the component enters the viewport (in pixels) |

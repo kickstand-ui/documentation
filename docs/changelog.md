@@ -16,6 +16,12 @@
 
 # Changelog
 
+## 2.17.5
+
+### Add
+
+- Add image fallback for [carousel](components/carousel.md) and [card](components/card.md) components.
+
 ## 2.17.4
 
 ### Fix
